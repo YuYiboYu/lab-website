@@ -1,52 +1,87 @@
 ---
-#
-# Use the widgets beneath and the content will be
-# inserted automagically in the webpage. To make
-# this work, you have to use › layout: frontpage
-#
-layout: frontpage
-header:
-  image_fullwidth: header_unsplash_12.jpg
-widget1:
-  title: "Blog & Portfolio"
-  url: 'http://phlow.github.io/feeling-responsive/blog/'
-  image: widget-1-302x182.jpg
-  text: 'Every good portfolio website has a blog with fresh news, thoughts and develop&shy;ments of your activities. <em>Feeling Responsive</em> offers you a fully functional blog with an archive page to give readers a quick overview of all your posts.'
-widget2:
-  title: "Why use this theme?"
-  url: 'http://phlow.github.io/feeling-responsive/info/'
-  text: '<em>Feeling Responsive</em> is heavily customizable.<br/>1. Language-Support :)<br/>2. Optimized for speed and it&#39;s responsive.<br/>3. Built on <a href="http://foundation.zurb.com/">Foundation Framework</a>.<br/>4. Seven different Headers.<br/>5. Customizable navigation, footer,...'
-  video: '<a href="#" data-reveal-id="videoModal"><img src="http://phlow.github.io/feeling-responsive/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""/></a>'
-widget3:
-  title: "Download Theme"
-  url: 'https://github.com/Phlow/feeling-responsive'
-  image: widget-github-303x182.jpg
-  text: '<em>Feeling Responsive</em> is free and licensed under a MIT License. Make it your own and start building. The code is well-documented and explains you how it works.'
-#
-# Use the call for action to show a button on the frontpage
-#
-# To make internal links, just use a permalink like this
-# url: /getting-started/
-#
-# To style the button in different colors, use no value
-# to use the main color or success, alert or secondary.
-# To change colors see sass/_01_settings_colors.scss
-#
-callforaction:
-  url: https://tinyletter.com/feeling-responsive
-  text: Inform me about new updates and features ›
-  style: alert
-permalink: /index.html
-#
-# This is a nasty hack to make the navigation highlight
-# this page as active in the topbar navigation
-#
-homepage: true
+layout: page
+title: Home
+permalink: /
 ---
 
-<div id="videoModal" class="reveal-modal large" data-reveal="">
-  <div class="flex-video widescreen vimeo" style="display: block;">
-    <iframe width="1280" height="720" src="https://www.youtube.com/embed/3b5zCFSmVvU" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <a class="close-reveal-modal">&#215;</a>
-</div>
+# Building Networked Systems for Immersive Computing, Human-AI Interaction, and Extended Reality
+
+The [Lab Name] at George Mason University develops practical systems for immersive content delivery, multi-user extended reality, human-AI interaction, mobile computing, edge/cloud platforms, and privacy-preserving spatial computing.
+
+[Explore Research](/research/) | [View Projects](/projects/) | [Join Us](/join/)
+
+---
+
+## Mission
+
+We design, build, and evaluate networked systems that make immersive and intelligent applications more scalable, responsive, collaborative, and trustworthy.
+
+Our work connects systems, networking, extended reality, mobile computing, edge/cloud infrastructure, computer vision, graphics, and human-centered interaction.
+
+---
+
+## Research Focus Areas
+
+**Research Interests:** Computer Networks, Mobile Computing, and Security & Privacy
+
+**Recent Focus:** Immersive Content Delivery, Human-AI Interaction, Multi-user Extended Reality, 5G and beyond, and Edge Computing
+
+---
+
+## Featured Projects
+
+### CoMIC
+
+A collaborative mobile immersive computing infrastructure for multi-user XR research.
+
+### OpenCIVAN
+
+An open-source ecosystem for collaborative immersive visualization and analytics of high-dimensional scientific data.
+
+### Volumetric Streaming Systems
+
+Systems for efficient capture, delivery, and rendering of volumetric video and 6DoF immersive content.
+
+### Privacy-Preserving XR
+
+Methods for secure and privacy-aware sensing, localization, and user authentication in immersive applications.
+
+[View All Projects](/projects/)
+
+---
+
+## Selected Recent Publications
+
+**Exploring Collaborative Immersive Visualization & Analytics for High-Dimensional Scientific Data through Domain Expert Perspectives**  
+ACM CHI 2026
+
+**NeVo: Advancing Volumetric Video Streaming with Neural Content Representation**  
+ACM MobiCom 2025
+
+**PIPE: Privacy-preserving Image-based 6DoF Pose Estimation for Immersive Applications**  
+ACM SenSys 2025
+
+**Hello, GenAI? Dissecting Human to Generative AI Calling**  
+ACM IMC 2025
+
+**MuV2: Scaling up Multi-user Mobile Volumetric Video Streaming via Content Hybridization and Sharing**  
+ACM MobiCom 2024
+
+[View All Publications](/publications/)
+
+---
+
+## News
+
+- [Date] Our paper on collaborative immersive visualization and analytics will appear at ACM CHI 2026.
+- [Date] Our paper NeVo will appear at ACM MobiCom 2025.
+- [Date] Our paper PIPE will appear at ACM SenSys 2025.
+- [Date] Our paper Hello, GenAI? will appear at ACM IMC 2025.
+
+---
+
+## Join Us
+
+We are looking for self-motivated students interested in building practical systems for immersive computing, extended reality, human-AI interaction, volumetric media, and mobile/edge/cloud platforms.
+
+[Opportunities in the Lab](/join/)

@@ -42,6 +42,7 @@ body.video cite { color: #fff; }
 
 
 
+
 /* Navigation
 ------------------------------------------------------------------- */
 
@@ -361,3 +362,23 @@ body.video cite { color: #fff; }
 .pr5  { padding-right: 5px !important; }
 .pr10 { padding-right: 10px !important; }
 .pr20 { padding-right: 20px !important; }
+
+#masthead-no-image-header {
+  display: none;
+}
+
+#masthead {
+  display: none;
+}
+
+#masthead-with-text {
+  display: none;
+}
+
+#masthead-with-pattern {
+  display: none;
+}
+
+#masthead-with-background-color {
+  display: none;
+}
