@@ -41,3 +41,29 @@ body.post > div.row.t30 [itemprop="articleSection"] {
     width: calc(100% - 72px) !important;
   }
 }
+
+/* Center expanded navigation links as one group */
+@media only screen and (min-width: 40.063em) {
+  #navigation .top-bar {
+    text-align: center;
+  }
+
+  #navigation .top-bar-section {
+    display: block;
+    float: none !important;
+    text-align: center;
+  }
+
+  #navigation .top-bar-section > ul.left,
+  #navigation .top-bar-section > ul.right {
+    display: inline-block;
+    float: none !important;
+    vertical-align: top;
+  }
+
+  #navigation .top-bar-section > ul.left > li,
+  #navigation .top-bar-section > ul.right > li {
+    display: inline-block;
+    float: none !important;
+  }
+}
