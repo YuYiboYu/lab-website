@@ -2,3 +2,40 @@
  * http://ressio.github.io/lazy-load-xt
  * (C) 2014 RESS.io
  * Licensed under MIT */img.lazy{display:none}.lazy-hidden{opacity:0}.lazy-loaded{-webkit-transition:opacity .7s;-moz-transition:opacity .7s;-ms-transition:opacity .7s;-o-transition:opacity .7s;transition:opacity .7s;opacity:1}*:target:not([id^="fn:"]):not([id^="fnref:"])::before{content:" ";width:0;height:0;display:block;padding-top:50px;margin-top:-50px}.highlight{background:#fff}.highlight [data-lang]::before{content:attr(data-lang);display:block;text-align:right;margin-right:5px;text-transform:uppercase}.highlight .c{color:#998;font-style:italic}.highlight .err{color:#a61717;background-color:#e3d2d2}.highlight .k{font-weight:bold}.highlight .o{font-weight:bold}.highlight .cm{color:#998;font-style:italic}.highlight .cp{color:#999;font-weight:bold}.highlight .c1{color:#998;font-style:italic}.highlight .cs{color:#999;font-weight:bold;font-style:italic}.highlight .gd{color:#000;background-color:#fdd}.highlight .gd .x{color:#000;background-color:#faa}.highlight .ge{font-style:italic}.highlight .gr{color:#a00}.highlight .gh{color:#999}.highlight .gi{color:#000;background-color:#dfd}.highlight .gi .x{color:#000;background-color:#afa}.highlight .go{color:#888}.highlight .gp{color:#555}.highlight .gs{font-weight:bold}.highlight .gu{color:#aaa}.highlight .gt{color:#a00}.highlight .kc{font-weight:bold}.highlight .kd{font-weight:bold}.highlight .kp{font-weight:bold}.highlight .kr{font-weight:bold}.highlight .kt{color:#458;font-weight:bold}.highlight .m{color:#099}.highlight .s{color:#d14}.highlight .na{color:teal}.highlight .nb{color:#0086b3}.highlight .nc{color:#458;font-weight:bold}.highlight .no{color:teal}.highlight .ni{color:purple}.highlight .ne{color:#900;font-weight:bold}.highlight .nf{color:#900;font-weight:bold}.highlight .nn{color:#555}.highlight .nt{color:navy}.highlight .nv{color:teal}.highlight .ow{font-weight:bold}.highlight .w{color:#bbb}.highlight .mf{color:#099}.highlight .mh{color:#099}.highlight .mi{color:#099}.highlight .mo{color:#099}.highlight .sb{color:#d14}.highlight .sc{color:#d14}.highlight .sd{color:#d14}.highlight .s2{color:#d14}.highlight .se{color:#d14}.highlight .sh{color:#d14}.highlight .si{color:#d14}.highlight .sx{color:#d14}.highlight .sr{color:#009926}.highlight .s1{color:#d14}.highlight .ss{color:#990073}.highlight .bp{color:#999}.highlight .vc{color:teal}.highlight .vg{color:teal}.highlight .vi{color:teal}.highlight .il{color:#099}/*# sourceMappingURL=styles_feeling_responsive.css.map */
+
+/* Wider static homepage content override */
+body.post > div.row.t30 {
+  box-sizing: border-box;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 1200px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: calc(100% - 40px) !important;
+}
+
+body.post > div.row.t30 > div.medium-8.columns.medium-offset-2.end {
+  box-sizing: border-box;
+  float: none !important;
+  left: auto !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  max-width: none !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  right: auto !important;
+  width: 100% !important;
+}
+
+body.post > div.row.t30 article,
+body.post > div.row.t30 [itemprop="articleSection"] {
+  box-sizing: border-box;
+  max-width: none !important;
+  width: 100% !important;
+}
+
+@media only screen and (min-width: 40.063em) {
+  body.post > div.row.t30 {
+    width: calc(100% - 72px) !important;
+  }
+}
