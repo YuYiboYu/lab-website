@@ -8,7 +8,7 @@ body.post > div.row.t30 {
   box-sizing: border-box;
   margin-left: auto !important;
   margin-right: auto !important;
-  max-width: 1200px !important;
+  max-width: 1100px !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
   width: calc(100% - 40px) !important;
@@ -18,9 +18,9 @@ body.post > div.row.t30 > div.medium-8.columns.medium-offset-2.end {
   box-sizing: border-box;
   float: none !important;
   left: auto !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  max-width: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 1000px !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
   right: auto !important;
@@ -30,7 +30,9 @@ body.post > div.row.t30 > div.medium-8.columns.medium-offset-2.end {
 body.post > div.row.t30 article,
 body.post > div.row.t30 [itemprop="articleSection"] {
   box-sizing: border-box;
-  max-width: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 1000px !important;
   width: 100% !important;
 }
 
