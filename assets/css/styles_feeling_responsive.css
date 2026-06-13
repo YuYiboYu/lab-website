@@ -43,7 +43,7 @@ body.post > div.row.t30 [itemprop="articleSection"] {
 }
 
 /* Center expanded navigation links as one group */
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: 75em) {
   #navigation {
     margin-bottom: 16px;
     min-height: 64px;
