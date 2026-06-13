@@ -79,3 +79,134 @@ body.post > div.row.t30 [itemprop="articleSection"] {
     float: none !important;
   }
 }
+
+/* People page card layout */
+.people-page {
+  color: #111;
+}
+
+.people-section {
+  margin-top: 2.25rem;
+}
+
+.people-section h2 {
+  border-bottom: 1px solid #d7d7d7;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.35rem;
+}
+
+.people-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+}
+
+.person-card {
+  background: #fff;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.person-card-featured {
+  min-height: 0;
+}
+
+.person-photo {
+  aspect-ratio: 4 / 3;
+  background: #e4e4e4;
+  border-bottom: 1px solid #d7d7d7;
+  min-height: 160px;
+  width: 100%;
+}
+
+.person-card-body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.person-card h3 {
+  font-size: 1.25rem;
+  margin-top: 0;
+}
+
+.person-card p {
+  margin-bottom: 0.85rem;
+}
+
+.person-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: auto;
+  padding-top: 0.35rem;
+}
+
+article a.person-profile-link,
+article a.person-profile-link:hover {
+  align-items: center;
+  background: #334d5c;
+  border: 0;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  font-weight: bold;
+  height: 2.15rem;
+  justify-content: center;
+  line-height: 1;
+  min-width: 2.15rem;
+  text-decoration: none;
+  width: 2.15rem;
+}
+
+article a.person-profile-link:hover,
+article a.person-profile-link:focus {
+  background: #a1d044;
+  color: #111;
+}
+
+.person-profile-link .ai {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.person-profile-link [class^="icon-"]:before,
+.person-profile-link [class*=" icon-"]:before {
+  margin-right: 0;
+}
+
+.person-profile-badge {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .people-grid-students,
+  .people-grid-compact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .person-card-featured {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.35fr) minmax(0, 1fr);
+  }
+
+  .person-card-featured .person-photo {
+    aspect-ratio: auto;
+    border-bottom: 0;
+    border-right: 1px solid #d7d7d7;
+    min-height: 100%;
+  }
+}
+
+@media only screen and (min-width: 64.063em) {
+  .people-grid-students {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
