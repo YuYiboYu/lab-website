@@ -387,6 +387,65 @@ body.post > div.row.t30 [itemprop="articleSection"] {
   }
 }
 
+/* Research page theme layout */
+.research-page {
+  color: var(--brand-text, #333333);
+}
+
+.research-intro {
+  font-size: 1.08rem;
+  line-height: 1.75;
+  margin-bottom: 2rem;
+}
+
+.research-theme {
+  border-top: 1px solid #dbe5e0;
+  padding: 2rem 0 0.35rem;
+}
+
+.research-theme:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.research-theme h2 {
+  color: var(--brand-primary, #005239);
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0 0 0.85rem;
+}
+
+.research-theme p {
+  color: var(--brand-text, #333333);
+  line-height: 1.7;
+  margin-bottom: 0.95rem;
+}
+
+.research-related {
+  border-left: 4px solid var(--brand-primary, #005239);
+  padding-left: 1rem;
+}
+
+.research-related strong {
+  color: var(--brand-primary, #005239);
+}
+
+@media only screen and (max-width: 40em) {
+  .research-intro {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .research-theme {
+    padding-top: 1.6rem;
+  }
+
+  .research-theme h2 {
+    font-size: 1.35rem;
+  }
+}
+
 /* People page card layout */
 .people-page {
   color: #111;
