@@ -99,6 +99,99 @@ body.post > div.row.t30 [itemprop="articleSection"] {
   }
 }
 
+/* Home page intro */
+.home-intro {
+  background: #fff;
+  color: var(--brand-text, #333333);
+  padding: 2.75rem 0 2.25rem;
+}
+
+.home-intro-inner {
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(180px, 280px) minmax(0, 1fr);
+}
+
+.home-logo-placeholder {
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  background: #f7f7f7;
+  border: 2px dashed var(--brand-primary, #005239);
+  color: var(--brand-primary, #005239);
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+  min-height: 180px;
+  padding: 1.25rem;
+  text-align: center;
+  width: 100%;
+}
+
+.home-logo-placeholder span {
+  line-height: 1.35;
+}
+
+.home-lab-info h1 {
+  color: var(--brand-primary, #005239);
+  margin: 0 0 0.85rem;
+}
+
+.home-pi-line,
+.home-email-line {
+  color: var(--brand-text, #333333);
+  margin: 0 0 0.8rem;
+}
+
+.home-institution-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
+  margin: 1.15rem 0 0.85rem;
+}
+
+.home-institution-links a,
+.home-email-line a,
+.home-pi-line a {
+  border-bottom: 1px dotted var(--brand-primary, #005239);
+  color: var(--brand-primary, #005239);
+  font-weight: 700;
+}
+
+.home-institution-links a:hover,
+.home-institution-links a:focus,
+.home-email-line a:hover,
+.home-email-line a:focus,
+.home-pi-line a:hover,
+.home-pi-line a:focus {
+  border-bottom-color: var(--brand-secondary, #FFC733);
+  color: var(--brand-primary, #005239);
+}
+
+@media only screen and (max-width: 40em) {
+  .home-intro {
+    padding: 1.75rem 0;
+  }
+
+  .home-intro-inner {
+    gap: 1.35rem;
+    grid-template-columns: 1fr;
+  }
+
+  .home-logo-placeholder {
+    margin: 0 auto;
+    max-width: 220px;
+  }
+
+  .home-lab-info {
+    text-align: center;
+  }
+
+  .home-institution-links {
+    justify-content: center;
+  }
+}
+
 /* People page card layout */
 .people-page {
   color: #111;
