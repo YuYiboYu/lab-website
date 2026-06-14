@@ -45,16 +45,17 @@ body.post > div.row.t30 [itemprop="articleSection"] {
 }
 
 /* Center expanded navigation links as one group */
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 64.063em) {
   #navigation {
-    margin-bottom: 16px;
-    min-height: 64px;
+    margin-bottom: 0;
+    margin-top: 0;
+    min-height: 45px;
     overflow: visible;
   }
 
   #navigation .top-bar {
-    height: auto !important;
-    min-height: 64px;
+    height: 45px !important;
+    min-height: 45px;
     overflow: visible;
     text-align: center;
   }
@@ -63,22 +64,38 @@ body.post > div.row.t30 [itemprop="articleSection"] {
     display: block;
     float: none !important;
     overflow: visible;
-    padding-bottom: 6px;
-    padding-top: 6px;
+    padding-bottom: 0;
+    padding-top: 0;
     text-align: center;
   }
 
-  #navigation .top-bar-section > ul.left,
+  #navigation .top-bar-section > ul.left {
+    display: inline-block;
+    float: none !important;
+    margin: 0;
+    vertical-align: top;
+  }
+
   #navigation .top-bar-section > ul.right {
+    display: none;
+  }
+
+  #navigation .top-bar-section > ul.left > li {
     display: inline-block;
     float: none !important;
     vertical-align: top;
   }
 
-  #navigation .top-bar-section > ul.left > li,
-  #navigation .top-bar-section > ul.right > li {
-    display: inline-block;
-    float: none !important;
+  #navigation .top-bar-section li:not(.has-form) a:not(.button) {
+    line-height: 45px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  #navigation .top-bar-section li.active:not(.has-form) a:not(.button),
+  #navigation .top-bar-section li.active > a {
+    line-height: 45px;
+    min-height: 45px;
   }
 }
 
