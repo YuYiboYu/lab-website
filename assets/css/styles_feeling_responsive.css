@@ -392,6 +392,18 @@ body.post > div.row.t30 [itemprop="articleSection"] {
   color: var(--brand-text, #333333);
 }
 
+.research-page,
+.research-intro,
+.research-theme p,
+.research-related {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
 .research-intro {
   font-size: 1.08rem;
   line-height: 1.75;
