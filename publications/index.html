@@ -314,7 +314,23 @@
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://dl.acm.org/doi/pdf/10.1145/3680207.3723473">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3680207.3723473">DOI</a>
+                <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="nevo-bibtex" data-publication-toggle="nevo-bibtex">BIB</button>
               </p>
+              <div class="publication-bibtex" id="nevo-bibtex" hidden aria-hidden="true">
+                <pre><code>@inproceedings{Wu_2025,
+  series={ACM MOBICOM ’25},
+  title={NeVo: Advancing Volumetric Video Streaming with Neural Content Representation},
+  url={http://dx.doi.org/10.1145/3680207.3723473},
+  DOI={10.1145/3680207.3723473},
+  booktitle={Proceedings of the 31st Annual International Conference on Mobile Computing and Networking},
+  publisher={ACM},
+  author={Wu, Nan and Chen, Bo and Cheng, Ruizhi and Nahrstedt, Klara and Han, Bo},
+  year={2025},
+  month=Nov,
+  pages={267–282},
+  collection={ACM MOBICOM ’25}
+}</code></pre>
+              </div>
             </li>
             <li class="publication-entry">
               <p class="publication-venue-short">IMC</p>
@@ -1173,6 +1189,23 @@
 
 
 <script src="https://yuyiboyu.github.io/lab-website/assets/js/javascript.min.js"></script>
+<script>
+  (function () {
+    document.querySelectorAll('[data-publication-toggle]').forEach(function (button) {
+      var target = document.getElementById(button.getAttribute('data-publication-toggle'));
+      if (!target) {
+        return;
+      }
+
+      button.addEventListener('click', function () {
+        var isOpen = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!isOpen));
+        target.hidden = isOpen;
+        target.setAttribute('aria-hidden', String(isOpen));
+      });
+    });
+  }());
+</script>
 
 
 
