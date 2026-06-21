@@ -215,7 +215,6 @@
             
             
               <li><a  href="https://yuyiboyu.github.io/lab-website/join/">Join Us</a></li>
-              <li class="divider"></li>
 
             
             
@@ -231,101 +230,6 @@
               
 
           
-          
-        
-        
-      </ul>
-      
-      
-
-      <ul class="right">
-        
-
-              
-
-
-
-          
-          
-        
-
-              
-
-
-
-          
-          
-        
-
-              
-
-
-
-          
-          
-        
-
-              
-
-
-
-          
-          
-        
-
-              
-
-
-
-          
-          
-        
-
-              
-
-
-
-          
-          
-        
-
-              
-
-
-
-          
-          
-        
-
-              
-
-
-
-          
-          
-            
-            
-              <li class="divider"></li>
-              <li><a  href="https://yuyiboyu.github.io/lab-website/search/">Search</a></li>
-
-            
-            
-          
-        
-
-              
-
-
-
-          
-          
-            
-            
-              <li class="divider"></li>
-              <li><a  href="https://yuyiboyu.github.io/lab-website/contact/">Contact</a></li>
-
-            
-            
           
         
         
