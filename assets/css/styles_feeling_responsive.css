@@ -866,9 +866,8 @@ body.video cite a,
 }
 
 .publication-list {
-  counter-reset: publication-entry;
   display: grid;
-  gap: 0.7rem;
+  gap: 0.45rem;
   list-style: none;
   margin: 0 0 2.5rem;
   padding: 0;
@@ -879,12 +878,11 @@ body.video cite a,
   border: 1px solid rgba(0, 82, 57, 0.14);
   border-left: 4px solid rgba(0, 82, 57, 0.62);
   border-radius: 6px;
-  column-gap: 1.35rem;
-  counter-increment: publication-entry;
+  column-gap: 1.1rem;
   display: grid;
   grid-template-columns: minmax(7.75rem, 9.5rem) minmax(0, 1fr);
   margin: 0;
-  padding: 1.2rem 1.1rem 1.2rem 1.15rem;
+  padding: 0.95rem 1rem;
   transition: background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
@@ -893,39 +891,6 @@ body.video cite a,
   border-color: rgba(0, 82, 57, 0.22);
   border-left-color: var(--brand-secondary);
   box-shadow: 0 2px 8px rgba(0, 82, 57, 0.08);
-}
-
-.publication-list-2026 {
-  gap: 0.45rem;
-}
-
-.publication-entry-2026 {
-  column-gap: 1.1rem;
-  padding: 0.95rem 1rem;
-}
-
-.publication-entry.publication-entry-2026::before {
-  content: none;
-  display: none;
-}
-
-.publication-entry::before {
-  align-self: start;
-  background: var(--brand-primary);
-  border-radius: 4px;
-  color: #fff;
-  content: "#" counter(publication-entry, decimal-leading-zero);
-  display: inline-flex;
-  font-size: 0.78rem;
-  font-weight: 700;
-  grid-column: 1;
-  grid-row: 1;
-  justify-content: center;
-  justify-self: start;
-  letter-spacing: 0;
-  line-height: 1;
-  min-width: 3.4rem;
-  padding: 0.38rem 0.55rem;
 }
 
 .publication-venue-short {
@@ -938,19 +903,14 @@ body.video cite a,
   font-size: 0.82rem;
   font-weight: 700;
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 1;
   justify-self: start;
   line-height: 1.3;
-  margin: 0.55rem 0 0;
+  margin: 0;
   max-width: 8.5rem;
   padding: 0.4rem 0.55rem;
   text-align: center;
   width: 100%;
-}
-
-.publication-entry-2026 .publication-venue-short {
-  grid-row: 1;
-  margin: 0;
 }
 
 article a.publication-venue-link,
@@ -1228,10 +1188,9 @@ details.publication-bibtex {
   .publication-entry {
     border-left-width: 3px;
     grid-template-columns: minmax(0, 1fr);
-    padding: 1rem 0.85rem;
+    padding: 0.9rem 0.8rem;
   }
 
-  .publication-entry::before,
   .publication-venue-short,
   .publication-image-placeholder,
   .publication-thumbnail,
@@ -1245,11 +1204,6 @@ details.publication-bibtex {
     grid-column: 1;
   }
 
-  .publication-entry::before {
-    grid-row: auto;
-    margin-bottom: 0.35rem;
-  }
-
   .publication-venue-short {
     grid-row: auto;
     margin: 0 0 0.65rem;
@@ -1258,6 +1212,13 @@ details.publication-bibtex {
   }
 
   .publication-thumbnail {
+    grid-row: auto;
+    justify-self: start;
+    margin: 0 0 0.75rem;
+    max-width: 12rem;
+  }
+
+  .publication-image-placeholder {
     grid-row: auto;
     justify-self: start;
     margin: 0 0 0.75rem;
@@ -1277,24 +1238,5 @@ details.publication-bibtex {
 
   .publication-button {
     min-width: 3.25rem;
-  }
-
-  .publication-entry-2026 {
-    padding: 0.9rem 0.8rem;
-  }
-
-  .publication-entry-2026 .publication-venue-short,
-  .publication-entry-2026 .publication-image-placeholder {
-    grid-row: auto;
-  }
-
-  .publication-entry-2026 .publication-venue-short {
-    margin: 0 0 0.55rem;
-  }
-
-  .publication-entry-2026 .publication-image-placeholder {
-    justify-self: start;
-    margin: 0 0 0.75rem;
-    max-width: 12rem;
   }
 }
