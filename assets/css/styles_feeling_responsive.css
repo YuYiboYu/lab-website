@@ -884,6 +884,71 @@ body.video cite a,
   padding: 0.75rem 0.95rem;
 }
 
+.publication-filter-bar {
+  align-items: center;
+  background: #f8fbf9;
+  border: 1px solid rgba(0, 82, 57, 0.18);
+  border-radius: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1.1rem 0 1.8rem;
+  padding: 0.85rem 0.95rem;
+}
+
+.publication-filter-button {
+  -webkit-appearance: none;
+  appearance: none;
+  align-items: center;
+  background: #fff;
+  border: 1px solid rgba(0, 82, 57, 0.42);
+  border-radius: 999px;
+  color: var(--brand-primary);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 0.84rem;
+  font-weight: 700;
+  height: auto;
+  justify-content: center;
+  letter-spacing: 0;
+  line-height: 1.15;
+  margin: 0;
+  min-height: 2rem;
+  padding: 0.44rem 0.72rem;
+  text-align: center;
+  text-transform: none;
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
+  white-space: normal;
+}
+
+.publication-filter-button.is-active,
+.publication-filter-button[aria-pressed="true"] {
+  background: var(--brand-primary);
+  border-color: var(--brand-primary);
+  color: #fff;
+}
+
+.publication-filter-button:hover,
+.publication-filter-button:focus {
+  background: var(--brand-secondary);
+  border-color: var(--brand-secondary);
+  color: var(--brand-text);
+}
+
+.publication-filter-button.is-active:hover,
+.publication-filter-button.is-active:focus,
+.publication-filter-button[aria-pressed="true"]:hover,
+.publication-filter-button[aria-pressed="true"]:focus {
+  background: var(--brand-primary);
+  border-color: var(--brand-primary);
+  color: #fff;
+}
+
+.publication-year-section.is-hidden {
+  display: none !important;
+}
+
 .publications-page h2 {
   align-items: center;
   color: var(--brand-primary);
