@@ -44,7 +44,39 @@ body.post > div.row.t30 [itemprop="articleSection"] {
   }
 }
 
+/* Keep the fixed header opaque while preserving existing active-link styling. */
+#navigation,
+#navigation.fixed,
+#navigation.expanded {
+  background: #fdfdfd;
+  position: relative;
+  z-index: 3000;
+}
+
+#navigation.fixed {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+#navigation .top-bar,
+#navigation .top-bar.expanded,
+#navigation .title-area,
+#navigation .top-bar-section,
+#navigation .top-bar-section ul,
+#navigation .top-bar-section li {
+  background: #fdfdfd;
+}
+
+#navigation .top-bar-section li:not(.active):not(.has-form) a:not(.button) {
+  background: #fdfdfd;
+  color: #000;
+}
+
 /* Center expanded navigation links as one group */
+
 @media only screen and (min-width: 64.063em) {
   #navigation {
     margin-bottom: 0;
@@ -96,6 +128,14 @@ body.post > div.row.t30 [itemprop="articleSection"] {
   #navigation .top-bar-section li.active > a {
     line-height: 45px;
     min-height: 45px;
+  }
+
+  #navigation.fixed .top-bar-section > ul.left > li.active,
+  #navigation.fixed .top-bar-section li.active:not(.has-form) a:not(.button),
+  #navigation.fixed .top-bar-section li.active > a {
+    height: 50px;
+    line-height: 50px;
+    min-height: 50px;
   }
 }
 
