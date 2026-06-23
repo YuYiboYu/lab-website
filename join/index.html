@@ -7,6 +7,133 @@
 
     <link rel="stylesheet" type="text/css" href="https://yuyiboyu.github.io/lab-website/assets/css/styles_feeling_responsive.css">
 
+	<style>
+		.join-page {
+			--join-green: #005239;
+			--join-gold: #FFC733;
+			--join-text: #333333;
+			--join-border: #dbe5e0;
+			--join-soft: #f7f9f8;
+			color: var(--join-text);
+		}
+
+		.join-page p,
+		.join-page li {
+			-webkit-hyphens: none;
+			-moz-hyphens: none;
+			-ms-hyphens: none;
+			hyphens: none;
+		}
+
+		.join-intro {
+			font-size: 1.05rem;
+			line-height: 1.7;
+			margin-bottom: 1.1rem;
+		}
+
+		.join-section {
+			margin-top: 1.45rem;
+		}
+
+		.join-section h2,
+		.join-card h2 {
+			color: var(--join-green);
+			font-size: 1.45rem;
+			font-weight: 700;
+			line-height: 1.3;
+			margin: 0 0 0.8rem;
+		}
+
+		.join-highlight,
+		.join-card,
+		.join-contact {
+			background: #fff;
+			border: 1px solid var(--join-border);
+			border-radius: 6px;
+			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+		}
+
+		.join-highlight {
+			background: var(--join-soft);
+			border-left: 4px solid var(--join-green);
+			padding: 1.1rem 1.2rem 1.15rem;
+		}
+
+		.join-contact {
+			padding: 1.1rem 1.2rem 1.15rem;
+		}
+
+		.join-highlight p,
+		.join-card p,
+		.join-contact p {
+			line-height: 1.65;
+			margin-bottom: 0.75rem;
+		}
+
+		.join-opportunity-list {
+			display: grid;
+			gap: 0.35rem 1.5rem;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			margin-bottom: 0;
+		}
+
+		.join-card-grid {
+			display: grid;
+			gap: 1rem;
+			grid-template-columns: 1fr;
+		}
+
+		.join-card {
+			padding: 1.1rem 1.15rem 1rem;
+		}
+
+		.join-card ul,
+		.join-contact ol {
+			margin-bottom: 0.75rem;
+		}
+
+		.join-card p:last-child,
+		.join-card ul:last-child,
+		.join-contact p:last-child,
+		.join-contact ol:last-child {
+			margin-bottom: 0;
+		}
+
+		.join-card-full {
+			grid-column: 1 / -1;
+		}
+
+		.join-subject {
+			background: #fffdf4;
+			border: 1px solid var(--join-gold);
+			color: var(--join-green);
+			font-weight: 700;
+			margin: 0.6rem 0 0.9rem;
+			padding: 0.75rem 0.9rem;
+		}
+
+		body.join-page-body #up-to-top {
+			padding: 45px 0 10px 0;
+		}
+
+		@media only screen and (min-width: 40.063em) {
+			.join-card-grid {
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+			}
+		}
+
+		@media only screen and (max-width: 40em) {
+			.join-intro {
+				font-size: 1rem;
+				line-height: 1.6;
+			}
+
+			.join-opportunity-list {
+				grid-template-columns: 1fr;
+			}
+		}
+	</style>
+
   
 
 	<script src="https://yuyiboyu.github.io/lab-website/assets/js/modernizr.min.js"></script>
@@ -94,7 +221,7 @@
 
 
 </head>
-<body id="top-of-page" class="post">
+<body id="top-of-page" class="post join-page-body">
 	
 	
 <div id="navigation" class="sticky">
@@ -273,92 +400,90 @@
 			
 
 			<div itemprop="articleSection">
-			<p>We are looking for self-motivated students who are excited to build practical networked systems for immersive computing, extended reality, human-AI interaction, volumetric media, and mobile/edge/cloud platforms.</p>
+			<div class="join-page">
+  <p class="join-intro">We are looking for self-motivated students who are excited to build practical networked systems for immersive computing, extended reality, human-AI interaction, volumetric media, and mobile/edge/cloud platforms.</p>
 
-<h2 id="phd-students">Ph.D. Students</h2>
+  <section class="join-section join-highlight" aria-labelledby="current-research-opportunities">
+    <h2 id="current-research-opportunities">Current Research Opportunities</h2>
+    <p>We are especially interested in students who want to work on:</p>
+    <ul class="join-opportunity-list">
+      <li>Multi-user extended reality</li>
+      <li>Immersive content delivery</li>
+      <li>Volumetric video streaming</li>
+      <li>Collaborative immersive analytics</li>
+      <li>Human-AI interaction</li>
+      <li>Browser-based XR and WebGPU systems</li>
+      <li>Privacy-preserving spatial computing</li>
+      <li>Mobile, edge, and cloud systems for immersive applications</li>
+    </ul>
+  </section>
 
-<p>We welcome Ph.D. applicants with strong hands-on experience and interest in building real systems. Relevant backgrounds include:</p>
+  <div class="join-section join-card-grid">
+    <section class="join-card" aria-labelledby="phd-students">
+      <h2 id="phd-students">Ph.D. Students</h2>
+      <p>We welcome Ph.D. applicants with strong hands-on experience and interest in building real systems. Relevant backgrounds include:</p>
+      <ul>
+        <li>Computer networks</li>
+        <li>Mobile computing</li>
+        <li>Distributed systems</li>
+        <li>Edge and cloud computing</li>
+        <li>Extended reality</li>
+        <li>Computer vision</li>
+        <li>Graphics</li>
+        <li>Machine learning</li>
+        <li>Human-computer interaction</li>
+        <li>Web systems</li>
+        <li>Security and privacy</li>
+      </ul>
+      <p>Applicants who enjoy building prototypes, running experiments, analyzing system performance, and publishing in top research venues are especially encouraged to apply.</p>
+    </section>
 
-<ul>
-  <li>Computer networks</li>
-  <li>Mobile computing</li>
-  <li>Distributed systems</li>
-  <li>Edge and cloud computing</li>
-  <li>Extended reality</li>
-  <li>Computer vision</li>
-  <li>Graphics</li>
-  <li>Machine learning</li>
-  <li>Human-computer interaction</li>
-  <li>Web systems</li>
-  <li>Security and privacy</li>
-</ul>
+    <section class="join-card" aria-labelledby="ms-students">
+      <h2 id="ms-students">M.S. Students</h2>
+      <p>M.S. students can contribute to active research projects through system development, experimentation, data analysis, benchmarking, visualization, and software engineering.</p>
+      <p>Strong candidates usually have experience with at least one of the following:</p>
+      <ul>
+        <li>Python, JavaScript, C++, or TypeScript</li>
+        <li>Web systems or WebXR</li>
+        <li>Unity, Unreal, or 3D visualization tools</li>
+        <li>Machine learning or computer vision</li>
+        <li>Networking or distributed systems</li>
+        <li>Data analysis and visualization</li>
+      </ul>
+    </section>
 
-<p>Applicants who enjoy building prototypes, running experiments, analyzing system performance, and publishing in top research venues are especially encouraged to apply.</p>
+    <section class="join-card join-card-full" aria-labelledby="undergraduate-researchers">
+      <h2 id="undergraduate-researchers">Undergraduate Researchers</h2>
+      <p>Undergraduate students can join projects involving software development, prototype building, experiment design, visualization, and data collection.</p>
+      <p>Students interested in research are encouraged to prepare:</p>
+      <ul>
+        <li>A short statement of interest</li>
+        <li>Relevant coursework</li>
+        <li>Prior projects</li>
+        <li>GitHub or portfolio link, if available</li>
+        <li>Weekly time availability</li>
+      </ul>
+    </section>
+  </div>
 
-<h2 id="ms-students">M.S. Students</h2>
-
-<p>M.S. students can contribute to active research projects through system development, experimentation, data analysis, benchmarking, visualization, and software engineering.</p>
-
-<p>Strong candidates usually have experience with at least one of the following:</p>
-
-<ul>
-  <li>Python, JavaScript, C++, or TypeScript</li>
-  <li>Web systems or WebXR</li>
-  <li>Unity, Unreal, or 3D visualization tools</li>
-  <li>Machine learning or computer vision</li>
-  <li>Networking or distributed systems</li>
-  <li>Data analysis and visualization</li>
-</ul>
-
-<h2 id="undergraduate-researchers">Undergraduate Researchers</h2>
-
-<p>Undergraduate students can join projects involving software development, prototype building, experiment design, visualization, and data collection.</p>
-
-<p>Students interested in research are encouraged to prepare:</p>
-
-<ul>
-  <li>A short statement of interest</li>
-  <li>Relevant coursework</li>
-  <li>Prior projects</li>
-  <li>GitHub or portfolio link, if available</li>
-  <li>Weekly time availability</li>
-</ul>
-
-<h2 id="current-research-opportunities">Current Research Opportunities</h2>
-
-<p>We are especially interested in students who want to work on:</p>
-
-<ul>
-  <li>Multi-user extended reality</li>
-  <li>Immersive content delivery</li>
-  <li>Volumetric video streaming</li>
-  <li>Collaborative immersive analytics</li>
-  <li>Human-AI interaction</li>
-  <li>Browser-based XR and WebGPU systems</li>
-  <li>Privacy-preserving spatial computing</li>
-  <li>Mobile, edge, and cloud systems for immersive applications</li>
-</ul>
-
-<h2 id="how-to-contact">How to Contact</h2>
-
-<p>Please email Prof. Bo Han with the subject line:</p>
-
-<p><strong>Prospective Student: [Your Name] — [Research Area]</strong></p>
-
-<p>Your email should include:</p>
-
-<ol>
-  <li>A brief introduction</li>
-  <li>Your current program or degree status</li>
-  <li>Research areas of interest</li>
-  <li>Relevant hands-on project experience</li>
-  <li>CV or resume</li>
-  <li>Transcript, if available</li>
-  <li>Links to GitHub, portfolio, or publications, if available</li>
-  <li>Why you are interested in this lab</li>
-</ol>
-
-<p>Email: bohan [at] gmu.edu</p>
+  <section class="join-section join-contact" aria-labelledby="how-to-contact">
+    <h2 id="how-to-contact">How to Contact</h2>
+    <p>Please email Prof. Bo Han with the subject line:</p>
+    <p class="join-subject">Prospective Student: [Your Name] — [Research Area]</p>
+    <p>Your email should include:</p>
+    <ol>
+      <li>A brief introduction</li>
+      <li>Your current program or degree status</li>
+      <li>Research areas of interest</li>
+      <li>Relevant hands-on project experience</li>
+      <li>CV or resume</li>
+      <li>Transcript, if available</li>
+      <li>Links to GitHub, portfolio, or publications, if available</li>
+      <li>Why you are interested in this lab</li>
+    </ol>
+    <p>Email: bohan [at] gmu.edu</p>
+  </section>
+</div>
 
 			</div>
 
