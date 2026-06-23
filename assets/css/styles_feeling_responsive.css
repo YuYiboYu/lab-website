@@ -177,6 +177,13 @@ body.post > div.row.t30 [itemprop="articleSection"] {
   margin: 0 0 0.85rem;
 }
 
+.home-lab-subheader {
+  color: var(--brand-text, #333333);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: -0.25rem 0 0.9rem;
+}
+
 .home-pi-line,
 .home-email-line {
   color: var(--brand-text, #333333);
