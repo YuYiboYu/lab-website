@@ -360,8 +360,13 @@
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://dl.acm.org/doi/pdf/10.1145/3680207.3723473">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3680207.3723473">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="nevo-abstract" data-publication-toggle="nevo-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="nevo-bibtex" data-publication-toggle="nevo-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: not found -->
+              <div class="publication-abstract" id="nevo-abstract" hidden aria-hidden="true">
+                <p>Abstract not available yet.</p>
+              </div>
               <div class="publication-bibtex" id="nevo-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Wu_2025,
   series={ACM MOBICOM ’25},
@@ -387,7 +392,12 @@
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://dl.acm.org/doi/pdf/10.1145/3730567.3764441">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3730567.3764441">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="hello-genai-abstract" data-publication-toggle="hello-genai-abstract">ABS</button>
               </p>
+              <!-- Abstract source: https://conferences.sigcomm.org/imc/2025/program/#65 -->
+              <div class="publication-abstract" id="hello-genai-abstract" hidden aria-hidden="true">
+                <p>The rise of generative artificial intelligence (GenAI), powered by large language models, has led to the emergence of real-time, voice-based conversational applications that enable dynamic, multi-modal interactions for everyday tasks such as checking the weather or planning a trip. These human-to-GenAI calling applications blend speech processing, generative intelligence, and real-time communication, presenting new challenges in latency optimization, network infrastructure design, and resilience under load. Despite their growing popularity, little is known about the operational characteristics and performance of these applications. This paper conducts an empirical measurement of six human-to-GenAI calling applications from Google, Meta, Microsoft, and OpenAI, focusing on their input/output modalities, network behavior, latency metrics, and robustness. Our findings reveal key design choices and performance bottlenecks in these emerging applications. For example, the conversational latency often reaches several seconds, far exceeding the typical sub-second delays of human-to-human voice communication and potentially impairing interactivity. Moreover, voice-based GenAI traffic is inherently asymmetric: the uplink, carrying real-time human speech, benefits from streaming-based transmission, while the typically large downlink GenAI responses are better served through batch-based delivery.</p>
+              </div>
             </li>
             <li class="publication-entry">
               <a class="publication-venue-short publication-venue-link" href="https://conferences.sigcomm.org/imc/2025/" target="_blank" rel="noopener noreferrer">IMC 2025</a>
@@ -398,7 +408,12 @@
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://dl.acm.org/doi/pdf/10.1145/3730567.3764504">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3730567.3764504">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="webgl-webgpu-abstract" data-publication-toggle="webgl-webgpu-abstract">ABS</button>
               </p>
+              <!-- Abstract source: https://conferences.sigcomm.org/imc/2025/program/#450 -->
+              <div class="publication-abstract" id="webgl-webgpu-abstract" hidden aria-hidden="true">
+                <p>With increasing demand for machine learning, deep learning, and visualization services in the browser, service providers seek cost-effective and privacy-preserving solutions. General-purpose GPU computations, such as vector and matrix operations, are foundational to these applications. WebGL is a widely adopted web graphics API capable of multidimensional rendering, while WebGPU is the newest graphics API to be developed for the web with compute-specific capabilities. This paper explores the use of WebGPU and WebGL APIs to accelerate client-side computations in Web browsers. Although WebGPU is a promising new standard, its performance has not been systematically evaluated. Through benchmarking key computational GPU kernels that we have developed, we compare WebGPU and WebGL across varying input sizes and algorithm complexities. Our results show that: 1) both WebGPU and WebGL underperform for smaller input data because of setup and synchronization overheads, 2) WebGL outperforms WebGPU for complex input data, 3) WebGPU outperforms WebGL for less complex input data and functions containing a central CPU-based loop, and 4) WebAssembly does not significantly enhance performance compared to JavaScript for either of the web graphics APIs because of the major bottlenecks not residing on the CPU.</p>
+              </div>
             </li>
             <li class="publication-entry">
               <a class="publication-venue-short publication-venue-link" href="https://conferences.sigcomm.org/imc/2025/" target="_blank" rel="noopener noreferrer">IMC 2025</a>
@@ -409,7 +424,12 @@
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://dl.acm.org/doi/pdf/10.1145/3730567.3764453">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3730567.3764453">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="ipfs-breakpoints-abstract" data-publication-toggle="ipfs-breakpoints-abstract">ABS</button>
               </p>
+              <!-- Abstract source: https://conferences.sigcomm.org/imc/2025/program/#95 -->
+              <div class="publication-abstract" id="ipfs-breakpoints-abstract" hidden aria-hidden="true">
+                <p>Web 3.0 is redefining the current Web (Web 2.0) with a focus on data and governance decentralization. The InterPlanetary File System (IPFS) exemplifies this shift. However, it faces a trade-off between decentralization and performance: prior studies have shown IPFS’s performance degradations but fail to diagnose root causes or deliver actionable fixes. In this study, we present a comprehensive client-side measurement of IPFS performance, identify key bottlenecks, and propose practical enhancements. The key insights of our study are threefold. First, IPFS suffers from significantly lower (∼ 8×) throughput than HTTP, primarily due to its sequential downloading pattern imposed by its default block exchange protocol, Bitswap. By enhancing Bitswap, we manage to increase IPFS’s downloading throughput by up to 2.23× for large files. Second, Bitswap’s sequential downloading pattern limits parallel data retrieval from multiple sources and prevents BBR congestion control from fully leveraging its throughput optimization potential in lossy networks. Third, Bitswap supersedes DHT as IPFS’s primary content discovery tool, resolving &gt;80% of requests. Meanwhile, the reliability of DHT is hampered by unresponsive peers, causing delays or failures. Fine-tuning the activation threshold of DHT could optimize lookup efficiency as we demonstrate.</p>
+              </div>
             </li>
             <li class="publication-entry">
               <a class="publication-venue-short publication-venue-link" href="https://sensys.acm.org/2025/" target="_blank" rel="noopener noreferrer">SenSys 2025</a>
@@ -417,7 +437,14 @@
               <p class="publication-title"><strong>PIPE: Privacy-preserving Image-based 6DoF Pose Estimation for Immersive Applications</strong></p>
               <p class="publication-authors"><u>Nan Wu</u>, <u>Ruizhi Cheng</u>, Songqing Chen, and <strong>Bo Han</strong></p>
               <p class="publication-venue-line">In Proceedings of the 23rd ACM Conference on Embedded Networked Sensor Systems (SenSys 2025).</p>
-              <p class="publication-actions"><a class="publication-button doi" href="https://doi.org/10.1145/3715014.3722069">DOI</a></p>
+              <p class="publication-actions">
+                <a class="publication-button doi" href="https://doi.org/10.1145/3715014.3722069">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="pipe-abstract" data-publication-toggle="pipe-abstract">ABS</button>
+              </p>
+              <!-- Abstract source: not found -->
+              <div class="publication-abstract" id="pipe-abstract" hidden aria-hidden="true">
+                <p>Abstract not available yet.</p>
+              </div>
             </li>
             <li class="publication-entry">
               <a class="publication-venue-short publication-venue-link" href="https://www2025.thewebconf.org/" target="_blank" rel="noopener noreferrer">WWW 2025</a>
@@ -428,7 +455,12 @@
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://dl.acm.org/doi/pdf/10.1145/3696410.3714627">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3696410.3714627">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="ipfs-data-management-abstract" data-publication-toggle="ipfs-data-management-abstract">ABS</button>
               </p>
+              <!-- Abstract source: not found -->
+              <div class="publication-abstract" id="ipfs-data-management-abstract" hidden aria-hidden="true">
+                <p>Abstract not available yet.</p>
+              </div>
             </li>
             <li class="publication-entry">
               <a class="publication-venue-short publication-venue-link" href="https://hotmobile.org/2025/" target="_blank" rel="noopener noreferrer">HotMobile 2025</a>
@@ -439,7 +471,12 @@
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://dl.acm.org/doi/pdf/10.1145/3708468.3711886">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3708468.3711886">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="dynamic-3d-gaussian-splatting-abstract" data-publication-toggle="dynamic-3d-gaussian-splatting-abstract">ABS</button>
               </p>
+              <!-- Abstract source: not found -->
+              <div class="publication-abstract" id="dynamic-3d-gaussian-splatting-abstract" hidden aria-hidden="true">
+                <p>Abstract not available yet.</p>
+              </div>
             </li>
           </ol>
           </section>
