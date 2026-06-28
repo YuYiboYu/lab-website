@@ -153,23 +153,17 @@ body.post > div.row.t30 [itemprop="articleSection"] {
   grid-template-columns: minmax(180px, 280px) minmax(0, 1fr);
 }
 
-.home-logo-placeholder {
-  align-items: center;
-  aspect-ratio: 1 / 1;
-  background: #f7f7f7;
-  border: 2px dashed var(--brand-primary, #005239);
-  color: var(--brand-primary, #005239);
+.home-logo {
   display: flex;
-  font-weight: 600;
   justify-content: center;
-  min-height: 180px;
-  padding: 1.25rem;
-  text-align: center;
   width: 100%;
 }
 
-.home-logo-placeholder span {
-  line-height: 1.35;
+.home-logo img {
+  display: block;
+  height: auto;
+  max-width: 260px;
+  width: 100%;
 }
 
 .home-lab-info h1 {
@@ -225,7 +219,7 @@ body.post > div.row.t30 [itemprop="articleSection"] {
     grid-template-columns: 1fr;
   }
 
-  .home-logo-placeholder {
+  .home-logo {
     margin: 0 auto;
     max-width: 220px;
   }
