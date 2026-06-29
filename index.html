@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Home</title>
 
-    <link rel="stylesheet" type="text/css" href="https://yuyiboyu.github.io/lab-website/assets/css/styles_feeling_responsive.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles_feeling_responsive.css">
 
   
 
@@ -298,17 +298,70 @@
 		</div>
 	</section>
 
+	<!-- Temporary fake logos for homepage layout preview -->
 	<section class="home-section home-logo-section home-sponsors-section" aria-labelledby="home-sponsors-title">
 		<div class="row">
 			<div class="home-section-inner">
 				<h2 class="home-section-title" id="home-sponsors-title">Lab Sponsors</h2>
-				<div class="home-logo-grid home-sponsor-grid" aria-label="Sponsor logo placeholders">
-					<div class="home-logo-box">Sponsor Logo</div>
-					<div class="home-logo-box">Sponsor Logo</div>
-					<div class="home-logo-box">Sponsor Logo</div>
-					<div class="home-logo-box">Sponsor Logo</div>
-					<div class="home-logo-box">Sponsor Logo</div>
-					<div class="home-logo-box">Sponsor Logo</div>
+				<div class="home-logo-grid home-sponsor-grid sponsor-logo-grid-compact" aria-label="Temporary fake sponsor logos">
+					<div class="home-logo-box mock-logo sponsor-logo-card-compact mock-logo-novagrid" aria-label="Temporary fake sponsor logo: NovaGrid">
+						<svg class="mock-logo-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+							<rect x="8" y="8" width="20" height="20" rx="3" fill="#d8eee5"/>
+							<rect x="20" y="20" width="20" height="20" rx="3" fill="#eaf7f1"/>
+							<path d="M8 8h20v20H8zM20 20h20v20H20zM28 8l12 12M8 28l12 12M28 28l12 12" fill="none" stroke="#005239" stroke-width="2.4" stroke-linejoin="round"/>
+							<circle cx="18" cy="18" r="3" fill="#2f8f7f"/>
+							<circle cx="30" cy="30" r="3" fill="#6bbf9b"/>
+						</svg>
+						<span class="mock-logo-name">NovaGrid</span>
+					</div>
+					<div class="home-logo-box mock-logo sponsor-logo-card-compact mock-logo-synex" aria-label="Temporary fake sponsor logo: Synex Labs">
+						<svg class="mock-logo-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+							<polygon points="24 5 40 14.5 40 33.5 24 43 8 33.5 8 14.5" fill="#f3fbf7" stroke="#005239" stroke-width="2.3"/>
+							<path d="M17 25c0-5 3.5-8 8-8h3.5c4 0 6.5 2.5 6.5 6s-2.5 6-6.5 6H25" fill="none" stroke="#2f8f7f" stroke-width="3" stroke-linecap="round"/>
+							<path d="M31 23c0 5-3.5 8-8 8h-3.5c-4 0-6.5-2.5-6.5-6s2.5-6 6.5-6H23" fill="none" stroke="#78bfa6" stroke-width="3" stroke-linecap="round"/>
+						</svg>
+						<span class="mock-logo-name">Synex Labs</span>
+					</div>
+					<div class="home-logo-box mock-logo sponsor-logo-card-compact mock-logo-verta" aria-label="Temporary fake sponsor logo: Verta AI">
+						<svg class="mock-logo-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+							<defs>
+								<linearGradient id="verta-ai-gradient" x1="10" y1="8" x2="38" y2="40" gradientUnits="userSpaceOnUse">
+									<stop offset="0" stop-color="#78bfa6"/>
+									<stop offset="1" stop-color="#1d7892"/>
+								</linearGradient>
+							</defs>
+							<path d="M9 12l13.5 28L39 9" fill="none" stroke="url(#verta-ai-gradient)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M20 25l5 10 7-15" fill="none" stroke="#005239" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						<span class="mock-logo-name">Verta AI</span>
+					</div>
+					<div class="home-logo-box mock-logo sponsor-logo-card-compact mock-logo-cloudarc" aria-label="Temporary fake sponsor logo: CloudArc">
+						<svg class="mock-logo-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+							<path d="M14 33h21c4 0 7-2.8 7-6.6 0-3.6-2.8-6.4-6.6-6.4-.7 0-1.4.1-2 .3C31.8 15.4 27.2 12 22 12c-6 0-11 4.7-11.5 10.6C7.5 23.5 6 25.8 6 28.5 6 31.1 8.3 33 14 33z" fill="#eaf7f1" stroke="#005239" stroke-width="2.4" stroke-linejoin="round"/>
+							<path d="M13 38c7.5 4.5 19 4.5 26-4" fill="none" stroke="#2f8f7f" stroke-width="3" stroke-linecap="round"/>
+							<path d="M33 13c3.5 1.1 6 3.7 7.5 7" fill="none" stroke="#1d7892" stroke-width="2.4" stroke-linecap="round"/>
+						</svg>
+						<span class="mock-logo-name">CloudArc</span>
+					</div>
+					<div class="home-logo-box mock-logo sponsor-logo-card-compact mock-logo-pixelwave" aria-label="Temporary fake sponsor logo: PixelWave">
+						<svg class="mock-logo-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+							<rect x="7" y="9" width="8" height="8" rx="2" fill="#005239"/>
+							<rect x="18" y="9" width="8" height="8" rx="2" fill="#78bfa6"/>
+							<rect x="7" y="20" width="8" height="8" rx="2" fill="#2f8f7f"/>
+							<rect x="18" y="20" width="8" height="8" rx="2" fill="#d8eee5"/>
+							<path d="M9 36c5.5-8 10.5-8 16 0s10.5 8 16 0" fill="none" stroke="#1d7892" stroke-width="3.2" stroke-linecap="round"/>
+							<path d="M25 25c4-3.5 8-3.5 12 0" fill="none" stroke="#6bbf9b" stroke-width="2.4" stroke-linecap="round"/>
+						</svg>
+						<span class="mock-logo-name">PixelWave</span>
+					</div>
+					<div class="home-logo-box mock-logo sponsor-logo-card-compact mock-logo-nexora" aria-label="Temporary fake sponsor logo: Nexora">
+						<svg class="mock-logo-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+							<path d="M10 38V10l28 28V10" fill="none" stroke="#005239" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M11 11l26 26" fill="none" stroke="#78bfa6" stroke-width="2.8" stroke-linecap="round"/>
+							<path d="M19 30c4-8 9-12 18-15" fill="none" stroke="#1d7892" stroke-width="2.4" stroke-linecap="round"/>
+						</svg>
+						<span class="mock-logo-name">Nexora</span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -318,11 +371,45 @@
 		<div class="row">
 			<div class="home-section-inner">
 				<h2 class="home-section-title" id="home-collaborators-title">Our Collaborators</h2>
-				<div class="home-logo-grid home-collaborator-grid" aria-label="Collaborator logo placeholders">
-					<div class="home-logo-box">Collaborator Logo</div>
-					<div class="home-logo-box">Collaborator Logo</div>
-					<div class="home-logo-box">Collaborator Logo</div>
-					<div class="home-logo-box">Collaborator Logo</div>
+				<div class="home-logo-grid home-collaborator-grid" aria-label="Temporary fake collaborator logos">
+					<div class="home-logo-box mock-logo mock-logo-metasphere" aria-label="Temporary fake collaborator logo: MetaSphere">
+						<svg class="mock-logo-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+							<circle cx="24" cy="24" r="11" fill="#eaf7f1" stroke="#005239" stroke-width="2.4"/>
+							<ellipse cx="24" cy="24" rx="20" ry="7" fill="none" stroke="#2f8f7f" stroke-width="2.6" transform="rotate(-22 24 24)"/>
+							<path d="M17 24h14M24 13c3 6 3 16 0 22" fill="none" stroke="#78bfa6" stroke-width="2" stroke-linecap="round"/>
+							<circle cx="38" cy="18" r="3" fill="#1d7892"/>
+						</svg>
+						<span class="mock-logo-name">MetaSphere</span>
+					</div>
+					<div class="home-logo-box mock-logo mock-logo-dataspring" aria-label="Temporary fake collaborator logo: DataSpring">
+						<svg class="mock-logo-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+							<path d="M10 13h13c7 0 10 4 10 11s3 11 10 11" fill="none" stroke="#005239" stroke-width="3" stroke-linecap="round"/>
+							<path d="M10 24h15c4 0 6 2.5 8 7" fill="none" stroke="#78bfa6" stroke-width="3" stroke-linecap="round"/>
+							<path d="M10 35h11c7 0 10-4 13-11" fill="none" stroke="#1d7892" stroke-width="3" stroke-linecap="round"/>
+							<circle cx="10" cy="13" r="3" fill="#005239"/>
+							<circle cx="10" cy="24" r="3" fill="#78bfa6"/>
+							<circle cx="10" cy="35" r="3" fill="#1d7892"/>
+						</svg>
+						<span class="mock-logo-name">DataSpring</span>
+					</div>
+					<div class="home-logo-box mock-logo mock-logo-omnicore" aria-label="Temporary fake collaborator logo: OmniCore">
+						<svg class="mock-logo-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+							<circle cx="24" cy="24" r="17" fill="#f3fbf7" stroke="#005239" stroke-width="2.4"/>
+							<circle cx="24" cy="24" r="9" fill="none" stroke="#78bfa6" stroke-width="4"/>
+							<circle cx="24" cy="24" r="3.8" fill="#005239"/>
+							<path d="M24 7v7M24 34v7M7 24h7M34 24h7" stroke="#1d7892" stroke-width="2.4" stroke-linecap="round"/>
+						</svg>
+						<span class="mock-logo-name">OmniCore</span>
+					</div>
+					<div class="home-logo-box mock-logo mock-logo-luminaworks" aria-label="Temporary fake collaborator logo: LuminaWorks">
+						<svg class="mock-logo-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+							<path d="M24 7l4.2 11.8L40 23l-11.8 4.2L24 39l-4.2-11.8L8 23l11.8-4.2z" fill="#eaf7f1" stroke="#005239" stroke-width="2.4" stroke-linejoin="round"/>
+							<circle cx="11" cy="37" r="3.5" fill="#78bfa6"/>
+							<circle cx="38" cy="11" r="3.5" fill="#1d7892"/>
+							<path d="M14 35l8-8M34 14l-7 7" stroke="#2f8f7f" stroke-width="2.4" stroke-linecap="round"/>
+						</svg>
+						<span class="mock-logo-name">LuminaWorks</span>
+					</div>
 				</div>
 			</div>
 		</div>
