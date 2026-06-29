@@ -840,11 +840,26 @@ month = apr
               <p class="publication-authors">Ruizhi Cheng, Songqing Chen, and <strong>Bo Han</strong></p>
               <p class="publication-venue-line">IEEE Communications Magazine.</p>
               <p class="publication-actions">
+                <a class="publication-button pdf" href="https://arxiv.org/pdf/2302.08885">PDF</a>
                 <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="zero-trust-metaverse-abstract" data-publication-toggle="zero-trust-metaverse-abstract">ABS</button>
+                <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="zero-trust-metaverse-bibtex" data-publication-toggle="zero-trust-metaverse-bibtex">BIB</button>
               </p>
               <!-- Abstract source: https://doi.org/10.1109/mcom.018.2300095 -->
               <div class="publication-abstract" id="zero-trust-metaverse-abstract" hidden aria-hidden="true">
                 <p>By focusing on immersive interaction among users, the burgeoning Metaverse can be viewed as a natural extension of existing social media. Similar to traditional online social networks, there are numerous security and privacy issues in the Metaverse (e.g., attacks on user authentication and impersonation). In this article, we develop a holistic research agenda for zero-trust user authentication in social virtual reality (VR), an early prototype of the Metaverse. Our proposed research includes four concrete steps: investigating biometrics-based authentication that is suitable for continuously authenticating VR users, leveraging federated learning (FL) for protecting user privacy in biometric data, improving the accuracy of continuous VR authentication with multimodal data, and boosting the usability of zero-trust security with adaptive VR authentication. Our preliminary study demonstrates that conventional FL algorithms are not well suited for biometrics-based authentication of VR users, leading to an accuracy of less than 10%. We discuss the root cause of this problem, the associated open challenges, and several future directions for realizing our research vision.</p>
+              </div>
+              <div class="publication-bibtex" id="zero-trust-metaverse-bibtex" hidden aria-hidden="true">
+                <pre><code>@article{cheng2023towards,
+  author = {Cheng, Ruizhi and Chen, Songqing and Han, Bo},
+  title = {Towards Zero-trust Security for the Metaverse},
+  journal = {IEEE Communications Magazine},
+  year = {2023},
+  eprint = {2302.08885},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CR},
+  doi = {10.48550/arXiv.2302.08885},
+  url = {https://arxiv.org/abs/2302.08885}
+}</code></pre>
               </div>
             </li>
           </ol>
@@ -862,8 +877,13 @@ month = apr
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://dl.acm.org/doi/pdf/10.1145/3626111.3628184">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3626111.3628184">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="holographic-telepresence-abstract" data-publication-toggle="holographic-telepresence-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="holographic-telepresence-bibtex" data-publication-toggle="holographic-telepresence-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://conferences.sigcomm.org/hotnets/2023/papers/hotnets23_cheng.pdf -->
+              <div class="publication-abstract" id="holographic-telepresence-abstract" hidden aria-hidden="true">
+                <p>Achieving the optimal balance of minimizing bandwidth consumption and end-to-end latency while preserving a satisfactory level of visual quality becomes the ultimate goal of live, interactive holographic communication, a fundamental building block of immersive telepresence envisioned for 6G. Nevertheless, achieving this ambitious goal poses significant challenges for mobile devices with limited computing power, considering the substantial amount of 3D data to stream, the demanding latency requirements, and the high computation workload involved. Instead of distributing immersive content bit by bit, in this position paper, we propose to deliver semantic information extracted from telepresence participants to drastically reduce Internet bandwidth usage for task-oriented applications such as remote collaboration. We contribute a taxonomy by categorizing related semantics into three different types (i.e., keypoints, 2D images, and text), pinpoint the open research challenges associated with developing a practical system for each category in our comprehensive research agenda, and delve into the potential solutions for overcoming these challenges. The preliminary results from our proof-of-concept implementation that harnesses keypoint-based semantics (partially) validate the feasibility of our research agenda.</p>
+              </div>
               <div class="publication-bibtex" id="holographic-telepresence-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Cheng_2023, series={HotNets ’23}, title={Enriching Telepresence with Semantic-driven Holographic Communication}, url={http://dx.doi.org/10.1145/3626111.3628184}, DOI={10.1145/3626111.3628184}, booktitle={Proceedings of the 22nd ACM Workshop on Hot Topics in Networks}, publisher={ACM}, author={Cheng, Ruizhi and Liu, Kaiyan and Wu, Nan and Han, Bo}, year={2023}, month=Nov, pages={147–156}, collection={HotNets ’23} }</code></pre>
               </div>
@@ -877,8 +897,13 @@ month = apr
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://dl.acm.org/doi/pdf/10.1145/3618257.3624833">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3618257.3624833">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="webassembly-xr-abstract" data-publication-toggle="webassembly-xr-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="webassembly-xr-bibtex" data-publication-toggle="webassembly-xr-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3618257.3624833 -->
+              <div class="publication-abstract" id="webassembly-xr-abstract" hidden aria-hidden="true">
+                <p>By combining various emerging technologies, mobile extended reality (XR) blends the real world with virtual content to create a spectrum of immersive experiences. Although Web-based XR can offer attractive features such as better accessibility, cross-platform compatibility, and instant updates, its performance may not be on par with its standalone counterpart. As a low-level bytecode, WebAssembly has the potential to drastically accelerate Web-based XR by enabling near-native execution speed. However, little has been known about how well Web-based XR performs with WebAssembly acceleration. To bridge this crucial gap, we conduct a first-of-its-kind systematic and empirical study to analyze the performance of Web-based XR expedited by WebAssembly on four diverse platforms with five different browsers. Our measurement results reveal that although WebAssembly can accelerate different XR tasks in various contexts, there remains a substantial performance disparity between Web-based and standalone XR. We hope our findings can foster the realization of an immersive Web that is accessible to a wider audience with various emerging technologies.</p>
+              </div>
               <div class="publication-bibtex" id="webassembly-xr-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Liu_2023, series={IMC ’23}, title={Demystifying Web-based Mobile Extended Reality Accelerated by WebAssembly}, url={http://dx.doi.org/10.1145/3618257.3624833}, DOI={10.1145/3618257.3624833}, booktitle={Proceedings of the 2023 ACM on Internet Measurement Conference}, publisher={ACM}, author={Liu, Kaiyan and Wu, Nan and Han, Bo}, year={2023}, month=Oct, pages={145–153}, collection={IMC ’23} }</code></pre>
               </div>
@@ -890,9 +915,15 @@ month = apr
               <p class="publication-authors"><u>Kaiyan Liu</u>, <u>Ruizhi Cheng</u>, <u>Nan Wu</u>, and <strong>Bo Han</strong></p>
               <p class="publication-venue-line">In Proceedings of the 1st ACM Workshop on Mobile Immersive Computing, Networking, and Systems (ImmerCom 2023).</p>
               <p class="publication-actions">
+                <a class="publication-button pdf" href="https://par.nsf.gov/servlets/purl/10467143">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3615452.3617938">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="neural-volumetric-abstract" data-publication-toggle="neural-volumetric-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="neural-volumetric-bibtex" data-publication-toggle="neural-volumetric-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://par.nsf.gov/biblio/10467143-toward-next-generation-volumetric-video-streaming-neural-based-content-representations -->
+              <div class="publication-abstract" id="neural-volumetric-abstract" hidden aria-hidden="true">
+                <p>Striking a balance between minimizing bandwidth consumption and maintaining high visual quality stands as the paramount objective in volumetric content delivery. However, achieving this ambitious target is a substantial challenge, especially for mobile devices with constrained computational resources, given the voluminous amount of 3D data to be streamed, strict latency requirements, and high computational load. Inspired by the advantages offered by neural radiance fields (NeRF), we propose, for the first time, to deliver volumetric videos by utilizing neural-based content representations. We delve deep into potential challenges and explore viable solutions for both video-on-demand (VOD) and live video streaming services, in terms of the end-to-end pipeline, real-time and high-quality streaming, rate adaptation, and viewport adaptation. Our preliminary results lend credence to the feasibility of our research proposition, offering a promising starting point for further investigation.</p>
+              </div>
               <div class="publication-bibtex" id="neural-volumetric-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Liu_2023, series={ImmerCom ’23}, title={Toward Next-generation Volumetric Video Streaming with Neural-based Content Representations}, url={http://dx.doi.org/10.1145/3615452.3617938}, DOI={10.1145/3615452.3617938}, booktitle={Proceedings of the 1st ACM Workshop on Mobile Immersive Computing, Networking, and Systems}, publisher={ACM}, author={Liu, Kaiyan and Cheng, Ruizhi and Wu, Nan and Han, Bo}, year={2023}, month=Oct, pages={199–207}, collection={ImmerCom ’23} }</code></pre>
               </div>
@@ -904,9 +935,15 @@ month = apr
               <p class="publication-authors">Ahmad Kamari, <u>Nan Wu</u>, Hemant Kumar Narsani, <strong>Bo Han</strong>, and Parth Pathak</p>
               <p class="publication-venue-line">In Proceedings of the 1st ACM Workshop on Mobile Immersive Computing, Networking, and Systems (ImmerCom 2023).</p>
               <p class="publication-actions">
+                <a class="publication-button pdf" href="https://par.nsf.gov/servlets/purl/10467145">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3615452.3617945">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="mmwave-beamforming-abstract" data-publication-toggle="mmwave-beamforming-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="mmwave-beamforming-bibtex" data-publication-toggle="mmwave-beamforming-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://par.nsf.gov/biblio/10467145-environment-driven-mmwave-beamforming-multi-user-immersive-applications -->
+              <div class="publication-abstract" id="mmwave-beamforming-abstract" hidden aria-hidden="true">
+                <p>This position paper explores the challenges and opportunities for high-quality immersive volumetric video streaming for multiple users over millimeter-wave (mmWave) WLANs. While most of the previous work has focused on single-user streaming, there is a growing need for multi-user immersive applications such as virtual collaboration, classroom education, teleconferencing, etc. While mmWave wireless links can provide multi-gigabit per second data rates, they suffer from blockages and high beamforming overhead. This paper investigates an environment-driven approach to address the challenges. It presents a comprehensive research agenda that includes developing a collaborative 3D scene reconstruction process, material identification, ray tracing, blockage mitigation, and cross-layer multi-user video rate adaptation. Our preliminary results show the feasibility and identify the limitations of existing solutions. Finally, we discuss the open challenges of implementing a practical system based on the proposed research agenda.</p>
+              </div>
               <div class="publication-bibtex" id="mmwave-beamforming-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Kamari_2023, series={ImmerCom ’23}, title={Environment-driven mmWave Beamforming for Multi-user Immersive Applications}, url={http://dx.doi.org/10.1145/3615452.3617945}, DOI={10.1145/3615452.3617945}, booktitle={Proceedings of the 1st ACM Workshop on Mobile Immersive Computing, Networking, and Systems}, publisher={ACM}, author={Kamari, Ahmad and Wu, Nan and Narsani, Hemant Kumar and Han, Bo and Pathak, Parth}, year={2023}, month=Oct, pages={268–275}, collection={ImmerCom ’23} }</code></pre>
               </div>
@@ -918,9 +955,15 @@ month = apr
               <p class="publication-authors">Yongjie Guan, Xueyu Hou, <u>Nan Wu</u>, <strong>Bo Han</strong>, and Tao Han</p>
               <p class="publication-venue-line">In Proceedings of the 29th ACM Conference on Mobile Computing and Networking (MobiCom 2023).</p>
               <p class="publication-actions">
+                <a class="publication-button pdf" href="https://dl.acm.org/doi/epdf/10.1145/3570361.3592530">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3570361.3592530">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="metastream-abstract" data-publication-toggle="metastream-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="metastream-bibtex" data-publication-toggle="metastream-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3570361.3592530 -->
+              <div class="publication-abstract" id="metastream-abstract" hidden aria-hidden="true">
+                <p>While recent work explored streaming volumetric content on-demand, there is little effort on live volumetric video streaming that bears the potential of bringing more exciting applications than its on-demand counterpart. To fill this critical gap, in this paper, we propose MetaStream, which is, to the best of our knowledge, the first practical live volumetric content capture, creation, delivery, and rendering system for immersive applications such as virtual, augmented, and mixed reality. To address the key challenge of the stringent latency requirement for processing and streaming a huge amount of 3D data, MetaStream integrates several innovations into a holistic system, including dynamic camera calibration, edge-assisted object segmentation, cross-camera redundant point removal, and foveated volumetric content rendering. We implement a prototype of MetaStream using commodity devices and extensively evaluate its performance. Our results demonstrate that MetaStream achieves low-latency live volumetric video streaming at close to 30 frames per second on WiFi networks. Compared to state-of-the-art systems, MetaStream reduces end-to-end latency by up to 31.7% while improving visual quality by up to 12.5%.</p>
+              </div>
               <div class="publication-bibtex" id="metastream-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Guan_2023, series={ACM MobiCom ’23}, title={MetaStream: Live Volumetric Content Capture, Creation, Delivery, and Rendering in Real Time}, url={http://dx.doi.org/10.1145/3570361.3592530}, DOI={10.1145/3570361.3592530}, booktitle={Proceedings of the 29th Annual International Conference on Mobile Computing and Networking}, publisher={ACM}, author={Guan, Yongjie and Hou, Xueyu and Wu, Nan and Han, Bo and Han, Tao}, year={2023}, month=Oct, pages={1–15}, collection={ACM MobiCom ’23} }</code></pre>
               </div>
@@ -934,8 +977,13 @@ month = apr
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://dl.acm.org/doi/pdf/10.1145/3544548.3581395">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3544548.3581395">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="vr-video-collaboration-abstract" data-publication-toggle="vr-video-collaboration-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="vr-video-collaboration-bibtex" data-publication-toggle="vr-video-collaboration-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3544548.3581395 -->
+              <div class="publication-abstract" id="vr-video-collaboration-abstract" hidden aria-hidden="true">
+                <p>Virtual Reality (VR) has a noteworthy educational potential by providing immersive and collaborative environments. As an alternative but cost-effective way of delivering realistic environments in VR, using 360-degree videos in immersive VR (VR videos) received more attention. Although many studies reported positive learning experiences with VR videos, little is known about how collaborative learning performs on VR video viewing systems. In this study, we implemented two collaborative VR video viewing modes based on the way of group video control, synchronized or shared (Sync mode) and non-synchronized or individual (Non-sync mode) video control, against a conventional VR video viewing setting (Basic mode). We conducted a within-subject study (N = 54) in a lab-simulated remote learning environment. Our results show that collaborative VR video modes (Sync and Non-sync mode) improve users’ learning experiences and collaboration quality, especially with shared video control. Our findings provide directions for designing and employing collaborative VR video tools in online learning environments.</p>
+              </div>
               <div class="publication-bibtex" id="vr-video-collaboration-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Jin_2023, series={CHI ’23}, title={Collaborative Online Learning with VR Video: Roles of Collaborative Tools and Shared Video Control}, url={http://dx.doi.org/10.1145/3544548.3581395}, DOI={10.1145/3544548.3581395}, booktitle={Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems}, publisher={ACM}, author={Jin, Qiao and Liu, Yu and Sun, Ruixuan and Chen, Chen and Zhou, Puqi and Han, Bo and Qian, Feng and Yarosh, Svetlana}, year={2023}, month=Apr, pages={1–18}, collection={CHI ’23} }</code></pre>
               </div>
@@ -947,9 +995,15 @@ month = apr
               <p class="publication-authors"><strong>Bo Han</strong>, Parth Pathak, Songqing Chen, and Lap-Fai (Craig) Yu</p>
               <p class="publication-venue-line">IEEE Network Magazine.</p>
               <p class="publication-actions">
+                <a class="publication-button pdf" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9903382">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1109/mnet.126.2200385">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="comic-abstract" data-publication-toggle="comic-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="comic-bibtex" data-publication-toggle="comic-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://ieeexplore.ieee.org/document/9903382 -->
+              <div class="publication-abstract" id="comic-abstract" hidden aria-hidden="true">
+                <p>While existing research on immersive technologies such as virtual, augmented, and mixed reality has been shifting from improving the quality of experience of a single user to multi-user scenarios, which are naturally required by the burgeoning Metaverse, there is little work on building the underlying infrastructure to support multi-user immersive applications, especially for geo-distributed users. In this position paper, we propose a research infrastructure, dubbed CoMIC, to fill this critical gap, by offering a collaborative, visual-first, and hologram-based computing space and a QoE-driven, multi-site, and immersive communication framework. With its rudimentary prototype, we demonstrate the effectiveness of CoMIC through a case study of multi-user volumetric video streaming over mmWave. We conclude this paper with a discussion of numerous unique opportunities that can be enabled by CoMIC.</p>
+              </div>
               <div class="publication-bibtex" id="comic-bibtex" hidden aria-hidden="true">
                 <pre><code>@article{Han_2023, title={CoMIC: A Collaborative Mobile Immersive Computing Infrastructure for Conducting Multi-User XR Research}, volume={37}, ISSN={1558-156X}, url={http://dx.doi.org/10.1109/mnet.126.2200385}, DOI={10.1109/mnet.126.2200385}, number={6}, journal={IEEE Network}, publisher={Institute of Electrical and Electronics Engineers (IEEE)}, author={Han, Bo and Pathak, Parth and Chen, Songqing and Yu, Lap-Fai}, year={2023}, month=Nov, pages={124–131} }</code></pre>
               </div>
@@ -961,9 +1015,15 @@ month = apr
               <p class="publication-authors">Yixiao Gao, Muhammad Saad, Adam Oest, Jean Zhang, <strong>Bo Han</strong>, and Songqing Chen</p>
               <p class="publication-venue-line">IEEE Communications Magazine.</p>
               <p class="publication-actions">
+                <a class="publication-button pdf" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=10121574">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1109/mcom.001.2200628">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="nft-attack-surface-abstract" data-publication-toggle="nft-attack-surface-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="nft-attack-surface-bibtex" data-publication-toggle="nft-attack-surface-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://ieeexplore.ieee.org/abstract/document/10121574 -->
+              <div class="publication-abstract" id="nft-attack-surface-abstract" hidden aria-hidden="true">
+                <p>Recent years have witnessed the increasing popularity and market value of Non-Fungible Tokens (NFTs), along with the burgeoning of blockchains and metaverse. The media hypes often imply that NFTs are as secure as the underlying blockchains. In this work, we take a first look into the building blocks of NFTs (i.e., ownership certificates stored on-chain and the metadata and digital assets stored on-chain or off-chain), focusing on understanding the new attack surface and safety of these digital assets (rather than the traditional attacks on block-chains). For this purpose, we provide a detailed analysis of the logical structure of the dominant off-chain NFTs, followed by the attack surface analysis. Our study indicates that specific new attacks could be easily mounted on them. To validate our findings, we experiment by minting our own NFTs on Ethereum and demonstrate that we can successfully mount the attacks with trivial or even no cost. The cause of these new attacks is rooted in the current design of NFTs where the digital assets are decoupled from the contracts deployed on the blockchains. We discuss some future research to address these vulnerabilities.</p>
+              </div>
               <div class="publication-bibtex" id="nft-attack-surface-bibtex" hidden aria-hidden="true">
                 <pre><code>@article{Gao_2023, title={Can I Own Your NFTs? Understanding the New Attack Surface to NFTs}, volume={61}, ISSN={1558-1896}, url={http://dx.doi.org/10.1109/mcom.001.2200628}, DOI={10.1109/mcom.001.2200628}, number={9}, journal={IEEE Communications Magazine}, publisher={Institute of Electrical and Electronics Engineers (IEEE)}, author={Gao, Yixiao and Saad, Muhammad and Oest, Adam and Zhang, Jean and Han, Bo and Chen, Songqing}, year={2023}, month=Sept, pages={64–70} }</code></pre>
               </div>
