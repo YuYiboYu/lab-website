@@ -1043,8 +1043,13 @@ month = apr
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://dl.acm.org/doi/pdf/10.1145/3560905.3568540">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3560905.3568540">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="m5-abstract" data-publication-toggle="m5-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="m5-bibtex" data-publication-toggle="m5-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3560905.3568540 -->
+              <div class="publication-abstract" id="m5-abstract" hidden aria-hidden="true">
+                <p>Multi-user volumetric content delivery can enable numerous appealing applications, such as online education, telehealth, multiuser AR/VR training, immersive collaborative analytics, etc. However, the bandwidth-intensive nature of volumetric video streaming makes existing systems for single-user experiences hard to scale to multi-user scenarios. To address this critical issue, in this paper, we first perform a scaling experiment on mmWave networks that offer the needed multi-Gbps throughput and identify two key challenges of streaming high-quality volumetric videos to multiple users: frequent blockages of mmWave links and high transmission redundancy among users. To solve these problems, we propose a first-of-its-kind, agile, and cross-layer system, dubbed M5, for improving the performance and quality of experience for multi-user volumetric video streaming. M5 utilizes the 6DoF motion prediction of users to proactively adapt mmWave beams and prefetch frames to mitigate the blockage effects. Furthermore, it takes advantage of the multicast transmission to deliver the overlapped common content within users' viewports to reduce the bandwidth requirement. Our extensive experiments on a real testbed and with a trace-driven simulator show that M5 can effectively improve the frame rate by 44.1% and volumetric video quality by 62.3% compared to the state-of-the-art system.</p>
+              </div>
               <div class="publication-bibtex" id="m5-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Zhang_2022, series={SenSys ’22}, title={M5: Facilitating Multi-User Volumetric Content Delivery with Multi-Lobe Multicast over mmWave}, url={http://dx.doi.org/10.1145/3560905.3568540}, DOI={10.1145/3560905.3568540}, booktitle={Proceedings of the 20th ACM Conference on Embedded Networked Sensor Systems}, publisher={ACM}, author={Zhang, Ding and Zhou, Puqi and Han, Bo and Pathak, Parth}, year={2022}, month=Nov, pages={31–46}, collection={SenSys ’22} }</code></pre>
               </div>
@@ -1058,8 +1063,13 @@ month = apr
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://dl.acm.org/doi/pdf/10.1145/3517745.3561417">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3517745.3561417">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="metaverse-readiness-abstract" data-publication-toggle="metaverse-readiness-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="metaverse-readiness-bibtex" data-publication-toggle="metaverse-readiness-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3517745.3561417 -->
+              <div class="publication-abstract" id="metaverse-readiness-abstract" hidden aria-hidden="true">
+                <p>Social virtual reality (VR) has the potential to gradually replace traditional online social media, thanks to recent advances in consumer-grade VR devices and VR technology itself. As the vital foundation for building the Metaverse, social VR has been extensively examined by the computer graphics and HCI communities. However, there has been little systematic study dissecting the network performance of social VR, other than hype in the industry. To fill this critical gap, we conduct an in-depth measurement study of five popular social VR platforms: AltspaceVR, Horizon Worlds, Mozilla Hubs, Rec Room, and VRChat. Our experimental results reveal that all these platforms are still in their early stage and face fundamental technical challenges to realize the grand vision of Metaverse. For example, their throughput, end-to-end latency, and on-device computation resource utilization increase almost linearly with the number of users, leading to potential scalability issues. We identify the platform servers' direct forwarding of avatar data for embodying users without further processing as the main reason for the poor scalability and discuss potential solutions to address this problem. Moreover, while the visual quality of the current avatar embodiment is low and fails to provide a truly immersive experience, improving the avatar embodiment will consume more network bandwidth and further increase computation overhead and latency, making the scalability issues even more pressing.</p>
+              </div>
               <div class="publication-bibtex" id="metaverse-readiness-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Cheng_2022, series={IMC ’22}, title={Are we ready for metaverse?: a measurement study of social virtual reality platforms}, url={http://dx.doi.org/10.1145/3517745.3561417}, DOI={10.1145/3517745.3561417}, booktitle={Proceedings of the 22nd ACM Internet Measurement Conference}, publisher={ACM}, author={Cheng, Ruizhi and Wu, Nan and Varvello, Matteo and Chen, Songqing and Han, Bo}, year={2022}, month=Oct, pages={504–518}, collection={IMC ’22} }</code></pre>
               </div>
@@ -1070,6 +1080,26 @@ month = apr
               <p class="publication-title"><strong>Vues: Practical Volumetric Video Streaming through Multiview Transcoding</strong></p>
               <p class="publication-authors">Yu Liu, <strong>Bo Han</strong>, Feng Qian, Arvind Narayanan, and Zhi-Li Zhang</p>
               <p class="publication-venue-line">In Proceedings of the 28th ACM Conference on Mobile Computing and Networking (MobiCom 2022).</p>
+              <p class="publication-actions">
+                <a class="publication-button pdf" href="https://dl.acm.org/doi/epdf/10.1145/3495243.3517027">PDF</a>
+                <a class="publication-button doi" href="https://doi.org/10.1145/3495243.3517027">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="vues-abstract" data-publication-toggle="vues-abstract">ABS</button>
+                <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="vues-bibtex" data-publication-toggle="vues-bibtex">BIB</button>
+              </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3495243.3517027 -->
+              <div class="publication-abstract" id="vues-abstract" hidden aria-hidden="true">
+                <p>The emerging volumetric videos offer a fully immersive, six degrees of freedom (6DoF) viewing experience, at the cost of extremely high bandwidth demand. In this paper, we design, implement, and evaluate Vues, an edge-assisted transcoding system that delivers high-quality volumetric videos with low bandwidth requirement, low decoding overhead, and high quality of experience (QoE) on mobile devices. Through an IRB-approved user study, we build a first-of-its-kind QoE model to quantify the impact of various factors introduced by transcoding volumetric content into 2D videos. Motivated by the key observations from this user study, Vues employs a novel multiview approach with the overarching goal of boosting QoE. The Vues edge server adaptively transcodes a volumetric video frame into multiple 2D views with the help of a few lightweight machine learning models and strategically balances the extra bandwidth consumption of additional views and the improved QoE, indicated by our QoE model. The client selects the view that optimizes the QoE among the delivered candidates for display. Comprehensive evaluations using a prototype implementation indicate that Vues dramatically outperforms existing approaches. On average, it improves the QoE by 35% (up to 85%), compared to single-view transcoding schemes, and reduces the bandwidth consumption by 95%, compared to the state-of-the-art that directly streams volumetric videos.</p>
+              </div>
+              <div class="publication-bibtex" id="vues-bibtex" hidden aria-hidden="true">
+                <pre><code>@inproceedings{liu2022vues,
+  title = {Vues: Practical Mobile Volumetric Video Streaming Through Multiview Transcoding},
+  author = {Liu, Yu and Han, Bo and Qian, Feng and Narayanan, Arvind and Zhang, Zhi-Li},
+  booktitle = {Proceedings of the 28th Annual International Conference on Mobile Computing and Networking},
+  pages = {514--527},
+  year = {2022},
+  doi = {10.1145/3495243.3517027}
+}</code></pre>
+              </div>
             </li>
             <li class="publication-entry">
               <a class="publication-venue-short publication-venue-link" href="https://www.sigmobile.org/mobisys/2022/" target="_blank" rel="noopener noreferrer">MobiSys 2022</a>
@@ -1080,8 +1110,13 @@ month = apr
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://dl.acm.org/doi/pdf/10.1145/3498361.3538945">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3498361.3538945">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="deepmix-abstract" data-publication-toggle="deepmix-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="deepmix-bibtex" data-publication-toggle="deepmix-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3498361.3538945 -->
+              <div class="publication-abstract" id="deepmix-abstract" hidden aria-hidden="true">
+                <p>Mobile headsets should be capable of understanding 3D physical environments to offer a truly immersive experience for augmented/mixed reality (AR/MR). However, their small form-factor and limited computation resources make it extremely challenging to execute in real-time 3D vision algorithms, which are known to be more compute-intensive than their 2D counterparts. In this paper, we propose DeepMix, a mobility-aware, lightweight, and hybrid 3D object detection framework for improving the user experience of AR/MR on mobile headsets. Motivated by our analysis and evaluation of state-of-the-art 3D object detection models, DeepMix intelligently combines edge-assisted 2D object detection and novel, on-device 3D bounding box estimations that leverage depth data captured by headsets. This leads to low end-to-end latency and significantly boosts detection accuracy in mobile scenarios. A unique feature of DeepMix is that it fully exploits the mobility of headsets to fine-tune detection results and boost detection accuracy. To the best of our knowledge, DeepMix is the first 3D object detection that achieves 30 FPS (i.e., an end-to-end latency much lower than the 100 ms stringent requirement of interactive AR/MR). We implement a prototype of DeepMix on Microsoft HoloLens and evaluate its performance via both extensive controlled experiments and a user study with 30+ participants. DeepMix not only improves detection accuracy by 9.1--37.3% but also reduces end-to-end latency by 2.68--9.15×, compared to the baseline that uses existing 3D object detection models.</p>
+              </div>
               <div class="publication-bibtex" id="deepmix-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Guan_2022, series={MobiSys ’22}, title={DeepMix: mobility-aware, lightweight, and hybrid 3D object detection for headsets}, url={http://dx.doi.org/10.1145/3498361.3538945}, DOI={10.1145/3498361.3538945}, booktitle={Proceedings of the 20th Annual International Conference on Mobile Systems, Applications and Services}, publisher={ACM}, author={Guan, Yongjie and Hou, Xueyu and Wu, Nan and Han, Bo and Han, Tao}, year={2022}, month=June, pages={28–41}, collection={MobiSys ’22} }</code></pre>
               </div>
@@ -1095,8 +1130,13 @@ month = apr
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://dl.acm.org/doi/pdf/10.1145/3534088.3534343">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3534088.3534343">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="spatial-privacy-abstract" data-publication-toggle="spatial-privacy-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="spatial-privacy-bibtex" data-publication-toggle="spatial-privacy-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3534088.3534343 -->
+              <div class="publication-abstract" id="spatial-privacy-abstract" hidden aria-hidden="true">
+                <p>Mapping and localization are the key components in mobile spatial computing to facilitate interactions between users and the digital model of the physical world. To enable localization, mobile devices keep capturing images of the real-world surroundings and uploading them to a server with spatial maps for localization. This leads to privacy concerns on the potential leakage of sensitive information in both spatial maps and localization images (e.g., when used in confidential industrial settings or our homes). Motivated by the above issues, we present a holistic research agenda in this paper for designing principled approaches to preserve privacy in spatial mapping and localization. We introduce our ongoing research, including learning-assisted noise generation to shield spatial maps, distributed architecture with intelligent aggregation to protect localization images, and end-to-end privacy preservation with fully homomorphic encryption. We also discuss the technical challenges, our preliminary results, and open research problems in those areas.</p>
+              </div>
               <div class="publication-bibtex" id="spatial-privacy-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Wu_2022, series={MMSys ’22}, title={Preserving privacy in mobile spatial computing}, url={http://dx.doi.org/10.1145/3534088.3534343}, DOI={10.1145/3534088.3534343}, booktitle={Proceedings of the 32nd Workshop on Network and Operating Systems Support for Digital Audio and Video}, publisher={ACM}, author={Wu, Nan and Cheng, Ruizhi and Chen, Songqing and Han, Bo}, year={2022}, month=June, pages={1–7}, collection={MMSys ’22} }</code></pre>
               </div>
@@ -1110,8 +1150,13 @@ month = apr
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://dl.acm.org/doi/pdf/10.1145/3491102.3517542">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3491102.3517542">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="vr-classrooms-abstract" data-publication-toggle="vr-classrooms-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="vr-classrooms-bibtex" data-publication-toggle="vr-classrooms-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3491102.3517542 -->
+              <div class="publication-abstract" id="vr-classrooms-abstract" hidden aria-hidden="true">
+                <p>VR has received increased attention as an educational tool and many argue it is destined to influence educational practices, especially with the emergence of the Metaverse. Most prior research on educational VR reports on applications or systems designed for specified educational or training objectives. However, it is also crucial to understand current practices and attitudes across disciplines, having a holistic view to extend the body of knowledge in terms of VR adoption in an authentic setting. Taking a higher-level perception of people in different roles, we conducted a qualitative analysis based on 23 interviews with major stakeholders and a series of participatory design workshops with instructors and students. We identified the stakeholders who need to be considered for using VR in higher education, and highlighted the challenges and opportunities critical for VR current and potential practices in the university classroom. Finally, we discussed the design implications based on our findings. This study contributes a detailed description of current perceptions and considerations from a multi-stakeholder perspective, providing new empirical insights for designing novel VR and HCI technologies in higher education.</p>
+              </div>
               <div class="publication-bibtex" id="vr-classrooms-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Jin_2022, series={CHI ’22}, title={How Will VR Enter University Classrooms? Multi-stakeholders Investigation of VR in Higher Education}, url={http://dx.doi.org/10.1145/3491102.3517542}, DOI={10.1145/3491102.3517542}, booktitle={CHI Conference on Human Factors in Computing Systems}, publisher={ACM}, author={Jin, Qiao and Liu, Yu and Yarosh, Svetlana and Han, Bo and Qian, Feng}, year={2022}, month=Apr, pages={1–17}, collection={CHI ’22} }</code></pre>
               </div>
@@ -1125,8 +1170,13 @@ month = apr
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://dl.acm.org/doi/pdf/10.1145/3485447.3512276">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3485447.3512276">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="nebula-abstract" data-publication-toggle="nebula-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="nebula-bibtex" data-publication-toggle="nebula-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3485447.3512276 -->
+              <div class="publication-abstract" id="nebula-abstract" hidden aria-hidden="true">
+                <p>Mobile cloud gaming enables high-end games on constrained devices by streaming the game content from powerful servers through mobile networks. Mobile networks suffer from highly variable bandwidth, latency, and losses that affect the gaming experience. This paper introduces Nebula, an end-to-end cloud gaming framework to minimize the impact of network conditions on the user experience. Nebula relies on an end-to-end distortion model adapting the video source rate and the amount of frame-level redundancy based on the measured network conditions. As a result, it minimizes the motion-to-photon (MTP) latency while protecting the frames from losses. We fully implement and evaluate its performance against the state-of-the-art techniques and latest research in real-time mobile cloud gaming transmission on a physical testbed over emulated and real wireless networks. Nebula consistently balances MTP latency (&lt;140 ms) and visual quality (&gt;31dB) even in highly variable environments. A user experiment confirms that Nebula maximizes the user experience with high perceived video quality, playability, and low user load.</p>
+              </div>
               <div class="publication-bibtex" id="nebula-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Alhilal_2022, series={WWW ’22}, title={Nebula: Reliable Low-latency Video Transmission for Mobile Cloud Gaming}, url={http://dx.doi.org/10.1145/3485447.3512276}, DOI={10.1145/3485447.3512276}, booktitle={Proceedings of the ACM Web Conference 2022}, publisher={ACM}, author={Alhilal, Ahmad and Braud, Tristan and Han, Bo and Hui, Pan}, year={2022}, month=Apr, pages={3407–3417}, collection={WWW ’22} }</code></pre>
               </div>
