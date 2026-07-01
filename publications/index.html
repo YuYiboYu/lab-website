@@ -2323,10 +2323,31 @@ month = apr
         }
 
         button.addEventListener('click', function () {
-          var isOpen = button.getAttribute('aria-expanded') === 'true';
-          button.setAttribute('aria-expanded', String(!isOpen));
-          target.hidden = isOpen;
-          target.setAttribute('aria-hidden', String(isOpen));
+          var entry = button.closest('.publication-entry');
+          var wasOpen = !target.hidden;
+
+          if (!entry) {
+            button.setAttribute('aria-expanded', String(!wasOpen));
+            target.hidden = wasOpen;
+            target.setAttribute('aria-hidden', String(wasOpen));
+            return;
+          }
+
+          entry.querySelectorAll('[data-publication-toggle]').forEach(function (entryButton) {
+            var entryTarget = document.getElementById(entryButton.getAttribute('data-publication-toggle'));
+            entryButton.setAttribute('aria-expanded', 'false');
+
+            if (entryTarget) {
+              entryTarget.hidden = true;
+              entryTarget.setAttribute('aria-hidden', 'true');
+            }
+          });
+
+          if (!wasOpen) {
+            button.setAttribute('aria-expanded', 'true');
+            target.hidden = false;
+            target.setAttribute('aria-hidden', 'false');
+          }
         });
       });
 
