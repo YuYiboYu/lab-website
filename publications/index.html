@@ -2277,9 +2277,16 @@ month = apr
               <p class="publication-authors"><strong>Bo Han</strong>, Pan Hui, V. S. Anil Kumar, Madhav V. Marathe, Guanhong Pei, and Aravind Srinivasan</p>
               <p class="publication-venue-line">In Proceedings of the 5th ACM MobiCom Workshop on Challenged Networks (CHANTS 2010), co-located with ACM MobiCom and ACM MobiHoc 2010.</p>
               <p class="publication-actions">
+                <a class="publication-button pdf" href="https://dl.acm.org/doi/pdf/10.1145/1859934.1859943">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/1859934.1859943">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="chants-offloading-abstract" data-publication-toggle="chants-offloading-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="chants-offloading-bibtex" data-publication-toggle="chants-offloading-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: user-provided screenshot; DOI page: https://doi.org/10.1145/1859934.1859943 -->
+              <div class="publication-abstract" id="chants-offloading-abstract" hidden aria-hidden="true">
+                <p>Due to the increasing popularity of various applications for smartphones, 3G networks are currently overloaded by mobile data traffic. Offloading cellular traffic through opportunistic communications is a promising solution to partially solve this problem, because there is no monetary cost for it. As a case study, we investigate the target-set selection problem for information delivery in the emerging Mobile Social Networks (MoSoNets). We propose to exploit opportunistic communications to facilitate the information dissemination and thus reduce the amount of cellular traffic. In particular, we study how to select the target set with only k users, such that we can minimize the cellular data traffic.</p>
+                <p>In this scenario, initially the content service providers deliver information over cellular networks to only users in the target set. Then through opportunistic communications, target-users will further propagate the information among all the subscribed users. Finally, service providers will send the information to users who fail to receive it before the delivery deadline (i.e., delay-tolerance threshold). We propose three algorithms, called Greedy, Heuristic, and Random, for this problem and evaluate their performance through an extensive trace-driven simulation study. The simulation results verify the efficiency of these algorithms for both synthetic and real-world mobility traces. For example, the Heuristic algorithm can offload cellular traffic by up to 73.66% for a real-world mobility trace.</p>
+              </div>
               <div class="publication-bibtex" id="chants-offloading-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Han_2010, series={MobiCom/MobiHoc ’10}, title={Cellular traffic offloading through opportunistic communications: a case study}, url={http://dx.doi.org/10.1145/1859934.1859943}, DOI={10.1145/1859934.1859943}, booktitle={Proceedings of the 5th ACM workshop on Challenged networks}, publisher={ACM}, author={Han, Bo and Hui, Pan and Kumar, V.S. Anil and Marathe, Madhav V. and Pei, Guanhong and Srinivasan, Aravind}, year={2010}, month=Sept, pages={31–38}, collection={MobiCom/MobiHoc ’10} }</code></pre>
               </div>
@@ -2291,8 +2298,23 @@ month = apr
               <p class="publication-authors"><strong>Bo Han</strong>, Aaron Schulman, Francesco Gringoli, Neil Spring, Bobby Bhattacharjee, Lorenzo Nava, Lusheng Ji, Seungjoon Lee, and Robert R. Miller</p>
               <p class="publication-venue-line">In Proceedings of the 7th USENIX Symposium on Networked Systems Design and Implementation (NSDI 2010).</p>
               <p class="publication-actions">
-                <a class="publication-button pdf" href="https://www.usenix.org/legacy/event/nsdi10/tech/full_papers/han.pdf">PDF</a>
+                <a class="publication-button pdf" href="https://www.usenix.org/legacy/events/nsdi10/tech/full_papers/han.pdf">PDF</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="maranello-abstract" data-publication-toggle="maranello-abstract">ABS</button>
+                <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="maranello-bibtex" data-publication-toggle="maranello-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://www.cs.umd.edu/projects/maranello/ -->
+              <div class="publication-abstract" id="maranello-abstract" hidden aria-hidden="true">
+                <p>In this project, we design, implement, and evaluate Maranello, a novel partial packet recovery mechanism for 802.11. In Maranello, the receiver computes checksums over blocks in corrupt packets and bundles these checksums into a negative acknowledgment sent when the sender expects to receive an acknowledgment. The sender then retransmits only those blocks for which the checksum is incorrect, and repeats this partial retransmission until it receives an acknowledgment. Successful transmissions are not burdened by additional bits and the receiver needs not infer which bits were corrupted. We implemented Maranello using OpenFWWF and deployed it in a small testbed. We compare Maranello to alternative recovery protocols using a trace-driven simulation and to 802.11 using a live implementation under various channel conditions. To our knowledge, Maranello is the first partial packet recovery design to be implemented in commonly-available firmware.</p>
+              </div>
+              <div class="publication-bibtex" id="maranello-bibtex" hidden aria-hidden="true">
+                <pre><code>@inproceedings{han2010maranello,
+  title = {Maranello: Practical Partial Packet Recovery for 802.11},
+  author = {Han, Bo and Schulman, Aaron and Gringoli, Francesco and Spring, Neil and Bhattacharjee, Bobby and Nava, Lorenzo and Ji, Lusheng and Lee, Seungjoon and Miller, Robert},
+  booktitle = {Proceedings of the 7th USENIX Symposium on Networked Systems Design and Implementation},
+  year = {2010},
+  url = {https://www.usenix.org/legacy/events/nsdi10/tech/full_papers/han.pdf}
+}</code></pre>
+              </div>
             </li>
             <li class="publication-entry">
               <a class="publication-venue-short publication-venue-link" href="https://www.usenix.org/legacy/events/iptps10/" target="_blank" rel="noopener noreferrer">IPTPS 2010</a>
@@ -2300,6 +2322,19 @@ month = apr
               <p class="publication-title"><strong>Don&#39;t Love Thy Nearest Neighbor</strong></p>
               <p class="publication-authors">Cristian Lumezanu, Dave Levin, <strong>Bo Han</strong>, Neil Spring, and Bobby Bhattacharjee</p>
               <p class="publication-venue-line">In Proceedings of the 9th International Workshop on Peer-to-Peer Systems (IPTPS 2010).</p>
+              <p class="publication-actions">
+                <a class="publication-button pdf" href="https://www.usenix.org/event/iptps10/tech/full_papers/Lumezanu.pdf">PDF</a>
+                <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="nearest-neighbor-bibtex" data-publication-toggle="nearest-neighbor-bibtex">BIB</button>
+              </p>
+              <div class="publication-bibtex" id="nearest-neighbor-bibtex" hidden aria-hidden="true">
+                <pre><code>@inproceedings{lumezanu2010dont,
+  title = {Don't Love Thy Nearest Neighbor},
+  author = {Lumezanu, Cristian and Levin, Dave and Han, Bo and Spring, Neil and Bhattacharjee, Bobby},
+  booktitle = {Proceedings of the 9th International Workshop on Peer-to-Peer Systems},
+  year = {2010},
+  url = {https://www.usenix.org/event/iptps10/tech/full_papers/Lumezanu.pdf}
+}</code></pre>
+              </div>
             </li>
             <li class="publication-entry">
               <a class="publication-venue-short publication-venue-link" href="https://www.sigmobile.org/pubs/mc2r/" target="_blank" rel="noopener noreferrer">ACM SIGMOBILE Mobile Computing and Communications Review 2010</a>
@@ -2308,9 +2343,15 @@ month = apr
               <p class="publication-authors"><strong>Bo Han</strong>, Pan Hui, and Aravind Srinivasan</p>
               <p class="publication-venue-line">ACM SIGMOBILE Mobile Computing and Communications Review.</p>
               <p class="publication-actions">
+                <a class="publication-button pdf" href="https://dl.acm.org/doi/pdf/10.1145/1942268.1942279">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/1942268.1942279">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="mobile-data-offloading-man-abstract" data-publication-toggle="mobile-data-offloading-man-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="mobile-data-offloading-man-bibtex" data-publication-toggle="mobile-data-offloading-man-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: user-provided screenshot; DOI page: https://doi.org/10.1145/1942268.1942279 -->
+              <div class="publication-abstract" id="mobile-data-offloading-man-abstract" hidden aria-hidden="true">
+                <p>Cellular networks, especially 3G networks, are currently overloaded with mobile data traffic. It is thus imperative to develop novel communication architectures and protocols for this problem. In this paper, we propose to exploit the delay-tolerant nature of non-realtime applications to offload mobile data traffic through opportunistic communications and WiFi networks. We argue that it is necessary for cellular network operators, WiFi service providers, and end-users to cooperate to make the offloading more effective. We also present several preliminary experiment results about the work we have been conducting, which show that it is promising to offload mobile data traffic in metropolitan area networks.</p>
+              </div>
               <div class="publication-bibtex" id="mobile-data-offloading-man-bibtex" hidden aria-hidden="true">
                 <pre><code>@article{Han_2010, title={Mobile data offloading in metropolitan area networks}, volume={14}, ISSN={1931-1222}, url={http://dx.doi.org/10.1145/1942268.1942279}, DOI={10.1145/1942268.1942279}, number={4}, journal={ACM SIGMOBILE Mobile Computing and Communications Review}, publisher={Association for Computing Machinery (ACM)}, author={Han, Bo and Hui, Pan and Srinivasan, Aravind}, year={2010}, month=Nov, pages={28–30} }</code></pre>
               </div>
