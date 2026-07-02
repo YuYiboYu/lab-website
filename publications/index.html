@@ -1189,8 +1189,13 @@ month = apr
               <p class="publication-venue-line">In Proceedings of the 19th USENIX Symposium on Networked Systems Design and Implementation (NSDI 2022).</p>
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://www.usenix.org/system/files/nsdi22-paper-zhang.pdf">PDF</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="yuzu-abstract" data-publication-toggle="yuzu-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="yuzu-bibtex" data-publication-toggle="yuzu-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://www.usenix.org/conference/nsdi22/presentation/zhang-anlan -->
+              <div class="publication-abstract" id="yuzu-abstract" hidden aria-hidden="true">
+                <p>Differing from traditional 2D videos, volumetric videos provide true 3D immersive viewing experiences and allow viewers to exercise six degree-of-freedom (6DoF) motion. However, streaming high-quality volumetric videos over the Internet is extremely bandwidth-consuming. In this paper, we propose to leverage 3D super resolution (SR) to drastically increase the visual quality of volumetric video streaming. To accomplish this goal, we conduct deep intra- and inter-frame optimizations for off-the-shelf 3D SR models, and achieve up to 542× speedup on SR inference without accuracy degradation. We also derive a first Quality of Experience (QoE) model for SR-enhanced volumetric video streaming, and validate it through extensive user studies involving 1,446 subjects, achieving a median QoE estimation error of 12.49%. We then integrate the above components, together with important features such as QoE-driven network/compute resource adaptation, into a holistic system called YuZu that performs line-rate (at 30+ FPS) adaptive SR for volumetric video streaming. Our evaluations show that YuZu can boost the QoE of volumetric video streaming by 37% to 178% compared to no SR, and outperform existing viewport-adaptive solutions by 101% to 175% on QoE.</p>
+              </div>
               <div class="publication-bibtex" id="yuzu-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings {278306,
   author = {Anlan Zhang and Chendong Wang and Bo Han and Feng Qian},
@@ -1213,9 +1218,15 @@ month = apr
               <p class="publication-authors">Wenxiao Zhang, <strong>Bo Han</strong>, and Pan Hui</p>
               <p class="publication-venue-line">In Proceedings of the 29th IEEE Conference on Virtual Reality and 3D User Interfaces (VR 2022).</p>
               <p class="publication-actions">
+                <a class="publication-button pdf" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9714049">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1109/tvcg.2022.3150467">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="sear-vr-abstract" data-publication-toggle="sear-vr-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="sear-vr-bibtex" data-publication-toggle="sear-vr-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://ieeexplore.ieee.org/document/9714049 -->
+              <div class="publication-abstract" id="sear-vr-abstract" hidden aria-hidden="true">
+                <p>In this paper, we present the design, implementation, and evaluation of SEAR, a collaborative framework for Scaling Experiences in multi-user Augmented Reality (AR). Most AR systems benefit from computer vision (CV) algorithms to detect, classify, or recognize physical objects for augmentation. A widely used acceleration method for mobile AR is to offload the compute-intensive tasks (e.g., CV algorithms) to the network edge. However, we show that the end-to-end latency, an important metric of mobile AR, may dramatically increase when offloading AR tasks from a large number of concurrent users to the edge. SEAR tackles this scalability issue through the innovation of a lightweight collaborative local caching scheme. Our key observation is that nearby AR users may share some common interests, and may even have overlapped views to augment (e.g., when playing a multi-user AR game). Thus, SEAR opportunistically exchanges the results of offloaded AR tasks among users when feasible and leverages compute resources on mobile devices to relieve, if necessary, the edge workload by intelligently reusing these results. We build a prototype of SEAR to demonstrate its efficacy in scaling AR experiences. We conduct extensive evaluations through both real-world experiments and trace-driven simulations. We observe that SEAR not only reduces the end-to-end latency, by up to 130×, compared to the state-of-the-art adaptive edge offloading scheme, but also achieves high object-recognition accuracy for mobile AR.</p>
+              </div>
               <div class="publication-bibtex" id="sear-vr-bibtex" hidden aria-hidden="true">
                 <pre><code>@article{Zhang_2022, title={SEAR: Scaling Experiences in Multi-user Augmented Reality}, volume={28}, ISSN={2160-9306}, url={http://dx.doi.org/10.1109/tvcg.2022.3150467}, DOI={10.1109/tvcg.2022.3150467}, number={5}, journal={IEEE Transactions on Visualization and Computer Graphics}, publisher={Institute of Electrical and Electronics Engineers (IEEE)}, author={Zhang, Wenxiao and Han, Bo and Hui, Pan}, year={2022}, month=May, pages={1982–1992} }</code></pre>
               </div>
@@ -1227,9 +1238,15 @@ month = apr
               <p class="publication-authors"><u>Ruizhi Cheng</u>, <u>Nan Wu</u>, Songqing Chen, and <strong>Bo Han</strong></p>
               <p class="publication-venue-line">In Proceedings of the 1st Workshop for Building the Foundations of the Metaverse (Metabuild 2022), co-located with the 29th IEEE Conference on Virtual Reality and 3D User Interfaces (VR 2022).</p>
               <p class="publication-actions">
+                <a class="publication-button pdf" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9757549">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1109/vrw55335.2022.00040">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="metabuild-reality-check-abstract" data-publication-toggle="metabuild-reality-check-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="metabuild-reality-check-bibtex" data-publication-toggle="metabuild-reality-check-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://ieeexplore.ieee.org/document/9757549 -->
+              <div class="publication-abstract" id="metabuild-reality-check-abstract" hidden aria-hidden="true">
+                <p>Metaverse has grasped the news headlines recently. While being heavily advocated by the industry, there are great interests from academia as it demands various technological support from both hardware and software research. There has been an extensive visionary discussion of metaverse lately, but there are few studies on its technical challenges and user experience in practice. To fill this critical gap, in this paper, we take a first look at Workrooms, arguably a premature metaverse product released by Meta (a.k.a. Facebook). The goal of our study is to gain an in-depth understanding of the current state of the metaverse and identify potential issues for improvement. Through extensive measurement studies, we dissect the underlying network support and demand of Workrooms. Our investigation reveals several interesting findings. For example, Workrooms utilizes different network flows to transmit virtual content and real-time multimedia content separately. This might be a principled approach that should be adopted in general. On the other hand, the current design of Workrooms faces imperative scalability challenges that should be addressed in any large-scale metaverse platform.</p>
+              </div>
               <div class="publication-bibtex" id="metabuild-reality-check-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Cheng_2022, title={Reality Check of Metaverse: A First Look at Commercial Social Virtual Reality Platforms}, url={http://dx.doi.org/10.1109/vrw55335.2022.00040}, DOI={10.1109/vrw55335.2022.00040}, booktitle={2022 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW)}, publisher={IEEE}, author={Cheng, Ruizhi and Wu, Nan and Chen, Songqing and Han, Bo}, year={2022}, month=Mar, pages={141–148} }</code></pre>
               </div>
@@ -1243,8 +1260,13 @@ month = apr
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://dl.acm.org/doi/pdf/10.1145/3508396.3512876">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3508396.3512876">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="hybrid-mobile-vision-abstract" data-publication-toggle="hybrid-mobile-vision-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="hybrid-mobile-vision-bibtex" data-publication-toggle="hybrid-mobile-vision-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3508396.3512876 -->
+              <div class="publication-abstract" id="hybrid-mobile-vision-abstract" hidden aria-hidden="true">
+                <p>While mobile applications have greatly benefited from 2D computer vision algorithms such as object detection and classification, there is limited research on exploring 3D vision that is enabled by the increasing availability of depth cameras and LiDAR scanners on mobile devices. In this paper, we propose a hybrid mobile vision system that intelligently combines 2D and 3D vision for improving the performance of emerging applications such as augmented and mixed reality and volumetric content analytics. Our research is motivated by and explores the key observation of the crucial latency-accuracy tradeoff between 2D and 3D vision. We present a research agenda with two principles for enhancing mobile vision stack, complementing 3D vision with its 2D counterpart by leveraging their diverse resource/accuracy profiles and processing 3D data (e.g., point clouds) with 2D vision cues for mitigating the high computation and storage costs.</p>
+              </div>
               <div class="publication-bibtex" id="hybrid-mobile-vision-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Wu_2022, series={HotMobile ’22}, title={Hybrid mobile vision for emerging applications}, url={http://dx.doi.org/10.1145/3508396.3512876}, DOI={10.1145/3508396.3512876}, booktitle={Proceedings of the 23rd Annual International Workshop on Mobile Computing Systems and Applications}, publisher={ACM}, author={Wu, Nan and Lin, Felix Xiaozhu and Qian, Feng and Han, Bo}, year={2022}, month=Mar, pages={61–67}, collection={HotMobile ’22} }</code></pre>
               </div>
@@ -1256,9 +1278,15 @@ month = apr
               <p class="publication-authors"><u>Ruizhi Cheng</u>, <u>Nan Wu</u>, Songqing Chen, and <strong>Bo Han</strong></p>
               <p class="publication-venue-line">IEEE Network Magazine.</p>
               <p class="publication-actions">
+                <a class="publication-button pdf" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9877927">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1109/mnet.117.2200055">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="nextg-metaverse-abstract" data-publication-toggle="nextg-metaverse-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="nextg-metaverse-bibtex" data-publication-toggle="nextg-metaverse-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://ieeexplore.ieee.org/document/9877927 -->
+              <div class="publication-abstract" id="nextg-metaverse-abstract" hidden aria-hidden="true">
+                <p>Metaverse, with the combination of the prefix “meta” (meaning transcending) and the word “universe,” has been deemed as a hypothetical next-generation (NextG) Internet. It aims to create a shared virtual space that connects all virtual worlds via the Internet, where users, represented as digital avatars, can communicate and collaborate as if they are in the physical world. Nevertheless, there is still no unified definition of the Metaverse. This article first reviews what has been heavily advocated by the industry and the positions of various high-tech companies. It then presents our vision of what the key requirements of Metaverse should be. After that, it briefly introduces existing social virtual reality (VR) platforms that can be viewed as early prototypes of the Metaverse, and conducts a reality check by diving into the network operation and performance of two representative platforms: Workrooms from Meta and AltspaceVR from Microsoft. Finally, it concludes by discussing several opportunities and future directions for further innovation.</p>
+              </div>
               <div class="publication-bibtex" id="nextg-metaverse-bibtex" hidden aria-hidden="true">
                 <pre><code>@article{Cheng_2022, title={Will Metaverse Be NextG Internet? Vision, Hype, and Reality}, volume={36}, ISSN={1558-156X}, url={http://dx.doi.org/10.1109/mnet.117.2200055}, DOI={10.1109/mnet.117.2200055}, number={5}, journal={IEEE Network}, publisher={Institute of Electrical and Electronics Engineers (IEEE)}, author={Cheng, Ruizhi and Wu, Nan and Chen, Songqing and Han, Bo}, year={2022}, month=Sept, pages={197–204} }</code></pre>
               </div>
@@ -1270,9 +1298,15 @@ month = apr
               <p class="publication-authors">Wenxiao Zhang, <strong>Bo Han</strong>, and Pan Hui</p>
               <p class="publication-venue-line">IEEE Transactions on Visualization and Computer Graphics. (Journal Track of IEEE VR 2022)</p>
               <p class="publication-actions">
+                <a class="publication-button pdf" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9714049">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1109/tvcg.2022.3150467">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="sear-journal-abstract" data-publication-toggle="sear-journal-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="sear-journal-bibtex" data-publication-toggle="sear-journal-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://ieeexplore.ieee.org/document/9714049 -->
+              <div class="publication-abstract" id="sear-journal-abstract" hidden aria-hidden="true">
+                <p>In this paper, we present the design, implementation, and evaluation of SEAR, a collaborative framework for Scaling Experiences in multi-user Augmented Reality (AR). Most AR systems benefit from computer vision (CV) algorithms to detect, classify, or recognize physical objects for augmentation. A widely used acceleration method for mobile AR is to offload the compute-intensive tasks (e.g., CV algorithms) to the network edge. However, we show that the end-to-end latency, an important metric of mobile AR, may dramatically increase when offloading AR tasks from a large number of concurrent users to the edge. SEAR tackles this scalability issue through the innovation of a lightweight collaborative local caching scheme. Our key observation is that nearby AR users may share some common interests, and may even have overlapped views to augment (e.g., when playing a multi-user AR game). Thus, SEAR opportunistically exchanges the results of offloaded AR tasks among users when feasible and leverages compute resources on mobile devices to relieve, if necessary, the edge workload by intelligently reusing these results. We build a prototype of SEAR to demonstrate its efficacy in scaling AR experiences. We conduct extensive evaluations through both real-world experiments and trace-driven simulations. We observe that SEAR not only reduces the end-to-end latency, by up to 130×, compared to the state-of-the-art adaptive edge offloading scheme, but also achieves high object-recognition accuracy for mobile AR.</p>
+              </div>
               <div class="publication-bibtex" id="sear-journal-bibtex" hidden aria-hidden="true">
                 <pre><code>@article{Zhang_2022, title={SEAR: Scaling Experiences in Multi-user Augmented Reality}, volume={28}, ISSN={2160-9306}, url={http://dx.doi.org/10.1109/tvcg.2022.3150467}, DOI={10.1109/tvcg.2022.3150467}, number={5}, journal={IEEE Transactions on Visualization and Computer Graphics}, publisher={Institute of Electrical and Electronics Engineers (IEEE)}, author={Zhang, Wenxiao and Han, Bo and Hui, Pan}, year={2022}, month=May, pages={1982–1992} }</code></pre>
               </div>
@@ -1292,8 +1326,13 @@ month = apr
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://people.cs.gmu.edu/~bohan/share/MuVV_HotNets21.pdf">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3484266.3487396">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="muvv-hotnets-abstract" data-publication-toggle="muvv-hotnets-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="muvv-hotnets-bibtex" data-publication-toggle="muvv-hotnets-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3484266.3487396 -->
+              <div class="publication-abstract" id="muvv-hotnets-abstract" hidden aria-hidden="true">
+                <p>Although existing work has demonstrated the feasibility of streaming volumetric content to a single user, there exist many appealing applications (e.g., classroom education and collaborative design) that involve multiple users who watch the same volumetric content simultaneously. In this paper, we first perform a scaling experiment to demonstrate the challenges of streaming high-quality volumetric videos to multiple users and reveal the viewport-similarity opportunity that we can leverage to effectively optimize the network resource utilization using multicast over mmWave. We then develop a holistic research agenda for improving the performance and quality of experience for multi-user volumetric video streaming on commodity devices. Our proposed research includes joint viewport prediction and blockage mitigation for multiple users, multicast grouping based on viewport similarity, customized mmWave beam design for efficient multicast, and mmWave-aware multi-user video rate adaptation. Finally, we discuss the open challenges of building a practical system with the proposed research roadmap.</p>
+              </div>
               <div class="publication-bibtex" id="muvv-hotnets-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Zhang_2021, series={HotNets ’21}, title={Innovating Multi-user Volumetric Video Streaming through Cross-layer Design}, url={http://dx.doi.org/10.1145/3484266.3487396}, DOI={10.1145/3484266.3487396}, booktitle={Proceedings of the Twentieth ACM Workshop on Hot Topics in Networks}, publisher={ACM}, author={Zhang, Ding and Han, Bo and Pathak, Parth and Wang, Haoliang}, year={2021}, month=Nov, pages={16–22}, collection={HotNets ’21} }</code></pre>
               </div>
@@ -1307,8 +1346,13 @@ month = apr
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://people.cs.gmu.edu/~bohan/share/DeepVista_WWW21.pdf">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3442381.3449829">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="deepvista-abstract" data-publication-toggle="deepvista-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="deepvista-bibtex" data-publication-toggle="deepvista-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3442381.3449829 -->
+              <div class="publication-abstract" id="deepvista-abstract" hidden aria-hidden="true">
+                <p>In this paper, we design, implement, and evaluate DeepVista, which is to our knowledge the first consumer-class system that streams panoramic videos far beyond the ultra high-definition resolution (up to 16K) to mobile devices, offering truly immersive experiences. Such an immense resolution makes streaming video-on-demand (VoD) content extremely resource-demanding. To tackle this challenge, DeepVista introduces a novel framework that leverages an edge server to perform efficient, intelligent, and quality-guaranteed content transcoding, by extracting from panoramic frames the viewport stream that will be delivered to the client. To support real-time transcoding of 16K content, DeepVista employs several key mechanisms such as dual-GPU acceleration, lossless viewport extraction, deep viewport prediction, and a two-layer streaming design. Our extensive evaluations using real users’ viewport movement data indicate that DeepVista outperforms existing solutions, and can smoothly stream 16K panoramic videos to mobile devices over diverse wireless networks including WiFi, LTE, and mmWave 5G.</p>
+              </div>
               <div class="publication-bibtex" id="deepvista-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Zhang_2021, series={WWW ’21}, title={DeepVista: 16K Panoramic Cinema on Your Mobile Device}, url={http://dx.doi.org/10.1145/3442381.3449829}, DOI={10.1145/3442381.3449829}, booktitle={Proceedings of the Web Conference 2021}, publisher={ACM}, author={Zhang, Wenxiao and Qian, Feng and Han, Bo and Hui, Pan}, year={2021}, month=Apr, pages={2232–2244}, collection={WWW ’21} }</code></pre>
               </div>
@@ -1321,7 +1365,24 @@ month = apr
               <p class="publication-venue-line">In Proceedings of the 22nd ACM Workshop on Mobile Computing Systems and Applications (HotMobile 2021).</p>
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://people.cs.gmu.edu/~bohan/share/VoluSR_HotMobile21.pdf">PDF</a>
+                <a class="publication-button doi" href="https://doi.org/10.1145/3446382.3448663">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="efficient-point-cloud-streaming-abstract" data-publication-toggle="efficient-point-cloud-streaming-abstract">ABS</button>
+                <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="efficient-point-cloud-streaming-bibtex" data-publication-toggle="efficient-point-cloud-streaming-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3446382.3448663 -->
+              <div class="publication-abstract" id="efficient-point-cloud-streaming-abstract" hidden aria-hidden="true">
+                <p>Volumetric videos allow viewers to exercise 6-DoF (degrees of freedom) movement when consuming fully 3D content (e.g., point clouds). Due to their truly immersive nature, streaming volumetric videos is highly bandwidth-demanding. In this work, we present to our knowledge a first volumetric video streaming system that leverages 3D super resolution (SR) of point clouds to boost the video quality on commodity devices, and to facilitate the distribution of volumetric content over bandwidth-constrained wireless networks. However, directly applying off-the-shelf 3D SR models leads to unacceptably low performance (~ 0.1 FPS even on a powerful GPU). To overcome this limitation, we propose a series of optimizations to make SR efficient. Our preliminary results indicate that for an edge-assisted (standalone mobile) setup, a small subset of our proposed optimizations can already drastically improve the FPS by a factor of 131× (53×) and reduce GPU memory usage by 83% (76%), while maintaining the same or even better SR inference accuracy, compared to using an off-the-shelf SR model.</p>
+              </div>
+              <div class="publication-bibtex" id="efficient-point-cloud-streaming-bibtex" hidden aria-hidden="true">
+                <pre><code>@inproceedings{zhang2021efficient,
+  title = {Efficient Volumetric Video Streaming Through Super Resolution},
+  author = {Zhang, Anlan and Wang, Chengdong and Han, Bo and Qian, Feng},
+  booktitle = {Proceedings of the 22nd International Workshop on Mobile Computing Systems and Applications},
+  pages = {106--111},
+  year = {2021},
+  doi = {10.1145/3446382.3448663}
+}</code></pre>
+              </div>
             </li>
           </ol>
           </section>
@@ -1336,9 +1397,15 @@ month = apr
               <p class="publication-authors">Huanle Zhang, <strong>Bo Han</strong>, Cheuk Yiu Ip, and Prasant Mohapatra</p>
               <p class="publication-venue-line">In Proceedings of the 17th International Conference on Mobile Ad Hoc and Sensor Systems (MASS 2020).</p>
               <p class="publication-actions">
+                <a class="publication-button pdf" href="https://pmlab.cse.usf.edu/assets/pubs/huanle2020accelerating.pdf">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1109/mass50613.2020.00079">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="slimmer-abstract" data-publication-toggle="slimmer-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="slimmer-bibtex" data-publication-toggle="slimmer-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://ieeexplore.ieee.org/document/9356048 -->
+              <div class="publication-abstract" id="slimmer-abstract" hidden aria-hidden="true">
+                <p>Three-Dimensional (3D) semantic segmentation is an essential building block for interactive Augmented Reality (AR). However, existing Deep Neural Network (DNN) models for segmenting 3D objects are not only computation-intensive but also memory heavy, hindering their deployment on resource-constrained mobile devices. We present the design, implementation and evaluation of Slimmer, a generic and model-independent framework for accelerating 3D semantic segmentation and facilitating its real-time applications on mobile devices. In contrast to the current practice that directly feeds a point cloud to DNN models, Slimmer is motivated by our observation that these models remain high accuracy even if we remove a fraction of points from the input, which can significantly reduce the inference time and memory usage of these models. Our design of Slimmer faces two key challenges. First, the simplification method of point clouds should be lightweight. Otherwise, the reduced inference time may be canceled out by the incurred overhead of input-data simplification. Second, Slimmer still needs to accurately segment the removed points from the input to create a complete segmentation of the original input, again, using a lightweight method. Our extensive performance evaluation demonstrates that, by addressing these two challenges, Slimmer can dramatically reduce the resource utilization of a representative DNN model for 3D semantic segmentation. For example, if we can tolerate 1% accuracy loss, the reduction could be ~20% for inference time and ~9% for memory usage. The reduction increases to around ~27% for inference time and ~15% for memory usage when we can tolerate 2% accuracy loss.</p>
+              </div>
               <div class="publication-bibtex" id="slimmer-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Zhang_2020, title={Slimmer: Accelerating 3D Semantic Segmentation for Mobile Augmented Reality}, url={http://dx.doi.org/10.1109/mass50613.2020.00079}, DOI={10.1109/mass50613.2020.00079}, booktitle={2020 IEEE 17th International Conference on Mobile Ad Hoc and Sensor Systems (MASS)}, publisher={IEEE}, author={Zhang, Huanle and Han, Bo and Ip, Cheuk Yiu and Mohapatra, Prasant}, year={2020}, month=Dec, pages={603–612} }</code></pre>
               </div>
@@ -1352,8 +1419,13 @@ month = apr
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://people.cs.gmu.edu/~bohan/share/ViVo_MobiCom20.pdf">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3372224.3380888">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="vivo-abstract" data-publication-toggle="vivo-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="vivo-bibtex" data-publication-toggle="vivo-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3372224.3380888 -->
+              <div class="publication-abstract" id="vivo-abstract" hidden aria-hidden="true">
+                <p>In this paper, we perform a first comprehensive study of mobile volumetric video streaming. Volumetric videos are truly 3D, allowing six degrees of freedom (6DoF) movement for their viewers during playback. Such flexibility enables numerous applications in entertainment, healthcare, education, etc. However, volumetric video streaming is extremely bandwidth-intensive. We conduct a detailed investigation of each of the following aspects for point cloud streaming (a popular volumetric data format): encoding, decoding, segmentation, viewport movement patterns, and viewport prediction. Motivated by the observations from the above study, we propose ViVo, which is to the best of our knowledge the first practical mobile volumetric video streaming system with three visibility-aware optimizations. ViVo judiciously determines the video content to fetch based on how, what and where a viewer perceives for reducing bandwidth consumption of volumetric video streaming. Our evaluations over real wireless networks (including commercial 5G), mobile devices and users indicate that ViVo can save on average 40% of data usage (up to 80%) with virtually no drop in visual quality.</p>
+              </div>
               <div class="publication-bibtex" id="vivo-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Han_2020, series={MobiCom ’20}, title={ViVo: visibility-aware mobile volumetric video streaming}, url={http://dx.doi.org/10.1145/3372224.3380888}, DOI={10.1145/3372224.3380888}, booktitle={Proceedings of the 26th Annual International Conference on Mobile Computing and Networking}, publisher={ACM}, author={Han, Bo and Liu, Yu and Qian, Feng}, year={2020}, month=Apr, pages={1–13}, collection={MobiCom ’20} }</code></pre>
               </div>
@@ -1364,6 +1436,25 @@ month = apr
               <p class="publication-title"><strong>Toward Mobile 3D Vision (Invited Paper)</strong></p>
               <p class="publication-authors">Huanle Zhang, <strong>Bo Han</strong>, and Prasant Mohapatra</p>
               <p class="publication-venue-line">In Proceedings of the 29th International Conference on Computer Communications and Networks (ICCCN 2020).</p>
+              <p class="publication-actions">
+                <a class="publication-button pdf" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9209700">PDF</a>
+                <a class="publication-button doi" href="https://doi.org/10.1109/ICCCN49398.2020.9209700">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="toward-mobile-3d-vision-abstract" data-publication-toggle="toward-mobile-3d-vision-abstract">ABS</button>
+                <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="toward-mobile-3d-vision-bibtex" data-publication-toggle="toward-mobile-3d-vision-bibtex">BIB</button>
+              </p>
+              <!-- Abstract source: https://ieeexplore.ieee.org/document/9209700 -->
+              <div class="publication-abstract" id="toward-mobile-3d-vision-abstract" hidden aria-hidden="true">
+                <p>In the past few years, the computer vision community has developed numerous novel technologies of 3D vision (e.g., 3D object detection and classification and 3D scene segmentation). In this work, we explore the opportunities brought by these innovations for enabling real-time 3D vision on mobile devices. Mobile 3D vision finds various use cases for emerging applications such as autonomous driving, drone navigation, and augmented reality (AR). The key differences between 3D vision and 2D vision mainly stem from the input data format (i.e., point clouds or 3D meshes vs. 2D images). Hence, the key challenge of 3D vision is that it is could be more computation intensive and memory hungry than 2D vision, due to the additional dimension of input data. For example, our preliminary measurement study of several state-of-the-art machine learning models for 3D vision shows that none of them can execute faster than one frame per second on smartphones. Motivated by these challenges, we present in this position paper a research agenda on offering systems support for real-time mobile 3D vision, focusing on improving its computation efficiency and memory utilization.</p>
+              </div>
+              <div class="publication-bibtex" id="toward-mobile-3d-vision-bibtex" hidden aria-hidden="true">
+                <pre><code>@inproceedings{zhang2020toward,
+  title = {Toward Mobile 3D Vision},
+  author = {Zhang, Huanle and Han, Bo and Mohapatra, Prasant},
+  booktitle = {Proceedings of the 29th International Conference on Computer Communications and Networks},
+  year = {2020},
+  doi = {10.1109/ICCCN49398.2020.9209700}
+}</code></pre>
+              </div>
             </li>
           </ol>
           </section>
@@ -1380,8 +1471,13 @@ month = apr
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://people.cs.gmu.edu/~bohan/share/VR_CoNEXT19.pdf">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3359989.3365413">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="viewport-prediction-abstract" data-publication-toggle="viewport-prediction-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="viewport-prediction-bibtex" data-publication-toggle="viewport-prediction-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3359989.3365413 -->
+              <div class="publication-abstract" id="viewport-prediction-abstract" hidden aria-hidden="true">
+                <p>In this paper, we study the problem of predicting a user's viewport movement in a networked VR system (i.e., predicting which direction the viewer will look at shortly). This critical knowledge will guide the VR system through making judicious content fetching decisions, leading to efficient network bandwidth utilization (e.g., up to 35% on LTE networks as demonstrated by our previous work) and improved Quality of Experience (QoE). For this study, we collect viewport trajectory traces from 275 users who have watched popular 360° panoramic videos for a total duration of 156 hours. Leveraging our unique datasets, we compare viewport movement patterns of different interaction modes: wearing a head-mounted device, tilting a smartphone, and dragging the mouse on a PC. We then apply diverse machine learning algorithms - from simple regression to sophisticated deep learning that leverages crowd-sourced data - to analyze the performance of viewport prediction. We find that the deep learning approach is robust for all interaction modes and yields supreme performance, especially when the viewport is more challenging to predict, e.g., for a longer prediction window, or with a more dynamic movement. Overall, our analysis provides key insights on how to intelligently perform viewport prediction in networked VR systems.</p>
+              </div>
               <div class="publication-bibtex" id="viewport-prediction-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Xu_2019, series={CoNEXT ’19}, title={Analyzing viewport prediction under different VR interactions}, url={http://dx.doi.org/10.1145/3359989.3365413}, DOI={10.1145/3359989.3365413}, booktitle={Proceedings of the 15th International Conference on Emerging Networking Experiments And Technologies}, publisher={ACM}, author={Xu, Tan and Han, Bo and Qian, Feng}, year={2019}, month=Dec, pages={165–171}, collection={CoNEXT ’19} }</code></pre>
               </div>
@@ -1394,7 +1490,24 @@ month = apr
               <p class="publication-venue-line">In Proceedings of the 15th International Conference on emerging Networking EXperiments and Technologies (CoNEXT 2019).</p>
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://people.cs.gmu.edu/~bohan/share/Egret_CoNEXT19.pdf">PDF</a>
+                <a class="publication-button doi" href="https://doi.org/10.1145/3359989.3365409">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="egret-abstract" data-publication-toggle="egret-abstract">ABS</button>
+                <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="egret-bibtex" data-publication-toggle="egret-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3359989.3365409 -->
+              <div class="publication-abstract" id="egret-abstract" hidden aria-hidden="true">
+                <p>Traffic migration is a common procedure performed by operators during planned maintenance and unexpected incidents to prevent/reduce service disruptions. However, current practices of traffic migration often couple operators' intentions (e.g. device upgrades) with network setups (e.g. load-balancers), resulting in poor re-usability and substantial operational complexities. Our study of 205 Methods of Procedure (MOPs) from a major U.S. carrier suggests that generalizing traffic migration with a unified model is feasible. Such generalization along with SDN's automation capability is key to scalable and flexible management of traffic, especially for virtualized network functions with unprecedented scale, heterogeneity, and fast iteration. In this paper, we propose Egret, a generic traffic migration system that simplifies traffic management for physical and virtual network functions. Egret (1) hides intricate implementation details from operators with generic intention-based interfaces, and (2) modularizes common traffic migration procedures to enable plug-and-play by developers and vendors. Leveraging a novel mask-based abstraction of traffic migration jobs, Egret can further simplify reverse traffic migration and enable job interleaving.</p>
+              </div>
+              <div class="publication-bibtex" id="egret-bibtex" hidden aria-hidden="true">
+                <pre><code>@inproceedings{lin2019egret,
+  title = {Egret: Simplifying Traffic Management for Physical and Virtual Network Functions},
+  author = {Lin, Yikai and Mahimkar, Ajay and Han, Bo and Ge, Zihui and Gopalakrishnan, Vijay and Mao, Z. Morley},
+  booktitle = {Proceedings of the 15th International Conference on Emerging Networking Experiments and Technologies},
+  pages = {334--340},
+  year = {2019},
+  doi = {10.1145/3359989.3365409}
+}</code></pre>
+              </div>
             </li>
             <li class="publication-entry">
               <a class="publication-venue-short publication-venue-link" href="https://nfvsdn2019.ieee-nfvsdn.org/" target="_blank" rel="noopener noreferrer">NFV-SDN 2019</a>
@@ -1403,9 +1516,15 @@ month = apr
               <p class="publication-authors">Yang Zhang, Zhi-Li Zhang, and <strong>Bo Han</strong></p>
               <p class="publication-venue-line">In Proceedings of the 5th IEEE Conference on Network Functions Virtualization and Software Defined Networking (NFV-SDN 2019).</p>
               <p class="publication-actions">
+                <a class="publication-button pdf" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9040088">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1109/nfv-sdn47374.2019.9040088">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="hybridsfc-abstract" data-publication-toggle="hybridsfc-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="hybridsfc-bibtex" data-publication-toggle="hybridsfc-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://ieeexplore.ieee.org/document/9040088 -->
+              <div class="publication-abstract" id="hybridsfc-abstract" hidden aria-hidden="true">
+                <p>Network Function Virtualization (NFV) coupled with Software Defined Networking (SDN) creates new opportunities as well as substantial challenges such as increased Service Function Chain (SFC) latency and reduced throughput. In this paper, we present HybridSFC, a framework that explores the opportunities of parallel packet processing at both traffic level and Network Function (NF) level. It incorporates innovative control and data-plane mechanisms that partition and convert a sequential chain into several finer-grained SFClets that can be executed in parallel on multiple cores and servers. HybridSFC is practical in that it can handle NFs spanning multiple servers and requires no modifications to existing NFs. Experiments show that HybridSFC reduces latency up to 51% with 7% CPU overhead, and a 1.42×-1.87× improvement in overall system throughput.</p>
+              </div>
               <div class="publication-bibtex" id="hybridsfc-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Zhang_2019, title={HybridSFC: Accelerating Service Function Chains with Parallelism}, url={http://dx.doi.org/10.1109/nfv-sdn47374.2019.9040088}, DOI={10.1109/nfv-sdn47374.2019.9040088}, booktitle={2019 IEEE Conference on Network Function Virtualization and Software Defined Networks (NFV-SDN)}, publisher={IEEE}, author={Zhang, Yang and Zhang, Zhi-Li and Han, Bo}, year={2019}, month=Nov, pages={1–7} }</code></pre>
               </div>
@@ -1416,6 +1535,24 @@ month = apr
               <p class="publication-title"><strong>Content Assisted Viewport Prediction for Panoramic Video Streaming</strong></p>
               <p class="publication-authors">Tan Xu, Feng Qian, and <strong>Bo Han</strong></p>
               <p class="publication-venue-line">In Proceedings of the 3nd CVPR Workshop on Computer Vision for Augmented and Virtual Reality.</p>
+              <p class="publication-actions">
+                <a class="publication-button pdf" href="https://xr.cornell.edu/workshop/2019/papers/Content_Assisted_Viewport_Prediction_for_Panoramic_Video_Streaming.pdf">PDF</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="content-assisted-viewport-prediction-abstract" data-publication-toggle="content-assisted-viewport-prediction-abstract">ABS</button>
+                <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="content-assisted-viewport-prediction-bibtex" data-publication-toggle="content-assisted-viewport-prediction-bibtex">BIB</button>
+              </p>
+              <!-- Abstract source: https://xr.cornell.edu/workshop/2019/papers/Content_Assisted_Viewport_Prediction_for_Panoramic_Video_Streaming.pdf -->
+              <div class="publication-abstract" id="content-assisted-viewport-prediction-abstract" hidden aria-hidden="true">
+                <p>In this paper, we explore the viewport prediction problem for 360-degree video streaming by utilizing a viewer’s recent head movement trajectory, cross-viewer heatmap, and video saliency detection. We propose a deep neural network (DNN) model using long short-term memory network (LSTM) as its backbone. This model fuses multi-modality features and makes a joint prediction for a user’s future viewing direction. We evaluate the proposed approach on a dataset recording the viewing sessions of more than 100 users and show that it outperforms several baseline schemes.</p>
+              </div>
+              <div class="publication-bibtex" id="content-assisted-viewport-prediction-bibtex" hidden aria-hidden="true">
+                <pre><code>@inproceedings{xu2019content,
+  title = {Content Assisted Viewport Prediction for Panoramic Video Streaming},
+  author = {Xu, Tan and Qian, Feng and Han, Bo},
+  booktitle = {Proceedings of the 3rd CVPR Workshop on Computer Vision for Augmented and Virtual Reality},
+  year = {2019},
+  url = {https://xr.cornell.edu/workshop/2019/papers/Content_Assisted_Viewport_Prediction_for_Panoramic_Video_Streaming.pdf}
+}</code></pre>
+              </div>
             </li>
             <li class="publication-entry">
               <a class="publication-venue-short publication-venue-link" href="https://mmsys2019.org/" target="_blank" rel="noopener noreferrer">MMSys 2019</a>
@@ -1425,7 +1562,24 @@ month = apr
               <p class="publication-venue-line">In Proceedings of the 10th ACM Multimedia Systems Conference (MMSys 2019).</p>
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://people.cs.gmu.edu/~bohan/share/LIME_MMSys19.pdf">PDF</a>
+                <a class="publication-button doi" href="https://doi.org/10.1145/3304109.3306220">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="lime-abstract" data-publication-toggle="lime-abstract">ABS</button>
+                <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="lime-bibtex" data-publication-toggle="lime-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3304109.3306220 -->
+              <div class="publication-abstract" id="lime-abstract" hidden aria-hidden="true">
+                <p>Personalized live video streaming is an increasingly popular technology that allows a broadcaster to share videos in real time with worldwide viewers. Compared to video-on-demand (VOD) streaming, experimenting with personalized live video streaming is harder due to its intrinsic live nature, the need for worldwide viewers, and a more complex data collection pipeline. In this paper, we make several contributions to both experimenting with and understanding today's commercial live video streaming services. First, we develop LIME (Live video MEasurement platform), a generic and holistic system allowing researchers to conduct crowd-sourced measurements on both commercial and experimental live streaming platforms. Second, we use LIME to perform, to the best of our knowledge, a first study of personalized 360° live video streaming on two commercial platforms, YouTube and Facebook. During a 7-day study, we have collected a dataset from 548 paid Amazon Mechanical Turk viewers from 35 countries who have watched more than 4,000 minutes of 360° live videos. Using this unique dataset, we characterize 360° live video streaming performance in the wild. Third, we conduct controlled experiments through LIME to shed light on how to make 360° live streaming (more) adaptive in the presence of challenging network conditions.</p>
+              </div>
+              <div class="publication-bibtex" id="lime-bibtex" hidden aria-hidden="true">
+                <pre><code>@inproceedings{liu2019lime,
+  title = {LIME: Understanding Commercial 360-degree Live Video Streaming Services},
+  author = {Liu, Xing and Han, Bo and Qian, Feng and Varvello, Matteo},
+  booktitle = {Proceedings of the 10th ACM Multimedia Systems Conference},
+  pages = {154--164},
+  year = {2019},
+  doi = {10.1145/3304109.3306220}
+}</code></pre>
+              </div>
             </li>
             <li class="publication-entry">
               <a class="publication-venue-short publication-venue-link" href="https://hotmobile.org/2019/" target="_blank" rel="noopener noreferrer">HotMobile 2019</a>
@@ -1436,8 +1590,13 @@ month = apr
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://people.cs.gmu.edu/~bohan/share/Volumetric_HotMobile19.pdf">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3301293.3302358">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="practical-volumetric-abstract" data-publication-toggle="practical-volumetric-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="practical-volumetric-bibtex" data-publication-toggle="practical-volumetric-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3301293.3302358 -->
+              <div class="publication-abstract" id="practical-volumetric-abstract" hidden aria-hidden="true">
+                <p>Volumetric videos offer six degree-of-freedom (DoF) as well as 3D rendering, making them highly immersive, interactive, and expressive. In this paper, we design Nebula, a practical and resource-efficient volumetric video streaming system for commodity mobile devices. Our design leverages edge computing to reduce the computation burden on mobile clients. We also introduce various optimizations to lower the perceived "motion-to-photon" delay, to dynamically adapt to the fluctuating network bandwidth, and to reduce the system's resource consumption while maintaining a high QoE.</p>
+              </div>
               <div class="publication-bibtex" id="practical-volumetric-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Qian_2019, series={HotMobile ’19}, title={Toward Practical Volumetric Video Streaming on Commodity Smartphones}, url={http://dx.doi.org/10.1145/3301293.3302358}, DOI={10.1145/3301293.3302358}, booktitle={Proceedings of the 20th International Workshop on Mobile Computing Systems and Applications}, publisher={ACM}, author={Qian, Feng and Han, Bo and Pair, Jarrell and Gopalakrishnan, Vijay}, year={2019}, month=Feb, pages={135–140}, collection={HotMobile ’19} }</code></pre>
               </div>
@@ -1449,9 +1608,15 @@ month = apr
               <p class="publication-authors"><strong>Bo Han</strong></p>
               <p class="publication-venue-line">IEEE Communications Magazine.</p>
               <p class="publication-actions">
+                <a class="publication-button pdf" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=8839969">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1109/mcom.001.1800876">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="mobile-immersive-abstract" data-publication-toggle="mobile-immersive-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="mobile-immersive-bibtex" data-publication-toggle="mobile-immersive-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://ieeexplore.ieee.org/document/8839969 -->
+              <div class="publication-abstract" id="mobile-immersive-abstract" hidden aria-hidden="true">
+                <p>By its name, immersive computing creates a sense of immersion by blurring the boundary between the digital and the physical worlds. Typical immersive computing technologies include VR, 360-degree videos, AR, MR, and so on. This article discusses and highlights several research challenges when consumers experience immersive media content on mobile devices. It focuses on the recent developments for improving network efficiency and quality of user experience for mobile immersive applications. It then briefly introduces related standardization activities. Finally, it points out several opportunities and directions for further innovation, such as edge-accelerated AR applications.</p>
+              </div>
               <div class="publication-bibtex" id="mobile-immersive-bibtex" hidden aria-hidden="true">
                 <pre><code>@article{Han_2019, title={Mobile Immersive Computing: Research Challenges and the Road Ahead}, volume={57}, ISSN={1558-1896}, url={http://dx.doi.org/10.1109/mcom.001.1800876}, DOI={10.1109/mcom.001.1800876}, number={10}, journal={IEEE Communications Magazine}, publisher={Institute of Electrical and Electronics Engineers (IEEE)}, author={Han, Bo}, year={2019}, month=Oct, pages={112–118} }</code></pre>
               </div>
@@ -1470,7 +1635,24 @@ month = apr
               <p class="publication-venue-line">In Proceedings of the ACM Multimedia Conference (SIGMM 2018).</p>
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://people.cs.gmu.edu/~bohan/share/Jaguar_Multimedia18.pdf">PDF</a>
+                <a class="publication-button doi" href="https://doi.org/10.1145/3240508.3240561">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="jaguar-abstract" data-publication-toggle="jaguar-abstract">ABS</button>
+                <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="jaguar-bibtex" data-publication-toggle="jaguar-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3240508.3240561 -->
+              <div class="publication-abstract" id="jaguar-abstract" hidden aria-hidden="true">
+                <p>In this paper, we present the design, implementation and evaluation of Jaguar, a mobile Augmented Reality (AR) system that features accurate, low-latency, and large-scale object recognition and flexible, robust, and context-aware tracking. Jaguar pushes the limit of mobile AR's end-to-end latency by leveraging hardware acceleration with GPUs on edge cloud. Another distinctive aspect of Jaguar is that it seamlessly integrates marker-less object tracking offered by the recently released AR development tools (e.g., ARCore and ARKit) into its design. Indeed, some approaches used in Jaguar have been studied before in a standalone manner, e.g., it is known that cloud offloading can significantly decrease the computational latency of AR. However, the question of whether the combination of marker-less tracking, cloud offloading and GPU acceleration would satisfy the desired end-to-end latency of mobile AR (i.e., the interval of camera frames) has not been eloquently addressed yet. We demonstrate via a prototype implementation of our proposed holistic solution that Jaguar reduces the end-to-end latency to ~33 ms. It also achieves accurate six degrees of freedom tracking and 97% recognition accuracy for a dataset with 10,000 images.</p>
+              </div>
+              <div class="publication-bibtex" id="jaguar-bibtex" hidden aria-hidden="true">
+                <pre><code>@inproceedings{zhang2018jaguar,
+  title = {Jaguar: Low Latency Mobile Augmented Reality with Flexible Tracking},
+  author = {Zhang, Wenxiao and Han, Bo and Hui, Pan},
+  booktitle = {Proceedings of the 26th ACM International Conference on Multimedia},
+  pages = {355--363},
+  year = {2018},
+  doi = {10.1145/3240508.3240561}
+}</code></pre>
+              </div>
             </li>
             <li class="publication-entry">
               <a class="publication-venue-short publication-venue-link" href="https://www.sigmobile.org/mobicom/2018/" target="_blank" rel="noopener noreferrer">MobiCom 2018</a>
@@ -1480,7 +1662,24 @@ month = apr
               <p class="publication-venue-line">In Proceedings of the 24th ACM Conference on Mobile Computing and Networking (MobiCom 2018).</p>
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://people.cs.gmu.edu/~bohan/share/Flare_MobiCom18.pdf">PDF</a>
+                <a class="publication-button doi" href="https://doi.org/10.1145/3241539.3241565">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="flare-abstract" data-publication-toggle="flare-abstract">ABS</button>
+                <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="flare-bibtex" data-publication-toggle="flare-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3241539.3241565 -->
+              <div class="publication-abstract" id="flare-abstract" hidden aria-hidden="true">
+                <p>Flare is a practical system for streaming 360-degree videos on commodity mobile devices. It takes a viewport-adaptive approach, which fetches only portions of a panoramic scene that cover what a viewer is about to perceive. We conduct an IRB-approved user study where we collect head movement traces from 130 diverse users to gain insights on how to design the viewport prediction mechanism for Flare. We then develop novel online algorithms that determine which spatial portions to fetch and their corresponding qualities. We also innovate other components in the streaming pipeline such as decoding and server-side transmission. Through extensive evaluations (~400 hours' playback on WiFi and ~100 hours over LTE), we show that Flare significantly improves the QoE in real-world settings. Compared to non-viewport-adaptive approaches, Flare yields up to 18x quality level improvement on WiFi, and achieves high bandwidth reduction (up to 35%) and video quality enhancement (up to 4.9x) on LTE.</p>
+              </div>
+              <div class="publication-bibtex" id="flare-bibtex" hidden aria-hidden="true">
+                <pre><code>@inproceedings{qian2018flare,
+  title = {Flare: Practical Viewport-Adaptive 360-Degree Video Streaming for Mobile Devices},
+  author = {Qian, Feng and Han, Bo and Xiao, Qingyang and Gopalakrishnan, Vijay},
+  booktitle = {Proceedings of the 24th Annual International Conference on Mobile Computing and Networking},
+  pages = {99--114},
+  year = {2018},
+  doi = {10.1145/3241539.3241565}
+}</code></pre>
+              </div>
             </li>
             <li class="publication-entry">
               <a class="publication-venue-short publication-venue-link" href="https://hotmobile.org/2018/" target="_blank" rel="noopener noreferrer">HotMobile 2018</a>
@@ -1490,7 +1689,24 @@ month = apr
               <p class="publication-venue-line">In Proceedings of the 19th ACM Workshop on Mobile Computing Systems and Applications (HotMobile 2018).</p>
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://people.cs.gmu.edu/~bohan/share/CARS_HotMobile18.pdf">PDF</a>
+                <a class="publication-button doi" href="https://doi.org/10.1145/3177102.3177107">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="cars-abstract" data-publication-toggle="cars-abstract">ABS</button>
+                <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="cars-bibtex" data-publication-toggle="cars-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3177102.3177107 -->
+              <div class="publication-abstract" id="cars-abstract" hidden aria-hidden="true">
+                <p>As Augmented Reality (AR) ties closely to the physical world, its users looking at overlapped scenes are likely to be in the vicinity of each other, which naturally enables the collaboration and interaction among them. In this paper, we propose CARS (Collaborative Augmented Reality for Socialization), a framework that leverages the social nature of human beings to improve the user-perceived Quality of Experience (QoE) for AR, especially the end-to-end latency. CARS takes advantage of the unique feature of AR to support intelligent sharing of information between nearby users when it is feasible. It brings various benefits at the user, application and system levels, e.g., reduction of end-to-end latency and reuse of networking and computation resources. We demonstrate the efficacy of CARS through a preliminary evaluation based on a prototype implementation.</p>
+              </div>
+              <div class="publication-bibtex" id="cars-bibtex" hidden aria-hidden="true">
+                <pre><code>@inproceedings{zhang2018cars,
+  title = {CARS: Collaborative Augmented Reality for Socialization},
+  author = {Zhang, Wenxiao and Han, Bo and Hui, Pan and Gopalakrishnan, Vijay and Zavesky, Eric and Qian, Feng},
+  booktitle = {Proceedings of the 19th International Workshop on Mobile Computing Systems and Applications},
+  pages = {25--30},
+  year = {2018},
+  doi = {10.1145/3177102.3177107}
+}</code></pre>
+              </div>
             </li>
           </ol>
           </section>
@@ -1506,7 +1722,24 @@ month = apr
               <p class="publication-venue-line">In Proceedings of the 16th ACM Workshop on Hot Topics in Networks (HotNets 2017).</p>
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://people.cs.gmu.edu/~bohan/share/360_HotNets17.pdf">PDF</a>
+                <a class="publication-button doi" href="https://doi.org/10.1145/3152434.3152443">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="degree-innovations-abstract" data-publication-toggle="degree-innovations-abstract">ABS</button>
+                <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="degree-innovations-bibtex" data-publication-toggle="degree-innovations-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3152434.3152443 -->
+              <div class="publication-abstract" id="degree-innovations-abstract" hidden aria-hidden="true">
+                <p>360-degree videos are becoming increasingly popular on commercial platforms. In this position paper, we propose a holistic research agenda aiming at improving the performance, resource utilization efficiency, and users' quality of experience (QoE) for 360° video streaming on commodity mobile devices. Based on a Field-of-View (FoV) guided approach that fetches only portions of a scene that users will see, our proposed research includes the following: robust video rate adaptation with incremental chunk upgrading, big-data-assisted head movement prediction and rate adaptation, novel support for multipath streaming, and enhancements to live 360° video broadcast. We also show preliminary results demonstrating promising performance of our proof-of-concept 360° video streaming system on which our proposed research are being prototyped, integrated, and evaluated.</p>
+              </div>
+              <div class="publication-bibtex" id="degree-innovations-bibtex" hidden aria-hidden="true">
+                <pre><code>@inproceedings{liu2017degree,
+  title = {360-Degree Innovations for Panoramic Video Streaming},
+  author = {Liu, Xing and Xiao, Qingyang and Gopalakrishnan, Vijay and Han, Bo and Qian, Feng and Varvello, Matteo},
+  booktitle = {Proceedings of the 16th ACM Workshop on Hot Topics in Networks},
+  pages = {50--56},
+  year = {2017},
+  doi = {10.1145/3152434.3152443}
+}</code></pre>
+              </div>
             </li>
             <li class="publication-entry">
               <a class="publication-venue-short publication-venue-link" href="https://conferences.sigcomm.org/sigcomm/2017/workshop-vrarnet.html" target="_blank" rel="noopener noreferrer">VR/AR Network 2017</a>
@@ -1517,8 +1750,13 @@ month = apr
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://people.cs.gmu.edu/~bohan/share/MAR_VRAR17.pdf">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3097895.3097900">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="mobile-ar-networking-abstract" data-publication-toggle="mobile-ar-networking-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="mobile-ar-networking-bibtex" data-publication-toggle="mobile-ar-networking-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3097895.3097900 -->
+              <div class="publication-abstract" id="mobile-ar-networking-abstract" hidden aria-hidden="true">
+                <p>In this paper, we conduct a reality check for Augmented Reality (AR) on mobile devices. We dissect and measure the cloud-offloading feature for computation-intensive visual tasks of two popular commercial AR systems. Our key finding is that their cloud-based recognition is still not mature and not optimized for latency, data usage and energy consumption. In order to identify the opportunities for further improving the Quality of Experience (QoE) for mobile AR, we break down the end-to-end latency of the pipeline for typical cloud-based mobile AR and pinpoint the dominating components in the critical path.</p>
+              </div>
               <div class="publication-bibtex" id="mobile-ar-networking-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Zhang_2017, series={SIGCOMM ’17}, title={On the Networking Challenges of Mobile Augmented Reality}, url={http://dx.doi.org/10.1145/3097895.3097900}, DOI={10.1145/3097895.3097900}, booktitle={Proceedings of the Workshop on Virtual Reality and Augmented Reality Network}, publisher={ACM}, author={Zhang, Wenxiao and Han, Bo and Hui, Pan}, year={2017}, month=Aug, pages={24–29}, collection={SIGCOMM ’17} }</code></pre>
               </div>
@@ -1531,7 +1769,24 @@ month = apr
               <p class="publication-venue-line">In Proceedings of the 3rd ACM Symposium on SDN Research (SOSR 2017).</p>
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://people.cs.gmu.edu/~bohan/share/ParaBox_SOSR17.pdf">PDF</a>
+                <a class="publication-button doi" href="https://doi.org/10.1145/3050220.3050236">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="parabox-abstract" data-publication-toggle="parabox-abstract">ABS</button>
+                <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="parabox-bibtex" data-publication-toggle="parabox-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3050220.3050236 -->
+              <div class="publication-abstract" id="parabox-abstract" hidden aria-hidden="true">
+                <p>Service Function Chains (SFCs) comprise a sequence of Network Functions (NFs) that are typically traversed in-order by data flows. Consequently, SFC delay grows linearly with the length of the SFC. Yet, for highly latency sensitive applications, this delay may be unacceptable - particularly when the constituent NFs are virtualized, running on commodity servers. In this paper, we investigate how SFC latency may be reduced by exploiting opportunities for parallel packet processing across NFs. We propose ParaBox, a novel hybrid packet processing architecture that, when possible, dynamically distributes packets to VNFs in parallel and merges their outputs intelligently to ensure the preservation of correct sequential processing semantics. To demonstrate the feasibility of our approach, we implement a ParaBox prototype on top of the DPDK-enabled Berkeley Extensible Software Switch. Our preliminary experiment results show that ParaBox can not only significantly reduce the service chaining latency, but also improve throughput.</p>
+              </div>
+              <div class="publication-bibtex" id="parabox-bibtex" hidden aria-hidden="true">
+                <pre><code>@inproceedings{zhang2017parabox,
+  title = {ParaBox: Exploiting Parallelism for Virtual Network Functions in Service Chaining},
+  author = {Zhang, Yang and Anwer, Bilal and Gopalakrishnan, Vijay and Han, Bo and Reich, Joshua and Shaikh, Aman and Zhang, Zhi-Li},
+  booktitle = {Proceedings of the 2017 Symposium on SDN Research},
+  pages = {143--149},
+  year = {2017},
+  doi = {10.1145/3050220.3050236}
+}</code></pre>
+              </div>
             </li>
             <li class="publication-entry">
               <a class="publication-venue-short publication-venue-link" href="https://archives.iw3c2.org/www2017/" target="_blank" rel="noopener noreferrer">WWW 2017</a>
@@ -1541,7 +1796,24 @@ month = apr
               <p class="publication-venue-line">In Proceedings of the 26th International World Wide Web Conference (WWW 2017).</p>
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://people.cs.gmu.edu/~bohan/share/HTTP2_WWW17.pdf">PDF</a>
+                <a class="publication-button doi" href="https://doi.org/10.1145/3038912.3052574">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="http2-server-push-abstract" data-publication-toggle="http2-server-push-abstract">ABS</button>
+                <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="http2-server-push-bibtex" data-publication-toggle="http2-server-push-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3038912.3052574 -->
+              <div class="publication-abstract" id="http2-server-push-abstract" hidden aria-hidden="true">
+                <p>In HTTP/1.1, it is necessary for the client to request an object (e.g. an image in a page) in order for the server to send it, even if the server knows in advance what the client will need. Server Push is a feature introduced in HTTP/2 that promises to improve page load times (PLT) by having the server push content to the browser in advance. In this paper, we investigate the benefits and challenges of using Server Push on mobile devices. We first examine whether pushing all content or just the CSS and Javascript files performs better, and find the former leads to much better web performance. Also, we find that sites making use of domain sharding or which otherwise have content divided across many servers do not benefit much from Server Push, a major challenge for Server Push going forward. Network performance characteristics also play a major role. Server Push is especially effective at improving performance at high loss rates (16% median PLT reduction with a 2% loss rate) and high latencies (14% PLT reduction with 100 ms latency), and has little benefit for high-speed Ethernet connections. This motivates its use on mobile devices, although we also find the limited processing power of these devices limits the benefits of Server Push. Server Push also offers modest energy benefits, with energy savings of 9% on LTE for one device. Overall, Server Push is a promising approach for improving web performance in mobile networks, but there are a number of challenges in achieving the full benefits of Server Push.</p>
+              </div>
+              <div class="publication-bibtex" id="http2-server-push-bibtex" hidden aria-hidden="true">
+                <pre><code>@inproceedings{rosen2017push,
+  title = {Push or Request: An Investigation of HTTP/2 Server Push for Improving Mobile Web Performance},
+  author = {Rosen, Sanae and Han, Bo and Hao, Shuai and Mao, Z. Morley and Qian, Feng},
+  booktitle = {Proceedings of the 26th International Conference on World Wide Web},
+  pages = {459--468},
+  year = {2017},
+  doi = {10.1145/3038912.3052574}
+}</code></pre>
+              </div>
             </li>
             <li class="publication-entry">
               <a class="publication-venue-short publication-venue-link" href="https://www.comsoc.org/publications/magazines/ieee-communications-magazine" target="_blank" rel="noopener noreferrer">IEEE Communications Magazine 2017</a>
@@ -1550,9 +1822,15 @@ month = apr
               <p class="publication-authors"><strong>Bo Han</strong>, Vijay Gopalakrishnan, Gnanavelkandan Kathirvel, and Aman Shaikh</p>
               <p class="publication-venue-line">IEEE Communications Magazine.</p>
               <p class="publication-actions">
+                <a class="publication-button pdf" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=7981543">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1109/mcom.2017.1601201">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="vnf-resiliency-abstract" data-publication-toggle="vnf-resiliency-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="vnf-resiliency-bibtex" data-publication-toggle="vnf-resiliency-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://ieeexplore.ieee.org/document/7981543 -->
+              <div class="publication-abstract" id="vnf-resiliency-abstract" hidden aria-hidden="true">
+                <p>Network functions virtualization is an emerging technology that can significantly improve the flexibility of network service provisioning and offer potential cost savings. However, it is critical that service providers offer high reliability and availability of the network and services when moving from proprietary hardware appliances to virtualized network functions on commodity servers. In a network consisting of physical appliances, providers can deploy redundant hardware and extra capacity to handle failures, although this is quite expensive in practice. Virtualization of network functions lead to more challenges for resiliency, but also bring new opportunities to address these challenges in a more cost-effective manner. In this article, we explain the resiliency requirements for virtual network functions in order to provide carrier grade services, summarize the existing solutions in the literature, highlight several research challenges, and present a concrete case study to demonstrate how to decompose a type of virtual router and thus enhance its resiliency.</p>
+              </div>
               <div class="publication-bibtex" id="vnf-resiliency-bibtex" hidden aria-hidden="true">
                 <pre><code>@article{Han_2017, title={On the Resiliency of Virtual Network Functions}, volume={55}, ISSN={0163-6804}, url={http://dx.doi.org/10.1109/mcom.2017.1601201}, DOI={10.1109/mcom.2017.1601201}, number={7}, journal={IEEE Communications Magazine}, publisher={Institute of Electrical and Electronics Engineers (IEEE)}, author={Han, Bo and Gopalakrishnan, Vijay and Kathirvel, Gnanavelkandan and Shaikh, Aman}, year={2017}, pages={152–157} }</code></pre>
               </div>
@@ -1572,8 +1850,13 @@ month = apr
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://people.cs.gmu.edu/~bohan/share/MPDASH_CoNEXT16.pdf">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/2999572.2999606">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="mp-dash-abstract" data-publication-toggle="mp-dash-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="mp-dash-bibtex" data-publication-toggle="mp-dash-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/2999572.2999606 -->
+              <div class="publication-abstract" id="mp-dash-abstract" hidden aria-hidden="true">
+                <p>Compared with using only a single wireless path such as WiFi, leveraging multipath (e.g., WiFi and cellular) can dramatically improve users' quality of experience (QoE) for mobile video streaming. However, Multipath TCP (MPTCP), the de-facto multipath solution, lacks the support to prioritize one path over another. When applied to video streaming, it may cause undesired network usage such as substantial over-utilization of the metered cellular link. In this paper, we propose MP-DASH, a multipath framework for video streaming with the awareness of network interface preferences from users. The basic idea behind MP-DASH is to strategically schedule video chunks' delivery and thus satisfy user preferences. MP-DASH can work with a wide range of off-the-shelf video rate adaptation algorithms with very small changes. Our extensive field studies at 33 locations in three U.S. states suggest that MP-DASH is very effective: it can reduce cellular usage by up to 99% and radio energy consumption by up to 85% with negligible degradation of QoE, compared with off-the-shelf MPTCP.</p>
+              </div>
               <div class="publication-bibtex" id="mp-dash-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Han_2016, series={CoNEXT ’16}, title={MP-DASH: Adaptive Video Streaming Over Preference-Aware Multipath}, url={http://dx.doi.org/10.1145/2999572.2999606}, DOI={10.1145/2999572.2999606}, booktitle={Proceedings of the 12th International on Conference on emerging Networking EXperiments and Technologies}, publisher={ACM}, author={Han, Bo and Qian, Feng and Ji, Lusheng and Gopalakrishnan, Vijay}, year={2016}, month=Dec, pages={129–143}, collection={CoNEXT ’16} }</code></pre>
               </div>
@@ -1585,9 +1868,15 @@ month = apr
               <p class="publication-authors">Bo Yan, Rittwik Jana, Shu Shi, Yang Xu, <strong>Bo Han</strong>, Vijay Gopalakrishnan, Lusheng Ji, and H. Jonathan Chao</p>
               <p class="publication-venue-line">In Proceedings of the ACM Workshop on Cloud-Assisted Networking (CAN 2016).</p>
               <p class="publication-actions">
+                <a class="publication-button pdf" href="https://dl.acm.org/doi/epdf/10.1145/3010079.3012016">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/3010079.3012016">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="multimedia-conferencing-sdn-abstract" data-publication-toggle="multimedia-conferencing-sdn-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="multimedia-conferencing-sdn-bibtex" data-publication-toggle="multimedia-conferencing-sdn-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/3010079.3012016 -->
+              <div class="publication-abstract" id="multimedia-conferencing-sdn-abstract" hidden aria-hidden="true">
+                <p>Modern Web-enabled multimedia conferencing systems relays the source video flows to all call participants through media conferencing servers. This solution works well for small conference groups. However, as the conference size increases, the outbound bandwidth of the conferencing server becomes the bottleneck, which limits the scalability of the system and eventually degrades conference QoS. In this paper, we re-architect the multimedia conferencing service using Software-Defined Networks (SDN) that provides enhanced scalability and service orchestration. The main idea of our approach is to decouple the data plane and the control plane of the conferencing service. We advertise the group-based traffic forwarding capability of commodity OpenFlow switches as OpenFlow Selective Forwarding as a Service (OFSFaaS). The conferencing server now only handles control traffic, and dynamically establish media channels using OpenFlow switches through OFSFaaS. Preliminary prototype evaluations show that OFSFaaS eliminates the outbound bottleneck at conferencing servers and scales efficiently. OFSFaaS can be subscribed to by a wide range of multimedia services.</p>
+              </div>
               <div class="publication-bibtex" id="multimedia-conferencing-sdn-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Yan_2016, series={CoNEXT ’16}, title={Architecting Multimedia Conferencing Service using SDN}, url={http://dx.doi.org/10.1145/3010079.3012016}, DOI={10.1145/3010079.3012016}, booktitle={Proceedings of the 2016 ACM Workshop on Cloud-Assisted Networking}, publisher={ACM}, author={Yan, Bo and Jana, Rittwik and Shi, Shu and Xu, Yang and Han, Bo and Gopalakrishnan, Vijay and Ji, Lusheng and Chao, H. Jonathan}, year={2016}, month=Dec, pages={13–18}, collection={CoNEXT ’16} }</code></pre>
               </div>
@@ -1601,8 +1890,13 @@ month = apr
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://people.cs.gmu.edu/~bohan/share/360_AllThingsCellular16.pdf">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/2980055.2980056">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="cellular-360-delivery-abstract" data-publication-toggle="cellular-360-delivery-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="cellular-360-delivery-bibtex" data-publication-toggle="cellular-360-delivery-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/2980055.2980056 -->
+              <div class="publication-abstract" id="cellular-360-delivery-abstract" hidden aria-hidden="true">
+                <p>As an important component of the virtual reality (VR) technology, 360-degree videos provide users with panoramic view and allow them to freely control their viewing direction during video playback. Usually, a player displays only the visible portion of a 360 video. Thus, fetching the entire raw video frame wastes bandwidth. In this paper, we consider the problem of optimizing 360 video delivery over cellular networks. We first conduct a measurement study on commercial 360 video platforms. We then propose a cellular-friendly streaming scheme that delivers only 360 videos' visible portion based on head movement prediction. Using viewing data collected from real users, we demonstrate the feasibility of our approach, which can reduce bandwidth consumption by up to 80% based on a trace-driven simulation.</p>
+              </div>
               <div class="publication-bibtex" id="cellular-360-delivery-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Qian_2016, series={MobiCom′16}, title={Optimizing 360 video delivery over cellular networks}, url={http://dx.doi.org/10.1145/2980055.2980056}, DOI={10.1145/2980055.2980056}, booktitle={Proceedings of the 5th Workshop on All Things Cellular: Operations, Applications and Challenges}, publisher={ACM}, author={Qian, Feng and Ji, Lusheng and Han, Bo and Gopalakrishnan, Vijay}, year={2016}, month=Oct, pages={1–6}, collection={MobiCom′16} }</code></pre>
               </div>
@@ -1616,8 +1910,13 @@ month = apr
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://people.cs.gmu.edu/~bohan/share/MPWeb_AllThingsCellular16.pdf">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/2980055.2980060">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="wifi-cellular-abstract" data-publication-toggle="wifi-cellular-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="wifi-cellular-bibtex" data-publication-toggle="wifi-cellular-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/2980055.2980060 -->
+              <div class="publication-abstract" id="wifi-cellular-abstract" hidden aria-hidden="true">
+                <p>In this paper, we investigate when to browse the web using WiFi and cellular simultaneously on mobile devices. Our observation, based on empirical measurements, is that mobile web may not always benefit from multipath, which motivates a cost-benefit analysis. However, it is challenging to analyze the benefits (i.e., improved user experience) and costs (e.g., energy consumption) of web browsing, due to HTTP's resource fetching model. We propose to use server push, a standard feature in HTTP/2, to provide an ideal framework for the cost-benefit analysis. We then design a practical system that reduces resource footprint for mobile web over multipath by providing adaptive multipath support.</p>
+              </div>
               <div class="publication-bibtex" id="wifi-cellular-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Han_2016, series={MobiCom′16}, title={When should we surf the mobile web using both wifi and cellular?}, url={http://dx.doi.org/10.1145/2980055.2980060}, DOI={10.1145/2980055.2980060}, booktitle={Proceedings of the 5th Workshop on All Things Cellular: Operations, Applications and Challenges}, publisher={ACM}, author={Han, Bo and Qian, Feng and Ji, Lusheng}, year={2016}, month=Oct, pages={7–12}, collection={MobiCom′16} }</code></pre>
               </div>
@@ -1637,8 +1936,13 @@ month = apr
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://people.cs.gmu.edu/~bohan/share/MPWeb_CoNEXT15.pdf">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/2716281.2836090">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="mobile-web-mptcp-abstract" data-publication-toggle="mobile-web-mptcp-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="mobile-web-mptcp-bibtex" data-publication-toggle="mobile-web-mptcp-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/2716281.2836090 -->
+              <div class="publication-abstract" id="mobile-web-mptcp-abstract" hidden aria-hidden="true">
+                <p>Leveraging multiple interfaces (e.g., WiFi and cellular) on mobile devices is known to provide performance gains for applications such as bulk data transfer. In this paper, we complement prior studies by conducting, to the best of our knowledge, the first measurement study of mobile web performance over multipath TCP (MPTCP). Based on experiments using real web pages under diverse settings, we found the upper-layer web protocols can incur complex and sometimes unexpected interactions with the multipath-enabled transport layer. MPTCP always boosts SPDY while may hurt HTTP. MPTCP also helps mitigate SPDY's key limitations of being vulnerable to losses and inefficient bandwidth utilization. We provide in-depth explanations of the root causes, as well as recommendations for improving mobile web performance over MPTCP.</p>
+              </div>
               <div class="publication-bibtex" id="mobile-web-mptcp-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Han_2015, series={CoNEXT ’15}, title={An anatomy of mobile web performance over multipath TCP}, url={http://dx.doi.org/10.1145/2716281.2836090}, DOI={10.1145/2716281.2836090}, booktitle={Proceedings of the 11th ACM Conference on Emerging Networking Experiments and Technologies}, publisher={ACM}, author={Han, Bo and Qian, Feng and Hao, Shuai and Ji, Lusheng}, year={2015}, month=Dec, pages={1–7}, collection={CoNEXT ’15} }</code></pre>
               </div>
@@ -1650,9 +1954,15 @@ month = apr
               <p class="publication-authors">Bo Han, Shuai Hao, and Feng Qian</p>
               <p class="publication-venue-line">In Proceedings of the 5th ACM Workshop on All Things Cellular (ATC 2015).</p>
               <p class="publication-actions">
+                <a class="publication-button pdf" href="https://dl.acm.org/doi/epdf/10.1145/2785971.2785972">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/2785971.2785972">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="metapush-abstract" data-publication-toggle="metapush-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="metapush-bibtex" data-publication-toggle="metapush-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/2785971.2785972 -->
+              <div class="publication-abstract" id="metapush-abstract" hidden aria-hidden="true">
+                <p>MetaPush is a novel server push framework aiming at reducing web page load time. The key idea is to strategically leverage Server Push, a built-in feature in HTTP/2, to preemptively push web pages' metadata, which can later be leveraged by the client to early-fetch critical resources. We demonstrate MetaPush is particularly suitable for cellular networks, providing negligible bandwidth overhead (around 0.4%), improved page load time (up to 45%), and reduced radio energy utilization (up to 37%) over HSPA+ networks.</p>
+              </div>
               <div class="publication-bibtex" id="metapush-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Han_2015, series={SIGCOMM ’15}, title={MetaPush: Cellular-Friendly Server Push For HTTP/2}, url={http://dx.doi.org/10.1145/2785971.2785972}, DOI={10.1145/2785971.2785972}, booktitle={Proceedings of the 5th Workshop on All Things Cellular: Operations, Applications and Challenges}, publisher={ACM}, author={Han, Bo and Hao, Shuai and Qian, Feng}, year={2015}, month=Aug, pages={57–62}, collection={SIGCOMM ’15} }</code></pre>
               </div>
@@ -1663,6 +1973,25 @@ month = apr
               <p class="publication-title"><strong>EdgePlex: Decomposing the Provider Edge for Flexibility and Reliability</strong></p>
               <p class="publication-authors">Angela Chiu, Vijay Gopalakrishnan, Bo Han, Murad Kablan, Oliver Spatscheck, Chengwei Wang, and Yang Xu</p>
               <p class="publication-venue-line">In Proceedings of the Symposium on SDN Research 2015 (SOSR 2015).</p>
+              <p class="publication-actions">
+                <a class="publication-button pdf" href="https://dl.acm.org/doi/epdf/10.1145/2774993.2775010">PDF</a>
+                <a class="publication-button doi" href="https://doi.org/10.1145/2774993.2775010">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="edgeplex-abstract" data-publication-toggle="edgeplex-abstract">ABS</button>
+                <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="edgeplex-bibtex" data-publication-toggle="edgeplex-bibtex">BIB</button>
+              </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/2774993.2775010 -->
+              <div class="publication-abstract" id="edgeplex-abstract" hidden aria-hidden="true">
+                <p>The service provider edge is responsible for connecting customers using standard protocols such as IP and BGP to the service providers internal network while enforcing service specific policies and service guarantees. Today this function is performed by the Provider Edge Router (PE). The specialized nature of the PE, however, restricts operational flexibility and their monolithic design impacts reliability. In this paper, we propose a new edge router architecture following SDN and NFV principals called EdgePlex. EdgePlex is a distributed system where the functions performed by a traditional edge router are decomposed and assigned to different elements in the system. A key aspect of our design is the use of a sandboxed environment (through the use of virtual machines) per customer. This gives EdgePlex the ability to isolate customers from one-another and independently move customers within and across EdgePlex platforms. We describe the architecture and a prototype implementation of EdgePlex. We perform detailed experiments using this prototype and show that EdgePlex is able to saturate the server in terms of throughput while having acceptable latency and jitter overheads. Our results lead us to believe that the EdgePlex design not only addresses the limitations of existing routers, but is also viable and can meet performance demands of production networks.</p>
+              </div>
+              <div class="publication-bibtex" id="edgeplex-bibtex" hidden aria-hidden="true">
+                <pre><code>@inproceedings{chiu2015edgeplex,
+  title = {EdgePlex: Decomposing the Provider Edge for Flexibility and Reliability},
+  author = {Chiu, Angela and Gopalakrishnan, Vijay and Han, Bo and Kablan, Murad and Spatscheck, Oliver and Wang, Chengwei and Xu, Yang},
+  booktitle = {Proceedings of the Symposium on SDN Research},
+  year = {2015},
+  doi = {10.1145/2774993.2775010}
+}</code></pre>
+              </div>
             </li>
             <li class="publication-entry">
               <a class="publication-venue-short publication-venue-link" href="https://hotmobile.org/2015/" target="_blank" rel="noopener noreferrer">HotMobile 2015</a>
@@ -1673,8 +2002,13 @@ month = apr
               <p class="publication-actions">
                 <a class="publication-button pdf" href="https://people.cs.gmu.edu/~bohan/share/Loc_HotMobile15.pdf">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1145/2699343.2699347">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="human-assisted-positioning-abstract" data-publication-toggle="human-assisted-positioning-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="human-assisted-positioning-bibtex" data-publication-toggle="human-assisted-positioning-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://dl.acm.org/doi/10.1145/2699343.2699347 -->
+              <div class="publication-abstract" id="human-assisted-positioning-abstract" hidden aria-hidden="true">
+                <p>Location information is one of the key enablers to context-aware systems and applications for mobile devices. However, most existing location sensing techniques do not work or will be significantly slowed down without infrastructure support, which limits their applicability in several cases. In this paper, we propose a localization system that works for both indoor and outdoor environments in a completely offline manner. Our system leverages human users' perception of nearby textual signs, without using GPS, Wi-Fi, cellular, and Internet. It enables several important use cases, such as offline localization on wearable devices. Based on real data collected from Google Street View and OpenStreetMap, we examine the feasibility of our approach. The preliminary result was encouraging. Our system was able to achieve higher than 90% accuracy with only 4 iterations even when the speech recognition accuracy is 70%, requiring very small storage space, and consuming 44% less instantaneous power compared to GPS.</p>
+              </div>
               <div class="publication-bibtex" id="human-assisted-positioning-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Han_2015, series={HotMobile ’15}, title={Human Assisted Positioning Using Textual Signs}, url={http://dx.doi.org/10.1145/2699343.2699347}, DOI={10.1145/2699343.2699347}, booktitle={Proceedings of the 16th International Workshop on Mobile Computing Systems and Applications}, publisher={ACM}, author={Han, Bo and Qian, Feng and Ra, Moo-Ryong}, year={2015}, month=Feb, pages={87–92}, collection={HotMobile ’15} }</code></pre>
               </div>
@@ -1686,9 +2020,15 @@ month = apr
               <p class="publication-authors"><strong>Bo Han</strong>, Jian Li, and Aravind Srinivasan</p>
               <p class="publication-venue-line">IEEE Transactions on Mobile Computing.</p>
               <p class="publication-actions">
+                <a class="publication-button pdf" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=6849499">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1109/tmc.2014.2333749">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="device-discovery-energy-abstract" data-publication-toggle="device-discovery-energy-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="device-discovery-energy-bibtex" data-publication-toggle="device-discovery-energy-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://ieeexplore.ieee.org/document/6849499 -->
+              <div class="publication-abstract" id="device-discovery-energy-abstract" hidden aria-hidden="true">
+                <p>In this paper, we propose an energy efficient device discovery protocol, eDiscovery, as the first step to bootstrapping opportunistic communications for smartphones, the most popular mobile devices. We chose Bluetooth over WiFi as the underlying wireless technology of device discovery, based on our measurement study of their operational power at different states on smartphones. eDiscovery adaptively changes the duration and interval of Bluetooth inquiry in dynamic environments, by leveraging history information of discovered peers. We implement a prototype of eDiscovery on Nokia N900 smartphones and evaluate its performance in three different environments. To the best of our knowledge, we are the first to conduct extensive performance evaluation of Bluetooth device discovery in the wild. Our experimental results demonstrate that compared with a scheme with constant inquiry duration and interval, eDiscovery can save around 44 percent energy at the expense of discovering only about 21 percent less peers. The results also show that eDiscovery performs better than other existing schemes, by discovering more peers and consuming less energy. We also verify the experimental results through extensive simulation studies in the ns-2 simulator.</p>
+              </div>
               <div class="publication-bibtex" id="device-discovery-energy-bibtex" hidden aria-hidden="true">
                 <pre><code>@article{Han_2015, title={On the Energy Efficiency of Device Discovery in Mobile Opportunistic Networks: A Systematic Approach}, volume={14}, ISSN={1536-1233}, url={http://dx.doi.org/10.1109/tmc.2014.2333749}, DOI={10.1109/tmc.2014.2333749}, number={4}, journal={IEEE Transactions on Mobile Computing}, publisher={Institute of Electrical and Electronics Engineers (IEEE)}, author={Han, Bo and Li, Jian and Srinivasan, Aravind}, year={2015}, month=Apr, pages={786–799} }</code></pre>
               </div>
@@ -1700,9 +2040,15 @@ month = apr
               <p class="publication-authors"><strong>Bo Han</strong>, Vijay Gopalakrishnan, Lusheng Ji, and Seungjoon Lee</p>
               <p class="publication-venue-line">IEEE Communications Magazine.</p>
               <p class="publication-actions">
+                <a class="publication-button pdf" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=7045396">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1109/mcom.2015.7045396">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="nfv-innovations-abstract" data-publication-toggle="nfv-innovations-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="nfv-innovations-bibtex" data-publication-toggle="nfv-innovations-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://ieeexplore.ieee.org/document/7045396 -->
+              <div class="publication-abstract" id="nfv-innovations-abstract" hidden aria-hidden="true">
+                <p>Network function virtualization was recently proposed to improve the flexibility of network service provisioning and reduce the time to market of new services. By leveraging virtualization technologies and commercial off-the-shelf programmable hardware, such as general-purpose servers, storage, and switches, NFV decouples the software implementation of network functions from the underlying hardware. As an emerging technology, NFV brings several challenges to network operators, such as the guarantee of network performance for virtual appliances, their dynamic instantiation and migration, and their efficient placement. In this article, we provide a brief overview of NFV, explain its requirements and architectural framework, present several use cases, and discuss the challenges and future directions in this burgeoning research area.</p>
+              </div>
               <div class="publication-bibtex" id="nfv-innovations-bibtex" hidden aria-hidden="true">
                 <pre><code>@article{Han_2015, title={Network function virtualization: Challenges and opportunities for innovations}, volume={53}, ISSN={0163-6804}, url={http://dx.doi.org/10.1109/mcom.2015.7045396}, DOI={10.1109/mcom.2015.7045396}, number={2}, journal={IEEE Communications Magazine}, publisher={Institute of Electrical and Electronics Engineers (IEEE)}, author={Han, Bo and Gopalakrishnan, Vijay and Ji, Lusheng and Lee, Seungjoon}, year={2015}, month=Feb, pages={90–97} }</code></pre>
               </div>
@@ -1714,9 +2060,15 @@ month = apr
               <p class="publication-authors">Robert Doverspike, George Clapp, Pierre Douyon, Douglas M. Freimuth, Krishna Gullapalli, Bo Han, Jeffrey Hartley, Ajay Mahimkar, Emmanuil Mavrogiorgis, James O.Connor, Jorge Pastor, K. K. Ramakrishnan, Michael E. Rauch, Mark Stadler, Ann Von Lehmen, Brian Wilson, and Sheryl L. Woodward</p>
               <p class="publication-venue-line">Journal of Optical Communications and Networking.</p>
               <p class="publication-actions">
+                <a class="publication-button pdf" href="https://opg.optica.org/jocn/viewmedia.cfm?uri=jocn-7-2-A326&amp;seq=0">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1364/jocn.7.00a326">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="sdn-bandwidth-demand-jocn-abstract" data-publication-toggle="sdn-bandwidth-demand-jocn-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="sdn-bandwidth-demand-jocn-bibtex" data-publication-toggle="sdn-bandwidth-demand-jocn-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://opg.optica.org/oe/abstract.cfm?uri=jocn-7-2-A326 -->
+              <div class="publication-abstract" id="sdn-bandwidth-demand-jocn-abstract" hidden aria-hidden="true">
+                <p>We describe bandwidth-on-demand in an evolved multilayer, software-defined networking (SDN) based cloud services model. We present motivation for using a multilayer architecture for the wide-area network (WAN). Our laboratory testbed is described, and both the hardware and management architecture are presented. We also show an initial proof-of-concept demonstration of this capability.</p>
+              </div>
               <div class="publication-bibtex" id="sdn-bandwidth-demand-jocn-bibtex" hidden aria-hidden="true">
                 <pre><code>@article{Doverspike_2014, title={Using SDN Technology to Enable Cost-Effective Bandwidth-on-Demand for Cloud Services [Invited]}, volume={7}, ISSN={1943-0639}, url={http://dx.doi.org/10.1364/jocn.7.00a326}, DOI={10.1364/jocn.7.00a326}, number={2}, journal={Journal of Optical Communications and Networking}, publisher={Optica Publishing Group}, author={Doverspike, Robert and Clapp, George and Douyon, Pierre and Freimuth, Douglas M. and Gullapalli, Krishna and Han, Bo and Hartley, Jeffrey and Mahimkar, Ajay and Mavrogiorgis, Emmanuil and O’Connor, James and Pastor, Jorge and Ramakrishnan, K. K. and Rauch, Michael E. and Stadler, Mark and Von Lehmen, Ann and Wilson, Brian and Woodward, Sheryl L.}, year={2014}, month=Dec, pages={A326} }</code></pre>
               </div>
@@ -1741,9 +2093,15 @@ month = apr
               <p class="publication-authors">Ashwin Sridharan, Rakesh K. Sinha, Rittwik Jana, <strong>Bo Han</strong>, K. K. Ramakrishnan, N. K. Shankaranarayanan, and Ioannis Broustis</p>
               <p class="publication-venue-line">In Proceedings of the 22nd IEEE International Conference on Network Protocols (ICNP 2014).</p>
               <p class="publication-actions">
+                <a class="publication-button pdf" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=6980387">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1109/icnp.2014.48">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="mptcp-fairness-abstract" data-publication-toggle="mptcp-fairness-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="mptcp-fairness-bibtex" data-publication-toggle="mptcp-fairness-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://ieeexplore.ieee.org/document/6980387 -->
+              <div class="publication-abstract" id="mptcp-fairness-abstract" hidden aria-hidden="true">
+                <p>Cellular providers are rapidly deploying multiple technologies like cell biasing, carrier aggregation, co-ordinated interference control/scheduling to improve capacity and coverage. In this paper, we explore a complementary transport layer approach based on multipath TCP that can concurrently use multiple interfaces to boost throughput of users with poor coverage and improve fairness. Multipath TCP has been recently standardized by IETF and requires no modifications to applications. It has been shown to improve fairness and throughput in wire line environments and individual user throughputs in wireless networks. However, in a wireless multi-user environment, it is not clear that it is always beneficial, as we show in this paper. Therefore, we examine if it is indeed beneficial for a service provider to judiciously decide whether to enable multiple cellular interfaces on a smart phone based on a global centralized view of its network. Alternatively, should a device decide independently based only on a local view? To quantify the network wide impact in a system where users have multiple cellular interfaces, we have developed centralized and distributed heuristic algorithms to evaluate this, particularly in the context of fairness across all the users. Our simulations and numerical models show that there are potential gains in fairness (15-30%) to be realized by judiciously enabling multipath connections at the cell edge. These gains diminish as the number of users in a cell increases or users behave greedily. We also quantify the delicate balance between throughput and fairness. Our analysis provides an intuition on which user(s) in a cellular network stand to benefit the most by enabling multiple interfaces. We also discuss LTE protocol mechanisms to enforce associations of specific interfaces to specific cells.</p>
+              </div>
               <div class="publication-bibtex" id="mptcp-fairness-bibtex" hidden aria-hidden="true">
                 <pre><code>@inproceedings{Sridharan_2014, title={Multi-path TCP: Boosting Fairness in Cellular Networks}, url={http://dx.doi.org/10.1109/icnp.2014.48}, DOI={10.1109/icnp.2014.48}, booktitle={2014 IEEE 22nd International Conference on Network Protocols}, publisher={IEEE}, author={Sridharan, Ashwin and Sinha, Rakesh K. and Jana, Rittwik and Han, Bo and Ramakrishnan, K.K. and Shankaranarayanan, N.K. and Broustis, Ioannis}, year={2014}, month=Oct, pages={275–280} }</code></pre>
               </div>
@@ -1755,9 +2113,15 @@ month = apr
               <p class="publication-authors"><strong>Bo Han</strong>, Jian Li, and Aravind Srinivasan</p>
               <p class="publication-venue-line">IEEE/ACM Transactions on Networking.</p>
               <p class="publication-actions">
+                <a class="publication-button pdf" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=6599012">PDF</a>
                 <a class="publication-button doi" href="https://doi.org/10.1109/tnet.2013.2280436">DOI</a>
+                <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="influential-mobile-users-abstract" data-publication-toggle="influential-mobile-users-abstract">ABS</button>
                 <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="influential-mobile-users-bibtex" data-publication-toggle="influential-mobile-users-bibtex">BIB</button>
               </p>
+              <!-- Abstract source: https://ieeexplore.ieee.org/document/6599012 -->
+              <div class="publication-abstract" id="influential-mobile-users-abstract" hidden aria-hidden="true">
+                <p>In this paper, we investigate the problem of identifying influential users in mobile social networks. Influential users are individuals with high centrality in their social-contact graphs. Traditional approaches find these users through centralized algorithms. However, the computational complexity of these algorithms is known to be very high, making them unsuitable for large-scale networks. We propose a lightweight and distributed protocol, iWander, to identify influential users through fixed-length random-walk sampling. We prove that random-walk sampling with O(logn) steps, where n is the number of nodes in a graph, comes quite close to sampling vertices approximately according to their degrees. To the best of our knowledge, we are the first to design a distributed protocol on mobile devices that leverages random walks for identifying influential users, although this technique has been used in other areas. The most attractive feature of iWander is its extremely low control-message overhead, which lends itself well to mobile applications. We evaluate the performance of iWander for two applications, targeted immunization of infectious diseases and target-set selection for information dissemination. Through extensive simulation studies using a real-world mobility trace, we demonstrate that targeted immunization using iWander achieves a comparable performance with a degree-based immunization policy that vaccinates users with a large number of contacts first, while generating only less than 1% of this policy's control messages. We also show that target-set selection based on iWander outperforms the random and degree-based selections for information dissemination in several scenarios.</p>
+              </div>
               <div class="publication-bibtex" id="influential-mobile-users-bibtex" hidden aria-hidden="true">
                 <pre><code>@article{Han_2014, title={Your Friends Have More Friends Than You Do: Identifying Influential Mobile Users Through Random-Walk Sampling}, volume={22}, ISSN={1558-2566}, url={http://dx.doi.org/10.1109/tnet.2013.2280436}, DOI={10.1109/tnet.2013.2280436}, number={5}, journal={IEEE/ACM Transactions on Networking}, publisher={Institute of Electrical and Electronics Engineers (IEEE)}, author={Han, Bo and Li, Jian and Srinivasan, Aravind}, year={2014}, month=Oct, pages={1389–1400} }</code></pre>
               </div>
