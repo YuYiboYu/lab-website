@@ -1498,6 +1498,25 @@ details.publication-bibtex {
   white-space: inherit;
 }
 
+.software-title-link,
+.software-title-link:link,
+.software-title-link:visited {
+  border-bottom: 0;
+  color: var(--brand-primary, #005239);
+  display: inline-block;
+  margin: 0 -0.2em;
+  padding: 0 0.2em;
+  text-decoration: none;
+}
+
+.software-title-link:hover,
+.software-title-link:focus {
+  background: var(--brand-secondary, #FFC733);
+  border-bottom: 0;
+  color: #333333;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 40em) {
   .publications-page h2 {
     font-size: 1.55rem;
