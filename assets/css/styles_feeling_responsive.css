@@ -1517,6 +1517,43 @@ details.publication-bibtex {
   text-decoration: none;
 }
 
+.software-link-icons {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 0.65rem 0 1.25rem;
+}
+
+.software-icon-link {
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid rgba(0, 82, 57, 0.32);
+  border-radius: 50%;
+  color: #005239;
+  display: inline-flex;
+  font-size: 26px;
+  font-weight: bold;
+  height: 44px;
+  justify-content: center;
+  line-height: 1;
+  min-width: 44px;
+  text-decoration: none;
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
+  width: 44px;
+}
+
+.software-icon-link::before {
+  margin: 0;
+}
+
+.software-icon-link:hover,
+.software-icon-link:focus {
+  background: #005239;
+  border-color: #005239;
+  color: #ffffff;
+}
+
 @media only screen and (max-width: 40em) {
   .publications-page h2 {
     font-size: 1.55rem;
