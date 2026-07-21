@@ -150,7 +150,7 @@ body.post > div.row.t30 [itemprop="articleSection"] {
   align-items: center;
   display: grid;
   gap: 2rem;
-  grid-template-columns: minmax(180px, 280px) minmax(0, 1fr);
+  grid-template-columns: minmax(180px, 312px) minmax(0, 1fr);
 }
 
 .home-logo {
@@ -162,7 +162,7 @@ body.post > div.row.t30 [itemprop="articleSection"] {
 .home-logo img {
   display: block;
   height: auto;
-  max-width: 260px;
+  max-width: 312px;
   width: 100%;
 }
 
@@ -221,7 +221,7 @@ body.post > div.row.t30 [itemprop="articleSection"] {
 
   .home-logo {
     margin: 0 auto;
-    max-width: 220px;
+    max-width: 264px;
   }
 
   .home-lab-info {
