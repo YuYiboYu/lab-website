@@ -374,6 +374,125 @@ body.post > div.row.t30 [itemprop="articleSection"] {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
+.funding-support-grid {
+  gap: 0.45rem;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60rem;
+}
+
+.home-logo-box.funding-support-card {
+  aspect-ratio: 1 / 1;
+  height: auto;
+  min-height: 0;
+  padding: 0.85rem;
+  text-align: center;
+  transition: none;
+  width: 100%;
+}
+
+.home-logo-box.funding-support-card:hover {
+  border-color: #d8e7df;
+  box-shadow: 0 10px 24px rgba(0, 82, 57, 0.06);
+  transform: none;
+}
+
+.home-logo-box.funding-support-card::after {
+  content: none;
+}
+
+.funding-support-logo {
+  display: block;
+  height: 72%;
+  max-height: 72%;
+  max-width: 72%;
+  object-fit: contain;
+  width: 72%;
+}
+
+.funding-support-logo--nsf,
+.funding-support-logo--att {
+  height: 88%;
+  max-height: 88%;
+  max-width: 88%;
+  width: 88%;
+}
+
+.funding-support-logo--att {
+  height: 84%;
+  max-height: 84%;
+  max-width: 84%;
+  width: 84%;
+}
+
+.funding-support-text {
+  color: #123f31;
+  display: block;
+  font-family: "Montserrat", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1.1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.collaborators-section {
+  background: #f7f9f8;
+}
+
+.collaborators-grid {
+  gap: 0.45rem;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60rem;
+}
+
+.home-logo-box.collaborator-card {
+  aspect-ratio: 1 / 1;
+  height: auto;
+  min-height: 0;
+  padding: 0.85rem;
+  text-align: center;
+  transition: none;
+  width: 100%;
+}
+
+.home-logo-box.collaborator-card:hover {
+  border-color: #d8e7df;
+  box-shadow: 0 10px 24px rgba(0, 82, 57, 0.06);
+  transform: none;
+}
+
+.home-logo-box.collaborator-card::after {
+  content: none;
+}
+
+.collaborator-logo {
+  display: block;
+  height: 76%;
+  max-height: 76%;
+  max-width: 86%;
+  object-fit: contain;
+  width: 86%;
+}
+
+.collaborator-text {
+  color: #123f31;
+  display: block;
+  font-family: "Montserrat", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1.1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  text-align: center;
+  white-space: nowrap;
+}
+
 .home-collaborator-grid {
   gap: 0.65rem;
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -564,6 +683,16 @@ body.post > div.row.t30 [itemprop="articleSection"] {
     grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
   }
 
+  .funding-support-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 33rem;
+  }
+
+  .collaborators-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 33rem;
+  }
+
   .home-collaborator-grid .home-logo-box {
     grid-column: auto;
   }
@@ -592,6 +721,16 @@ body.post > div.row.t30 [itemprop="articleSection"] {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 
+  .funding-support-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 22rem;
+  }
+
+  .collaborators-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 22rem;
+  }
+
   .home-mission-band {
     padding: 2.35rem 0;
   }
@@ -609,6 +748,31 @@ body.post > div.row.t30 [itemprop="articleSection"] {
     padding: 0.95rem 1rem 1.25rem;
   }
 
+  .home-logo-box.funding-support-card {
+    min-height: 0;
+    padding: 0.75rem;
+  }
+
+  .home-logo-box.collaborator-card {
+    min-height: 0;
+    padding: 0.75rem;
+  }
+
+  .funding-support-logo--nsf,
+  .funding-support-logo--att {
+    height: 88%;
+    max-height: 88%;
+    max-width: 88%;
+    width: 88%;
+  }
+
+  .funding-support-logo--att {
+    height: 84%;
+    max-height: 84%;
+    max-width: 84%;
+    width: 84%;
+  }
+
   .mock-logo-name {
     font-size: 1rem;
   }
@@ -622,6 +786,16 @@ body.post > div.row.t30 [itemprop="articleSection"] {
   .home-sponsor-grid.sponsor-logo-grid-compact,
   .home-collaborator-grid {
     grid-template-columns: 1fr !important;
+  }
+
+  .funding-support-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 22rem;
+  }
+
+  .collaborators-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 22rem;
   }
 }
 
