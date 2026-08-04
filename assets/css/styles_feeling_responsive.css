@@ -480,6 +480,25 @@ body.post > div.row.t30 [itemprop="articleSection"] {
   width: 86%;
 }
 
+.home-logo-box.logo-meta img {
+  height: 76%;
+  max-height: 76%;
+  max-width: 86%;
+  object-fit: contain;
+  object-position: center;
+  width: 86%;
+}
+
+.home-logo-box.logo-ut-austin .collaborator-logo,
+.home-logo-box.logo-mit-media-lab .collaborator-logo {
+  height: 90%;
+  max-height: 90%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+}
+
 .collaborator-text {
   color: #123f31;
   display: block;
