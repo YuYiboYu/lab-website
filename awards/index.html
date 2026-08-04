@@ -19,7 +19,7 @@
 		}
 
 		.awards-page .awards-section {
-			margin-top: 2.25rem;
+			margin-top: 1.25rem;
 		}
 
 		.awards-page .awards-section h2 {
@@ -42,12 +42,31 @@
 			border: 1px solid rgba(0, 82, 57, 0.14);
 			border-left: 4px solid var(--awards-green);
 			border-radius: 6px;
+			cursor: pointer;
 			display: grid;
 			gap: 0.75rem 1.1rem;
 			grid-template-columns: minmax(8.75rem, 9.5rem) minmax(0, 1fr);
 			margin: 0;
 			min-height: 12rem;
 			padding: 0.95rem 1rem;
+			transition: background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+		}
+
+		.awards-page .awards-list > li:hover {
+			border-color: rgba(0, 82, 57, 0.24);
+			box-shadow: 0 4px 12px rgba(0, 82, 57, 0.1);
+		}
+
+		.awards-page .awards-list > li.is-selected {
+			background: #fffdf4;
+			border-color: rgba(0, 82, 57, 0.22);
+			border-left-color: var(--brand-secondary, #fabb00);
+			box-shadow: 0 2px 8px rgba(0, 82, 57, 0.08);
+		}
+
+		.awards-page .awards-list > li:focus-visible {
+			outline: 3px solid rgba(250, 187, 0, 0.55);
+			outline-offset: 3px;
 		}
 
 		.awards-page .awards-media {
@@ -89,6 +108,17 @@
 			min-height: 5.25rem;
 			padding: 0.55rem;
 			text-align: center;
+			width: 100%;
+		}
+
+		.awards-page .awards-image-placeholder img {
+			display: block;
+			height: 100%;
+			margin: auto;
+			max-height: 150px;
+			max-width: 150px;
+			object-fit: contain;
+			object-position: center;
 			width: 100%;
 		}
 
@@ -385,49 +415,12 @@
 			<div class="awards-page">
   <p class="awards-intro">Selected research grants and awards for the lab. Demo entries are included as placeholders for the initial page structure.</p>
 
-  <section class="awards-section" aria-labelledby="research-grants">
-    <h2 id="research-grants">Research Grants</h2>
-    <ul class="awards-list">
-      <li>
-        <div class="awards-media">
-          <div class="awards-year">2026</div>
-          <div class="awards-image-placeholder">Image Placeholder</div>
-        </div>
-        <div>
-          <p class="awards-title">Demo Research Grant on Mobile and Immersive Networking Technologies</p>
-          <p class="awards-meta">National Science Foundation, PI: Bo Han, Amount: TBD</p>
-        </div>
-      </li>
-      <li>
-        <div class="awards-media">
-          <div class="awards-year">2025</div>
-          <div class="awards-image-placeholder">Image Placeholder</div>
-        </div>
-        <div>
-          <p class="awards-title">Demo Collaborative Research Grant on Extended Reality and Edge Computing</p>
-          <p class="awards-meta">National Science Foundation, PI: Bo Han, co-PI: TBD, Amount: TBD</p>
-        </div>
-      </li>
-      <li>
-        <div class="awards-media">
-          <div class="awards-year">2024</div>
-          <div class="awards-image-placeholder">Image Placeholder</div>
-        </div>
-        <div>
-          <p class="awards-title">Demo Seed Grant on Human-AI Interaction and Networked Systems</p>
-          <p class="awards-meta">George Mason University, PI: Bo Han, Amount: TBD</p>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-  <section class="awards-section" aria-labelledby="awards">
-    <h2 id="awards">Awards</h2>
+  <section class="awards-section">
     <ul class="awards-list">
       <li>
         <div class="awards-media">
           <div class="awards-year">2025</div>
-          <div class="awards-image-placeholder">Image Placeholder</div>
+          <div class="awards-image-placeholder"><img src="../images/logos/NSF_logo.png" alt="National Science Foundation logo" loading="lazy" decoding="async"></div>
         </div>
         <div>
           <p class="awards-title"><a href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2449446" target="_blank" rel="noopener noreferrer">POSE: Phase I: OpenCIVAN: Scoping and Planning for an Open-Source Ecosystem for Collaborative and Immersive Visualization and Analytics in a Networked Environment</a></p>
@@ -439,7 +432,7 @@
       <li>
         <div class="awards-media">
           <div class="awards-year">2025</div>
-          <div class="awards-image-placeholder">Image Placeholder</div>
+          <div class="awards-image-placeholder"><img src="../images/logos/NSF_logo.png" alt="National Science Foundation logo" loading="lazy" decoding="async"></div>
         </div>
         <div>
           <p class="awards-title"><a href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2437203" target="_blank" rel="noopener noreferrer">Collaborative Research: NeTS: Small: Revolutionizing Immersive Video Streaming with Neural Content Representation</a></p>
@@ -451,7 +444,7 @@
       <li>
         <div class="awards-media">
           <div class="awards-year">2024</div>
-          <div class="awards-image-placeholder">Image Placeholder</div>
+          <div class="awards-image-placeholder"><img src="../images/logos/NSF_logo.png" alt="National Science Foundation logo" loading="lazy" decoding="async"></div>
         </div>
         <div>
           <p class="awards-title"><a href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2402992" target="_blank" rel="noopener noreferrer">Collaborative Research: NeTS: Medium: Scaling up Multi-user Immersive Content Delivery over mmWave</a></p>
@@ -463,7 +456,7 @@
       <li>
         <div class="awards-media">
           <div class="awards-year">2023</div>
-          <div class="awards-image-placeholder">Image Placeholder</div>
+          <div class="awards-image-placeholder"><img src="../images/logos/NSF_logo.png" alt="National Science Foundation logo" loading="lazy" decoding="async"></div>
         </div>
         <div>
           <p class="awards-title"><a href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2235049" target="_blank" rel="noopener noreferrer">Collaborative Research: CCRI: New: CoMIC: A Collaborative Mobile Immersive Computing Research Infrastructure for Multi-user XR</a></p>
@@ -475,7 +468,7 @@
       <li>
         <div class="awards-media">
           <div class="awards-year">2022</div>
-          <div class="awards-image-placeholder">Image Placeholder</div>
+          <div class="awards-image-placeholder"><img src="../images/logos/NSF_logo.png" alt="National Science Foundation logo" loading="lazy" decoding="async"></div>
         </div>
         <div>
           <p class="awards-title"><a href="https://www.nsf.gov/awardsearch/show-award?AWD_ID=2212296" target="_blank" rel="noopener noreferrer">Collaborative Research: CNS Core: Medium: Innovating Volumetric Video Streaming with Motion Forecasting, Intelligent Upsampling, and QoE Modeling</a></p>
@@ -582,6 +575,68 @@
 
 
 <script src="https://yuyiboyu.github.io/lab-website/assets/js/javascript.min.js"></script>
+
+<script>
+  (function () {
+    function onReady(callback) {
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', callback);
+        return;
+      }
+
+      callback();
+    }
+
+    function isInteractiveElement(target) {
+      while (target && target !== document) {
+        if (target.matches && target.matches('a, button, input, select, textarea, summary, [role="button"]')) {
+          return true;
+        }
+
+        target = target.parentElement;
+      }
+
+      return false;
+    }
+
+    onReady(function () {
+      var page = document.querySelector('.awards-page');
+
+      if (!page) {
+        return;
+      }
+
+      var cards = Array.prototype.slice.call(page.querySelectorAll('.awards-list > li'));
+
+      function selectCard(selectedCard) {
+        cards.forEach(function (card) {
+          card.classList.toggle('is-selected', card === selectedCard);
+        });
+      }
+
+      cards.forEach(function (card) {
+        card.setAttribute('tabindex', '0');
+
+        card.addEventListener('click', function (event) {
+          if (isInteractiveElement(event.target)) {
+            return;
+          }
+
+          selectCard(card);
+        });
+
+        card.addEventListener('keydown', function (event) {
+          if (event.target !== card || (event.key !== 'Enter' && event.key !== ' ')) {
+            return;
+          }
+
+          event.preventDefault();
+          selectCard(card);
+        });
+      });
+    });
+  }());
+</script>
 
 
 
