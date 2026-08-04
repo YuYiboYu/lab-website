@@ -942,16 +942,23 @@ body.post > .research-projects-row [itemprop="articleSection"] {
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 82, 57, 0.07);
   box-sizing: border-box;
-  cursor: pointer;
   min-width: 0;
   padding: 1.35rem;
   transition: background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
 .research-projects-page .research-area-card:hover,
-.research-projects-page .project-card:hover {
-  border-color: rgba(0, 82, 57, 0.24);
-  box-shadow: 0 4px 12px rgba(0, 82, 57, 0.1);
+.research-projects-page .research-area-card:focus-within,
+.research-projects-page .project-card:hover,
+.research-projects-page .project-card:focus-within {
+  background: #fffdf4;
+  border-color: rgba(0, 82, 57, 0.22);
+  box-shadow: 0 2px 8px rgba(0, 82, 57, 0.08);
+}
+
+.research-projects-page .research-area-card:hover,
+.research-projects-page .research-area-card:focus-within {
+  border-top-color: var(--brand-secondary, #fabb00);
 }
 
 .research-projects-page .research-area-card {
@@ -975,32 +982,9 @@ body.post > .research-projects-row [itemprop="articleSection"] {
   transition: background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
-.research-projects-page .project-card:hover {
-  background: #fff;
-  border-color: rgba(0, 82, 57, 0.24);
-  border-left-color: rgba(0, 82, 57, 0.62);
-  box-shadow: 0 4px 12px rgba(0, 82, 57, 0.1);
-}
-
-.research-projects-page .research-area-card.is-selected,
-.research-projects-page .project-card.is-selected {
-  background: #fffdf4;
-  border-color: rgba(0, 82, 57, 0.22);
-  box-shadow: 0 2px 8px rgba(0, 82, 57, 0.08);
-}
-
-.research-projects-page .research-area-card.is-selected {
-  border-top-color: var(--brand-secondary, #fabb00);
-}
-
-.research-projects-page .project-card.is-selected {
+.research-projects-page .project-card:hover,
+.research-projects-page .project-card:focus-within {
   border-left-color: var(--brand-secondary, #fabb00);
-}
-
-.research-projects-page .research-area-card:focus-visible,
-.research-projects-page .project-card:focus-visible {
-  outline: 3px solid rgba(250, 187, 0, 0.55);
-  outline-offset: 3px;
 }
 
 .research-projects-page .research-area-card h3,
@@ -1761,8 +1745,7 @@ body.video cite a,
   transition: background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
-.publication-entry:hover,
-.publication-entry.is-selected {
+.publication-entry:hover {
   background: #fffdf4;
   border-color: rgba(0, 82, 57, 0.22);
   border-left-color: var(--brand-secondary);

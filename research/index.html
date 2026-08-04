@@ -469,68 +469,6 @@
 
 <script src="https://yuyiboyu.github.io/lab-website/assets/js/javascript.min.js"></script>
 
-<script>
-  (function () {
-    function onReady(callback) {
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', callback);
-        return;
-      }
-
-      callback();
-    }
-
-    function isInteractiveElement(target) {
-      while (target && target !== document) {
-        if (target.matches && target.matches('a, button, input, select, textarea, summary, [role="button"]')) {
-          return true;
-        }
-
-        target = target.parentElement;
-      }
-
-      return false;
-    }
-
-    onReady(function () {
-      var page = document.querySelector('.research-projects-page');
-
-      if (!page) {
-        return;
-      }
-
-      var cards = Array.prototype.slice.call(page.querySelectorAll('.research-area-card, .project-card'));
-
-      function selectCard(selectedCard) {
-        cards.forEach(function (card) {
-          card.classList.toggle('is-selected', card === selectedCard);
-        });
-      }
-
-      cards.forEach(function (card) {
-        card.setAttribute('tabindex', '0');
-
-        card.addEventListener('click', function (event) {
-          if (isInteractiveElement(event.target)) {
-            return;
-          }
-
-          selectCard(card);
-        });
-
-        card.addEventListener('keydown', function (event) {
-          if (event.target !== card || (event.key !== 'Enter' && event.key !== ' ')) {
-            return;
-          }
-
-          event.preventDefault();
-          selectCard(card);
-        });
-      });
-    });
-  }());
-</script>
-
 
 
 
