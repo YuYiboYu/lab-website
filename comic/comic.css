@@ -1,18 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
 :root {
-  --mint-green: #005239;
-  --mint-green-dark: #005239;
-  --mint-yellow: #FFC733;
-  --mint-text: #333333;
-  --mint-muted: #565656;
+  --gmu-green: #005239;
+  --gmu-gold: #FFC733;
+  --gmu-black: #333333;
+  --mint-green: var(--gmu-green);
+  --mint-green-dark: var(--gmu-green);
+  --mint-yellow: var(--gmu-gold);
+  --mint-text: var(--gmu-black);
+  --mint-muted: var(--gmu-black);
   --mint-page: #fdfdfd;
   --mint-soft: #f8fbf9;
   --mint-surface: #ffffff;
   --mint-border: rgba(0, 82, 57, 0.14);
   --mint-border-strong: rgba(0, 82, 57, 0.22);
   --mint-border-ui: rgba(0, 82, 57, 0.18);
-  --mint-card-accent: rgba(0, 82, 57, 0.62);
+  --mint-card-accent: var(--gmu-green);
   --mint-card-hover: #fffdf4;
   --mint-card-shadow: 0 2px 8px rgba(0, 82, 57, 0.08);
   --mint-card-radius: 6px;
@@ -32,12 +35,71 @@
   --comic-gold: var(--mint-yellow);
   background: var(--mint-page);
   color: var(--mint-text);
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.5;
   margin: 0;
   min-width: 0;
   overflow-x: hidden;
+}
+
+.comic-site-body button,
+.comic-site-body input,
+.comic-site-body select,
+.comic-site-body textarea {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.comic-site-body p {
+  color: var(--mint-text);
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  margin-top: 0;
+}
+
+.comic-site-body h1,
+.comic-site-body h2,
+.comic-site-body h3,
+.comic-site-body h4,
+.comic-site-body h5,
+.comic-site-body h6 {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 1.4;
+  padding: 0;
+  text-transform: none;
+}
+
+.comic-site-body :where(h1) {
+  font-size: 2.441em;
+  margin-top: 0;
+}
+
+.comic-site-body :where(h2) {
+  font-size: 1.953em;
+  margin: 1.563em 0 0;
+}
+
+.comic-site-body :where(h3) {
+  font-size: 1.563em;
+  margin: 1.152em 0 0;
+}
+
+.comic-site-body :where(h4) {
+  font-size: 1.25em;
+  margin: 1.152em 0 0;
+}
+
+.comic-site-body :where(h5) {
+  font-size: 1.152em;
+  margin: 1em 0 0;
 }
 
 .comic-site-body *,
@@ -49,7 +111,7 @@
 .comic-site-body a {
   border-bottom: 1px dotted var(--mint-green);
   color: var(--mint-green);
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: none;
   transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
 }
@@ -57,7 +119,7 @@
 .comic-site-body a:hover,
 .comic-site-body a:focus {
   border-bottom-color: var(--mint-yellow);
-  color: var(--mint-green);
+  color: var(--mint-text);
 }
 
 .comic-site-body a:focus-visible,
@@ -110,9 +172,9 @@
 }
 
 .comic-site-header {
-  background: var(--mint-green);
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-  color: #ffffff;
+  background: var(--mint-surface);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12);
+  color: var(--mint-green);
 }
 
 .comic-site-header-inner {
@@ -125,32 +187,33 @@
 .comic-site-brand {
   align-items: center;
   border-bottom: 0;
-  color: #ffffff;
+  color: var(--mint-green);
   display: inline-flex;
-  min-height: 4.25rem;
-  padding: 0.7rem 0;
+  min-height: 50px;
+  padding: 0;
   text-decoration: none;
 }
 
 .comic-site-brand:hover,
 .comic-site-brand:focus {
   border-bottom: 0;
-  color: #ffffff;
+  color: var(--mint-green);
 }
 
 .comic-site-brand-name {
-  color: #ffffff;
+  color: var(--mint-green);
   display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 1;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1.1875rem;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 50px;
 }
 
 .comic-site-nav {
-  background: var(--mint-green);
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: var(--mint-surface);
+  border-top: 1px solid var(--mint-border);
+  font-family: "Montserrat", Arial, sans-serif;
   margin-left: calc(50% - 50vw);
   overflow-x: auto;
   width: 100vw;
@@ -175,16 +238,17 @@
 
 .comic-site-body .comic-site-nav a.comic-site-nav-link {
   align-items: center;
-  background: transparent;
+  background: var(--mint-surface);
   border: 0;
-  color: #ffffff;
+  color: var(--mint-green);
   display: inline-flex;
-  font-size: 0.86rem;
-  font-weight: 700;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 500;
   justify-content: center;
-  letter-spacing: 0.02em;
-  line-height: 1.2;
-  min-height: 3.1rem;
+  letter-spacing: normal;
+  line-height: 45px;
+  min-height: 45px;
   padding: 0 1rem;
   text-align: center;
   text-decoration: none;
@@ -197,14 +261,14 @@
 .comic-site-body .comic-site-nav a.comic-site-nav-link:hover,
 .comic-site-body .comic-site-nav a.comic-site-nav-link:focus {
   background: var(--mint-yellow);
-  color: var(--mint-text);
+  color: var(--mint-green-dark);
 }
 
 .comic-site-body .comic-site-nav a.comic-site-nav-link-active,
 .comic-site-body .comic-site-nav a.comic-site-nav-link-active:hover,
 .comic-site-body .comic-site-nav a.comic-site-nav-link-active:focus {
-  background: rgba(0, 0, 0, 0.16);
-  box-shadow: inset 0 -3px 0 var(--mint-yellow);
+  background: var(--mint-green);
+  box-shadow: none;
   color: #ffffff;
 }
 
@@ -217,17 +281,17 @@
 
 .comic-hero {
   display: grid;
-  gap: 1rem;
+  gap: 0;
   grid-template-columns: minmax(0, 1fr);
 }
 
-.comic-page-heading {
+.comic-site-body .comic-page-heading {
   color: var(--mint-green);
-  font-size: clamp(2rem, 4vw, 2.441rem);
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 1.15;
-  margin: 0;
+  font-size: 2.441em;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.4;
+  margin: 0 0 0.5rem;
   max-width: 58rem;
 }
 
@@ -237,8 +301,10 @@
 
 .comic-lede {
   color: var(--mint-text);
-  font-size: 1.02rem;
-  line-height: 1.65;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.6;
   margin: 0;
   max-width: 56rem;
 }
@@ -247,19 +313,26 @@
   margin-top: 2.25rem;
 }
 
-.comic-section-title,
+.comic-site-body .comic-section-title,
 .comic-publications-page .comic-publication-year {
   align-items: center;
   color: var(--mint-green);
   display: flex;
-  font-size: 1.55rem;
-  font-weight: 700;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 600;
   gap: 0.75rem;
-  line-height: 1.25;
+  letter-spacing: normal;
+  line-height: 1.4;
   margin: 0 0 1rem;
 }
 
-.comic-section-title::after,
+.comic-site-body .comic-section-title {
+  font-size: 1.953em;
+  margin-bottom: 1.25rem;
+  margin-top: 1.563em;
+}
+
+.comic-site-body .comic-section-title::after,
 .comic-publications-page .comic-publication-year::after {
   background: rgba(0, 82, 57, 0.2);
   content: "";
@@ -317,8 +390,10 @@
 .comic-figure figcaption {
   border-top: 1px solid var(--mint-border);
   color: var(--mint-muted);
-  font-size: 0.9rem;
-  line-height: 1.45;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.5;
   padding: 0.75rem 0.95rem;
 }
 
@@ -330,7 +405,7 @@
   color: var(--mint-green);
   display: inline-flex;
   font-size: 0.86rem;
-  font-weight: 700;
+  font-weight: 600;
   justify-content: center;
   line-height: 1;
   min-height: 2rem;
@@ -368,18 +443,18 @@
   color: var(--mint-green);
   display: inline-flex;
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 600;
   height: 2rem;
   justify-content: center;
   line-height: 1;
   width: 2rem;
 }
 
-.comic-card-title {
+.comic-site-body .comic-card-title {
   color: var(--mint-green);
-  font-size: 1.08rem;
-  font-weight: 700;
-  line-height: 1.35;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
   margin: 0.85rem 0 0.45rem;
 }
 
@@ -434,7 +509,7 @@
   display: inline-flex;
   font: inherit;
   font-size: 0.84rem;
-  font-weight: 700;
+  font-weight: 600;
   justify-content: center;
   letter-spacing: 0;
   line-height: 1.15;
@@ -516,7 +591,7 @@
   color: var(--mint-green);
   display: flex;
   font-size: 0.82rem;
-  font-weight: 700;
+  font-weight: 600;
   grid-column: 1;
   grid-row: 1;
   justify-content: center;
@@ -536,10 +611,10 @@
   background: rgba(0, 82, 57, 0.05);
   border: 1px solid rgba(0, 82, 57, 0.16);
   border-radius: 4px;
-  color: rgba(0, 82, 57, 0.62);
+  color: var(--mint-green);
   display: flex;
   font-size: 0.78rem;
-  font-weight: 700;
+  font-weight: 600;
   grid-column: 1;
   grid-row: 2;
   justify-content: center;
@@ -581,7 +656,8 @@
 }
 
 .comic-publications-page .comic-publication-title strong {
-  font-weight: 700;
+  color: var(--mint-green);
+  font-weight: 600;
 }
 
 .comic-publications-page .comic-publication-authors {
@@ -621,7 +697,7 @@
   color: var(--mint-green);
   display: inline-flex;
   font-size: 0.84rem;
-  font-weight: 700;
+  font-weight: 600;
   justify-content: center;
   line-height: 1.3;
   padding: 0.4rem 0.55rem;
@@ -645,8 +721,11 @@
 }
 
 .comic-site-footer-inner {
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: 0.8125rem;
-  font-weight: 300;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.6;
   margin: 0 auto;
   max-width: var(--comic-container);
   padding: 1.875rem 0 1.25rem;
@@ -655,6 +734,7 @@
 
 .comic-site-footer p {
   color: #ffffff;
+  font: inherit;
   margin: 0;
 }
 
@@ -684,14 +764,6 @@
     width: calc(100% - 32px);
   }
 
-  .comic-site-brand {
-    min-height: 3.8rem;
-  }
-
-  .comic-site-brand-name {
-    font-size: 1.75rem;
-  }
-
   .comic-site-nav {
     margin-left: calc(50% - 50vw);
   }
@@ -701,8 +773,6 @@
   }
 
   .comic-site-body .comic-site-nav a.comic-site-nav-link {
-    font-size: 0.8rem;
-    min-height: 2.85rem;
     padding: 0 0.85rem;
   }
 
@@ -710,25 +780,11 @@
     padding: 2rem 0 2.75rem;
   }
 
-  .comic-page-heading,
-  .comic-page-heading-small {
-    font-size: 1.85rem;
-  }
-
-  .comic-lede {
-    font-size: 0.98rem;
-  }
-
   .comic-section {
     margin-top: 1.8rem;
   }
 
-  .comic-section-title,
-  .comic-publications-page .comic-publication-year {
-    font-size: 1.35rem;
-  }
-
-  .comic-section-title::after,
+  .comic-site-body .comic-section-title::after,
   .comic-publications-page .comic-publication-year::after {
     height: 1px;
   }
