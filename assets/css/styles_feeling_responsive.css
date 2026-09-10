@@ -1060,6 +1060,14 @@ body.post > .research-projects-row [itemprop="articleSection"] {
   width: 180px;
 }
 
+.research-projects-page .project-media img.project-image-contain {
+  aspect-ratio: 3 / 2;
+  background: #fff;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
 .research-projects-page .project-content {
   align-self: start;
   display: flex;
