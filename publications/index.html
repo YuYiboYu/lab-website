@@ -284,39 +284,101 @@
             <button class="publication-filter-button" type="button" data-filter="2010-earlier" aria-pressed="false">2010 and earlier</button>
           </div>
 
-          <section class="publication-year-section" data-year="forthcoming">
-          <h2 id="publications-forthcoming">Forthcoming</h2>
-          <ol class="publication-list">
-            <li class="publication-entry">
-              <div class="publication-entry-side">
-                <a class="publication-venue-short publication-venue-link" href="https://www.comsoc.org/publications/magazines/ieee-network" target="_blank" rel="noopener noreferrer">IEEE Network Magazine</a>
-              </div>
-              <div class="publication-entry-main">
-                <p class="publication-title"><strong>Real-time Human and Generative AI Interaction: Network Challenges and Opportunities</strong></p>
-                <p class="publication-authors">Ruizhi Cheng, Guowu Xie, and <strong>Bo Han</strong></p>
-                <p class="publication-venue-line">To appear in IEEE Network Magazine.</p>
-              </div>
-            </li>
-          </ol>
-          </section>
-
           <section class="publication-year-section" data-year="2026">
           <h2 id="publications-2026">2026</h2>
           <h3>Journal Articles</h3>
           <ol class="publication-list publication-list-2026">
             <li class="publication-entry publication-entry-2026">
               <div class="publication-entry-side">
+                <a class="publication-venue-short publication-venue-link" href="https://www.comsoc.org/publications/magazines/ieee-network" target="_blank" rel="noopener noreferrer">IEEE Network 2026</a>
+                <p class="publication-actions">
+                  <a class="publication-button pdf" href="/lab-website/assets/pdf/real-time-human-genai-ieee-network-2026.pdf">PDF</a>
+                  <a class="publication-button doi" href="https://doi.org/10.1109/MNET.2026.3656136">DOI</a>
+                  <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="real-time-human-genai-abstract" data-publication-toggle="real-time-human-genai-abstract">ABS</button>
+                  <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="real-time-human-genai-bibtex" data-publication-toggle="real-time-human-genai-bibtex">BIB</button>
+                </p>
+              </div>
+              <div class="publication-entry-main">
+                <p class="publication-title"><strong>Real-Time Human and Generative AI Interaction: Network Challenges and Opportunities</strong></p>
+                <p class="publication-authors">Ruizhi Cheng, Guowu Xie, and <strong>Bo Han</strong></p>
+                <p class="publication-venue-line">IEEE Network, 2026.</p>
+              </div>
+              <div class="publication-abstract" id="real-time-human-genai-abstract" hidden aria-hidden="true">
+                <p>The rapid rise of real-time, audio/video-based interactions between humans and generative AI (GenAI) introduces fundamental challenges for today's network infrastructure. Our measurement study, combined with an in-depth analysis of existing deployments, reveals two key shortcomings in the current system design for human and GenAI interaction. First, they fall short of providing fast and robust network adaptation, resulting in a degraded user experience under dynamic and lossy network conditions. Second, existing platforms adopt inconsistent and ad hoc transport-layer strategies to reuse legacy architectures that are ill-suited for the unique traffic patterns of human and GenAI interactions. To address these challenges, we first propose leveraging the network edge as an intelligent relay between users and GenAI backends to perform key network adaptation tasks such as congestion control. This architecture shortens the length of the path that network adaptation mechanisms must handle, improving their effectiveness. We further analyze the tradeoffs between various transmission paradigms across different network segments and identify the proper strategy for each. Preliminary results from our proof-of-concept implementation demonstrate the feasibility of this architecture for empowering real-time human and GenAI interaction.</p>
+              </div>
+              <div class="publication-bibtex" id="real-time-human-genai-bibtex" hidden aria-hidden="true">
+                <pre><code>@article{cheng2026realtime,
+  author  = {Ruizhi Cheng and Guowu Xie and Bo Han},
+  title   = {Real-Time Human and Generative AI Interaction: Network Challenges and Opportunities},
+  journal = {IEEE Network},
+  year    = {2026},
+  doi     = {10.1109/MNET.2026.3656136}
+}</code></pre>
+              </div>
+            </li>
+            <li class="publication-entry publication-entry-2026">
+              <div class="publication-entry-side">
                 <p class="publication-venue-short">IEEE Internet Computing 2026</p>
+                <p class="publication-actions">
+                  <a class="publication-button pdf" href="../assets/pdf/ai-native-immersive-computing-2026.pdf">PDF</a>
+                  <a class="publication-button doi" href="https://doi.org/10.1109/MIC.2026.3687654">DOI</a>
+                  <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="ai-native-immersive-computing-abstract" data-publication-toggle="ai-native-immersive-computing-abstract">ABS</button>
+                  <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="ai-native-immersive-computing-bibtex" data-publication-toggle="ai-native-immersive-computing-bibtex">BIB</button>
+                </p>
               </div>
               <div class="publication-entry-main">
                 <p class="publication-title"><strong>AI-Native Immersive Computing: Toward Scalable, Intelligent, and Trustworthy Digital&ndash;Physical Continuums</strong></p>
                 <p class="publication-authors"><strong>Bo Han</strong>, Amitabh Varshney, and Songqing Chen</p>
                 <p class="publication-venue-line">IEEE Internet Computing, Volume 30, Issue 3, pages 94&ndash;102, 2026.</p>
               </div>
+              <div class="publication-abstract" id="ai-native-immersive-computing-abstract" hidden aria-hidden="true">
+                <p>Immersive computing is emerging as the next-generation computing paradigm, yet current systems are hindered by fragmented multimodal intelligence, siloed design, rigid infrastructure, and insufficient guarantees of trust and application grounding. This article presents a vision for artificial intelligence (AI)-native immersive computing, in which AI is embedded as a first-class primitive throughout the entire system stack. We propose a research agenda structured around three synergistic pillars to bridge these gaps. It prioritizes the creation of multimodal foundation models capable of unifying diverse data representations, performing adaptive inference in real time, and generating realistic 3-D world content. This intelligence is sustained by networked systems and infrastructure that leverage learning-driven orchestration and real-time coordination across scalable, shared platforms. To translate these advancements into meaningful real-world impact, the framework incorporates trustworthy, domain-specific application design by embedding end-to-end privacy, ensuring robust, reliable performance, and centering on task-centric operational requirements.</p>
+              </div>
+              <div class="publication-bibtex" id="ai-native-immersive-computing-bibtex" hidden aria-hidden="true">
+                <pre><code>@article{han2026ainative,
+author  = {Bo Han and Amitabh Varshney and Songqing Chen},
+title   = {AI-Native Immersive Computing: Toward Scalable, Intelligent, and Trustworthy Digital--Physical Continuums},
+journal = {IEEE Internet Computing},
+volume  = {30},
+number  = {3},
+pages   = {94--102},
+year    = {2026},
+doi     = {10.1109/MIC.2026.3687654}
+}</code></pre>
+              </div>
             </li>
           </ol>
           <h3>Conference Papers</h3>
           <ol class="publication-list publication-list-2026">
+            <li class="publication-entry publication-entry-2026">
+              <div class="publication-entry-side">
+                <p class="publication-venue-short">SIGCOMM 2026</p>
+                <p class="publication-actions">
+                  <a class="publication-button pdf" href="/lab-website/assets/pdf/lite-sigcomm-2026.pdf">PDF</a>
+                  <a class="publication-button doi" href="https://doi.org/10.1145/3789240.3829116">DOI</a>
+                  <button class="publication-button abs" type="button" aria-expanded="false" aria-controls="lite-sigcomm-2026-abstract" data-publication-toggle="lite-sigcomm-2026-abstract">ABS</button>
+                  <button class="publication-button bib" type="button" aria-expanded="false" aria-controls="lite-sigcomm-2026-bibtex" data-publication-toggle="lite-sigcomm-2026-bibtex">BIB</button>
+                </p>
+              </div>
+              <div class="publication-entry-main">
+                <p class="publication-title"><strong>LITE: Loss-resilient Immersive Telepresence with Multimodal Semantics</strong></p>
+                <p class="publication-authors">Ruizhi Cheng, Harshvardhan Takawale, Nan Wu, Nirupam Roy, Sennur Ulukus, Matteo Varvello, Eugene Chai, and <strong>Bo Han</strong></p>
+                <p class="publication-venue-line">Proceedings of the ACM SIGCOMM 2026 Conference, pp. 628&ndash;641.</p>
+              </div>
+              <div class="publication-abstract" id="lite-sigcomm-2026-abstract" hidden aria-hidden="true">
+                <p>Immersive telepresence has the potential to transform real-time communication through highly interactive and engaging experiences. Despite recent advances in reducing communication and computation costs, existing systems largely overlook packet loss, which can severely degrade the quality of experience (QoE). Recovering lost immersive content is considerably more challenging than in 2D video due to the complexity of dense 3D representations. Recovery must be both accurate and timely while minimizing the communication and computation overhead it incurs. To address these challenges, we present LITE, the first loss-resilient immersive telepresence system. LITE incorporates three key design principles: (1) leveraging semantic communication to transmit compact motion and audio semantics, which can be reconstructed into the remote user's immersive representation and voice, enabling fast semantic-level recovery and remaining robust to congestion-control-induced rate reductions under loss; (2) fusing audio and motion semantics via a lightweight multimodal model to achieve accurate, real-time recovery of motion semantics; and (3) encoding audio semantics from multiple past frames into succinct neural redundancy to enable robust recovery. We prototype LITE using a well-known parametric facial motion representation and extensively evaluate its performance across diverse networks. Our results demonstrate that LITE improves QoE by up to 109% compared with existing schemes, while sustaining real-time streaming at 30 frames per second and preserving high visual fidelity (structural similarity index measure above 0.9, where 1 indicates perfect similarity).</p>
+              </div>
+              <div class="publication-bibtex" id="lite-sigcomm-2026-bibtex" hidden aria-hidden="true">
+                <pre><code>@inproceedings{cheng2026lite,
+  author    = {Ruizhi Cheng and Harshvardhan Takawale and Nan Wu and Nirupam Roy and Sennur Ulukus and Matteo Varvello and Eugene Chai and Bo Han},
+  title     = {LITE: Loss-resilient Immersive Telepresence with Multimodal Semantics},
+  booktitle = {Proceedings of the ACM SIGCOMM 2026 Conference},
+  pages     = {628--641},
+  year      = {2026},
+  doi       = {10.1145/3789240.3829116}
+}</code></pre>
+              </div>
+            </li>
             <li class="publication-entry publication-entry-2026">
               <div class="publication-entry-side">
                 <a class="publication-venue-short publication-venue-link" href="https://2026.ieee-icra.org/" target="_blank" rel="noopener noreferrer">ICRA 2026</a>
