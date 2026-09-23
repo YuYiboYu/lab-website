@@ -1394,6 +1394,10 @@ article a.person-profile-link:focus {
   --brand-text: #333333;
 }
 
+#footer {
+  background: var(--brand-primary);
+}
+
 body,
 button,
 input,
